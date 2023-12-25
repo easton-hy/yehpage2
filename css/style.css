@@ -329,7 +329,6 @@ nav .menu a:hover {
     transform: translateX(200%);
     opacity: 0;
     transition: all 1.5s;
-    background-color: white;
 }
 
 .profile-img .profilecontainer {
