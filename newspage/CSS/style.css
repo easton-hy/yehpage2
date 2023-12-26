@@ -242,16 +242,15 @@ h1,h2,h3,h4,h5,h6{
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 1rem;
 }
-#home-articles .articles-container > *:first-child,
-#home-articles .articles-container > *:last-child{
+#home-articles .articles-container{
   display: grid;
-  grid-template-columns: 	repeat(2, 1fr);
+  grid-template-columns: 	repeat(3, 1fr);
   grid-gap: 1rem;
-  grid-column: span 2;
+  grid-column: span 3;
   align-items: center;
 }
-#home-articles .articles-container > *:last-child{
-  grid-column: span 2;
+#home-articles .articles-container{
+  grid-column: span 3;
 }
 #article .meta{
   display: flex;
