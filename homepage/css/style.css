@@ -387,11 +387,6 @@ h6 { font-size: 16px; }
 }
 
 
-
-
-
-
-
 /*---------------------------------------------------*/
 /*	03) ERLING HEADER
 /*---------------------------------------------------*/
@@ -616,7 +611,7 @@ h6 { font-size: 16px; }
 .erling_tm_about{
 	width: 100%;
 	background-color: #f7f7f7;
-	padding: 50px 0px;
+	padding: 80px 0px;
 }
 .erling_tm_about .about_inner{
 	width: 100%;
@@ -843,112 +838,6 @@ h6 { font-size: 16px; }
 }
 
 /*---------------------------------------------------*/
-/*	06) ERLING SERVICES
-/*---------------------------------------------------*/
-
-.erling_tm_service{
-	width: 100%;
-	background-color: #f7f7f7;
-	padding: 20px 0px 20px 0px;
-}
-.erling_tm_service .service_list{
-	width: 100%;
-}
-.erling_tm_service .service_list > ul{
-	display: flex;
-	flex-wrap: wrap;
-	margin-left: -40px;
-}
-.erling_tm_service .service_list > ul > li{
-	width: 33.3333%;
-	padding-left: 40px;
-	margin-bottom: 40px;
-}
-.erling_tm_service .service_list .list_inner{
-	width: 100%;
-	height: 100%;
-	position: relative;
-	background-color: #f7f7f7;
-	padding: 70px 50px;
-}
-.erling_tm_service .service_list .list_inner .svg{
-	width: 60px;
-	height: 60px;
-	color: #999;
-	margin-bottom: 20px;
-	
-	-webkit-transition: all .3s ease;
-	   -moz-transition: all .3s ease;
-	    -ms-transition: all .3s ease;
-	     -o-transition: all .3s ease;
-	        transition: all .3s ease;
-}
-.erling_tm_service .service_list .list_inner:hover .svg{
-	color: #000;
-}
-.erling_tm_service .service_list .title{
-	font-size: 22px;
-}
-.erling_tm_service .service_list .list{
-	width: 100%;
-	border-top: 1px solid rgba(0,0,0,.1);
-	margin-top: 30px;
-	padding-top: 30px;
-}
-.erling_tm_service .service_list .list li{
-	width: 100%;
-	margin-bottom: 5px;
-	position: relative;
-	padding-left: 18px;
-}
-.erling_tm_service .service_list .list li:last-child{
-	margin-bottom: 0px;
-}
-.erling_tm_service .service_list .list li:before{
-	position: absolute;
-	content: "";
-	width: 6px;
-	height: 6px;
-	background-color: rgba(0,0,0,.15);
-	border-radius: 100%;
-	left: 0px;
-	top: 50%;
-	transform: translateY(-50%);
-}
-.erling_tm_service .erling_progress{
-	position: absolute;
-	bottom: 0px;
-	left: 0px;
-	right: 0px;
-}
-.erling_tm_service .progress_inner .background{
-	width:100%;
-	min-width:100%;
-	position:relative;
-	height:8px;
-}
-.erling_tm_service .progress_inner .background .bar_in{
-	height:100%;
-	background:#d9d9d9;
-	width:0px;
-	overflow:hidden;
-}
-.erling_tm_service .progress_inner .background .bar{
-	width:0px;
-	height:100%;
-}
-.progress_inner .background .bar.open{
-	-webkit-animation: wow 2s cubic-bezier(0.165, 0.840, 0.440, 1.000);  /* Safari 4+ */
-	-moz-animation:    wow 2s cubic-bezier(0.165, 0.840, 0.440, 1.000);  /* Fx 5+ */
-	animation:         wow 2s cubic-bezier(0.165, 0.840, 0.440, 1.000);  /* IE 10+ */
-	width:100%;	
-}
-
-@-webkit-keyframes wow {0%{ width:0%; } 100%{ width:100%; }}
-@-moz-keyframes wow {0%{ width:0%; } 100%{ width:100%; }}
-@keyframes wow {0%{ width:0%; } 100%{ width:100%; }}
-
-/*---------------------------------------------------*/
 /*	07) ERLING PORTFOLIO
 /*---------------------------------------------------*/
 
@@ -1114,7 +1003,7 @@ h6 { font-size: 16px; }
 
 .erling_tm_experience{
 	width: 100%;
-	padding: 143px 0px 150px 0px;
+	padding: 80px 0px 30px 0px;
 }
 .erling_tm_experience .experience_inner{
 	width: 100%;
@@ -1180,207 +1069,12 @@ h6 { font-size: 16px; }
 }
 
 /*---------------------------------------------------*/
-/*	09) ERLING TESTIMONIALS
-/*---------------------------------------------------*/
-
-.erling_tm_testimonials{
-	width: 100%;
-	background-color: #f7f7f7;
-	padding: 143px 0px 150px 0px;
-}
-.erling_tm_testimonials .wrapper{
-	width: 100%;
-	display: flex;
-}
-.erling_tm_testimonials .left{
-	width: 60%;
-	padding-right: 20px;
-}
-.erling_tm_testimonials .box{
-	width: 100%;
-	background-color: #fff;
-	position: relative;
-}
-.erling_tm_testimonials .short{
-	width: 100%;
-    background-color: #eaeaea;
-    padding: 25px 40px;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-}
-.erling_tm_testimonials .short img{
-	width: 60px;
-	height: 60px;
-	border-radius: 100%;
-	object-fit: cover;
-}
-.erling_tm_testimonials .short h3{
-	font-size: 17px;
-	text-transform: uppercase;
-}
-.erling_tm_testimonials .desc{
-	width: 100%;
-	padding: 40px 40px 60px 40px;
-}
-.erling_tm_testimonials .sign{
-	max-width: 200px;
-	margin-top: 30px;
-}
-.erling_tm_testimonials .right{
-	width: 40%;
-	padding-left: 20px;
-}
-.erling_tm_testimonials .right .in{
-	width: 100%;
-	height: 100%;
-	position: relative;
-	background-color: #fff;
-}
-.erling_tm_testimonials .box svg{
-	position: absolute;
-	bottom: -130px;
-	right: -100px;
-	width: 500px;
-	height: 500px;
-	opacity: .07;
-}
-.erling_tm_testimonials .rating{
-	display: flex;
-	margin-bottom: 20px;
-}
-.erling_tm_testimonials .rating li i{
-	font-size: 18px;
-}
-.erling_tm_testimonials .desc p{
-	position: relative;
-	z-index: 1;
-}
-
-/*---------------------------------------------------*/
-/*	10) ERLING NEWS
-/*---------------------------------------------------*/
-
-.erling_tm_news{
-	width: 100%;
-	padding: 50px 0px 50px 0px;
-}
-.erling_tm_news .news_list{
-	width: 100%;
-}
-.erling_tm_news .news_list ul{
-	margin: 0px 0px 0px -40px;
-	display: flex;
-	flex-wrap: wrap;
-}
-.erling_tm_news .news_list ul li{
-	margin: 0px 0px 40px 0px;
-	padding-left: 40px;
-	width: 33.3333%;
-}
-.erling_tm_news .news_list ul li .list_inner{
-	width: 100%;
-	height: 100%;
-	clear: both;
-	position: relative;
-}
-.erling_tm_news .news_list ul li .image{
-	position: relative;
-	margin-bottom: 10px;
-	overflow: hidden;
-}
-.erling_tm_news .news_list ul li .image img{
-	position: relative;
-	min-width: 100%;
-	opacity: 0;
-}
-.erling_tm_news .news_list ul li .image .main{
-	position: absolute;
-	top: 0px;
-	bottom: 0px;
-	left: 0px;
-	right: 0px;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-	transform: scale(1) translateZ(0);
-	
-	-webkit-transition: all .3s ease;
-	   -moz-transition: all .3s ease;
-	    -ms-transition: all .3s ease;
-	     -o-transition: all .3s ease;
-	        transition: all .3s ease;
-}
-.erling_tm_news .news_list ul li .image:hover .main{
-	transform: scale(1.1) translateZ(0)
-}
-.erling_tm_news .news_list ul li .details{
-	width: 100%;
-	background-color: #f5f5f5;
-}
-.erling_tm_news .news_list ul li .meta{
-	width: 100%;
-	background-color: #eaeaea;
-	padding: 15px 30px;
-}
-.erling_tm_news .news_list ul li .meta{
-	display: flex;
-	align-items: center;
-}
-.erling_tm_news .news_list ul li .meta span{
-	position: relative;
-	display: inline-block;
-	padding-right: 15px;
-	margin-right: 10px;
-}
-.erling_tm_news .news_list ul li .meta span:after{
-	position: absolute;
-	content: "";
-	width: 6px;
-	height: 6px;
-	background-color: rgba(0,0,0,.15);
-	right: 0px;
-	top: 50%;
-	transform: translateY(-50%);
-	border-radius: 100%;
-}
-.erling_tm_news .news_list ul li .meta span:last-child{
-	margin: 0px;
-	padding: 0px;
-}
-.erling_tm_news .news_list ul li .meta span:last-child:after{
-	display: none;
-}
-.erling_tm_news .news_list ul li .meta a{
-	color: #000;
-}
-.erling_tm_news .news_list ul li .title{
-	width: 100%;
-	padding: 30px;
-}
-.erling_tm_news .news_list ul li .title h3{
-	font-size: 20px;
-}
-.erling_tm_news .news_list ul li .title a{
-	color: #000;
-}
-.erling_tm_news .news_list ul li .date{
-	position: absolute;
-	z-index: 1;
-	top: 20px;
-	left: 20px;
-	background-color: #fff;
-	display: inline-block;
-	padding: 5px 20px;
-}
-
-/*---------------------------------------------------*/
 /*	11) ERLING CONTACT
 /*---------------------------------------------------*/
 
 .erling_tm_contact{
 	width: 100%;
-	padding: 50px 0px 30px 0px;
+	padding: 80px 0px 30px 0px;
 	background-color: #f5f5f5;
 }
 .erling_tm_contact .contact_inner{
