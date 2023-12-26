@@ -326,7 +326,7 @@ nav .menu a:hover {
     position: relative;
     width: 275px;
     height: 275px;
-    cursor: pointer;
+    cursor: pointer;   
     /* animasi masuk */
     transform: translateX(200%);
     opacity: 0;
