@@ -28,6 +28,9 @@
 }
 
 @media(max-width: 600px){
+  #heatmap-iframe {
+    height: 100px;
+  }
   /* Articles Grid */
   #showcase .showcase-container,
   #home-articles .articles-container,
