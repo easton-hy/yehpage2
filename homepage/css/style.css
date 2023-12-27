@@ -1284,11 +1284,6 @@ h6 { font-size: 16px; }
 	width: 90%;
 }
 
-.erling_tm_copyright a1{
-	color: rgb(2, 9, 190);
-	font-size: 18px;
-  }
-
 .erling_tm_copyright .footer-container{
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
@@ -1311,7 +1306,6 @@ h6 { font-size: 16px; }
 .erling_tm_copyright .footer-container input[type='submit']{
 	width: 90%;
 }
-
 /* New Footer*/
 
 
