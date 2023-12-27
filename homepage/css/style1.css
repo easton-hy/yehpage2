@@ -589,53 +589,53 @@ h6 { font-size: 16px; }
 /* ---- stats.js ---- */
 
 .count-particles{
-	background: #000022;
-	position: absolute;
-	top: 48px;
-	left: 0;
-	width: 80px;
-	color: #13E8E9;
-	font-size: .8em;
-	text-align: left;
-	text-indent: 4px;
-	line-height: 14px;
-	padding-bottom: 2px;
-	font-family: Helvetica, Arial, sans-serif;
-	font-weight: bold;
-  }
-  
-  .js-count-particles{
-	font-size: 1.1em;
-  }
-  
-  #stats,
-  .count-particles{
-	-webkit-user-select: none;
-	margin-top: 5px;
-	margin-left: 5px;
-  }
-  
-  #stats{
-	border-radius: 3px 3px 0 0;
-	overflow: hidden;
-  }
-  
-  .count-particles{
-	border-radius: 0 0 3px 3px;
-  }
-  
-  
-  /* ---- particles.js container ---- */
-  
-  #particles-js{
-	width: 100%;
-	height: 100%;
-	background-color: #b61924;
-	background-image: url('');
-	background-size: cover;
-	background-position: 50% 50%;
-	background-repeat: no-repeat;
-  }
+  background: #000022;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 80px;
+  color: #13E8E9;
+  font-size: .8em;
+  text-align: left;
+  text-indent: 4px;
+  line-height: 14px;
+  padding-bottom: 2px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}
+
+.js-count-particles{
+  font-size: 1.1em;
+}
+
+#stats,
+.count-particles{
+  -webkit-user-select: none;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+#stats{
+  border-radius: 3px 3px 0 0;
+  overflow: hidden;
+}
+
+.count-particles{
+  border-radius: 0 0 3px 3px;
+}
+
+
+/* ---- particles.js container ---- */
+
+#particles-js{
+  width: 100%;
+  height: 100%;
+  background-color: #b61924;
+  background-image: url('');
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
 
 /*---------------------------------------------------*/
 /*	05) ERLING ABOUT
@@ -870,6 +870,100 @@ h6 { font-size: 16px; }
 	background-size: 100% 1px;
 }
 
+/*---------------------------------------------------*/
+/*	06) ERLING SERVICES
+/*---------------------------------------------------*/
+
+.erling_tm_service{
+	width: 100%;
+	padding: 143px 0px 110px 0px;
+}
+.erling_tm_service .service_list{
+	width: 100%;
+}
+.erling_tm_service .service_list > ul{
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: -40px;
+}
+.erling_tm_service .service_list > ul > li{
+	width: 33.3333%;
+	padding-left: 40px;
+	margin-bottom: 40px;
+}
+.erling_tm_service .service_list .list_inner{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	background-color: #f7f7f7;
+	padding: 70px 50px;
+}
+.erling_tm_service .service_list .list_inner .svg{
+	width: 60px;
+	height: 60px;
+	color: #999;
+	margin-bottom: 20px;
+	
+	-webkit-transition: all .3s ease;
+	   -moz-transition: all .3s ease;
+	    -ms-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
+}
+.erling_tm_service .service_list .list_inner:hover .svg{
+	color: #000;
+}
+.erling_tm_service .service_list .title{
+	font-size: 22px;
+}
+.erling_tm_service .service_list .list{
+	width: 100%;
+	border-top: 1px solid rgba(0,0,0,.1);
+	margin-top: 30px;
+	padding-top: 30px;
+}
+.erling_tm_service .service_list .list li{
+	width: 100%;
+	margin-bottom: 5px;
+	position: relative;
+	padding-left: 18px;
+}
+.erling_tm_service .service_list .list li:last-child{
+	margin-bottom: 0px;
+}
+.erling_tm_service .service_list .list li:before{
+	position: absolute;
+	content: "";
+	width: 6px;
+	height: 6px;
+	background-color: rgba(0,0,0,.15);
+	border-radius: 100%;
+	left: 0px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.erling_tm_service .erling_progress{
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+}
+.erling_tm_service .progress_inner .background{
+	width:100%;
+	min-width:100%;
+	position:relative;
+	height:8px;
+}
+.erling_tm_service .progress_inner .background .bar_in{
+	height:100%;
+	background:#d9d9d9;
+	width:0px;
+	overflow:hidden;
+}
+.erling_tm_service .progress_inner .background .bar{
+	width:0px;
+	height:100%;
+}
 .progress_inner .background .bar.open{
 	-webkit-animation: wow 2s cubic-bezier(0.165, 0.840, 0.440, 1.000);  /* Safari 4+ */
 	-moz-animation:    wow 2s cubic-bezier(0.165, 0.840, 0.440, 1.000);  /* Fx 5+ */
@@ -1047,7 +1141,7 @@ h6 { font-size: 16px; }
 
 .erling_tm_experience{
 	width: 100%;
-	padding: 80px 0px 30px 0px;
+	padding: 143px 0px 150px 0px;
 }
 .erling_tm_experience .experience_inner{
 	width: 100%;
@@ -1113,12 +1207,208 @@ h6 { font-size: 16px; }
 }
 
 /*---------------------------------------------------*/
+/*	09) ERLING TESTIMONIALS
+/*---------------------------------------------------*/
+
+.erling_tm_testimonials{
+	width: 100%;
+	background-color: #f7f7f7;
+	padding: 143px 0px 150px 0px;
+}
+.erling_tm_testimonials .wrapper{
+	width: 100%;
+	display: flex;
+}
+.erling_tm_testimonials .left{
+	width: 60%;
+	padding-right: 20px;
+}
+.erling_tm_testimonials .box{
+	width: 100%;
+	background-color: #fff;
+	position: relative;
+}
+.erling_tm_testimonials .short{
+	width: 100%;
+    background-color: #eaeaea;
+    padding: 25px 40px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.erling_tm_testimonials .short img{
+	width: 60px;
+	height: 60px;
+	border-radius: 100%;
+	object-fit: cover;
+}
+.erling_tm_testimonials .short h3{
+	font-size: 17px;
+	text-transform: uppercase;
+}
+.erling_tm_testimonials .desc{
+	width: 100%;
+	padding: 40px 40px 60px 40px;
+}
+.erling_tm_testimonials .sign{
+	max-width: 200px;
+	margin-top: 30px;
+}
+.erling_tm_testimonials .right{
+	width: 40%;
+	padding-left: 20px;
+}
+.erling_tm_testimonials .right .in{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	background-color: #fff;
+}
+.erling_tm_testimonials .box svg{
+	position: absolute;
+	bottom: -130px;
+	right: -100px;
+	width: 500px;
+	height: 500px;
+	opacity: .07;
+}
+.erling_tm_testimonials .rating{
+	display: flex;
+	margin-bottom: 20px;
+}
+.erling_tm_testimonials .rating li i{
+	font-size: 18px;
+}
+.erling_tm_testimonials .desc p{
+	position: relative;
+	z-index: 1;
+}
+
+/*---------------------------------------------------*/
+/*	10) ERLING NEWS
+/*---------------------------------------------------*/
+
+.erling_tm_news{
+	width: 100%;
+	padding: 143px 0px 110px 0px;
+}
+.erling_tm_news .news_list{
+	width: 100%;
+}
+.erling_tm_news .news_list ul{
+	margin: 0px 0px 0px -40px;
+	display: flex;
+	flex-wrap: wrap;
+}
+.erling_tm_news .news_list ul li{
+	margin: 0px 0px 40px 0px;
+	padding-left: 40px;
+	width: 33.3333%;
+}
+.erling_tm_news .news_list ul li .list_inner{
+	width: 100%;
+	height: 100%;
+	clear: both;
+	position: relative;
+}
+.erling_tm_news .news_list ul li .image{
+	position: relative;
+	margin-bottom: 10px;
+	overflow: hidden;
+}
+.erling_tm_news .news_list ul li .image img{
+	position: relative;
+	min-width: 100%;
+	opacity: 0;
+}
+.erling_tm_news .news_list ul li .image .main{
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	transform: scale(1) translateZ(0);
+	
+	-webkit-transition: all .3s ease;
+	   -moz-transition: all .3s ease;
+	    -ms-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
+}
+.erling_tm_news .news_list ul li .image:hover .main{
+	transform: scale(1.1) translateZ(0)
+}
+.erling_tm_news .news_list ul li .details{
+	width: 100%;
+	background-color: #f5f5f5;
+}
+.erling_tm_news .news_list ul li .meta{
+	width: 100%;
+	background-color: #eaeaea;
+	padding: 15px 30px;
+}
+.erling_tm_news .news_list ul li .meta{
+	display: flex;
+	align-items: center;
+}
+.erling_tm_news .news_list ul li .meta span{
+	position: relative;
+	display: inline-block;
+	padding-right: 15px;
+	margin-right: 10px;
+}
+.erling_tm_news .news_list ul li .meta span:after{
+	position: absolute;
+	content: "";
+	width: 6px;
+	height: 6px;
+	background-color: rgba(0,0,0,.15);
+	right: 0px;
+	top: 50%;
+	transform: translateY(-50%);
+	border-radius: 100%;
+}
+.erling_tm_news .news_list ul li .meta span:last-child{
+	margin: 0px;
+	padding: 0px;
+}
+.erling_tm_news .news_list ul li .meta span:last-child:after{
+	display: none;
+}
+.erling_tm_news .news_list ul li .meta a{
+	color: #000;
+}
+.erling_tm_news .news_list ul li .title{
+	width: 100%;
+	padding: 30px;
+}
+.erling_tm_news .news_list ul li .title h3{
+	font-size: 20px;
+}
+.erling_tm_news .news_list ul li .title a{
+	color: #000;
+}
+.erling_tm_news .news_list ul li .date{
+	position: absolute;
+	z-index: 1;
+	top: 20px;
+	left: 20px;
+	background-color: #fff;
+	display: inline-block;
+	padding: 5px 20px;
+}
+
+/*---------------------------------------------------*/
 /*	11) ERLING CONTACT
 /*---------------------------------------------------*/
 
 .erling_tm_contact{
 	width: 100%;
-	padding: 80px 0px 30px 0px;
+	padding: 143px 0px 140px 0px;
+	background-color: #f5f5f5;
 }
 .erling_tm_contact .contact_inner{
 	width: 100%;
@@ -1237,9 +1527,9 @@ h6 { font-size: 16px; }
 /*---------------------------------------------------*/
 
 .erling_tm_copyright{
-	background: var(--dark-color);
-	padding: 50px 0px 30px 0px;
-	background-color: #f5f5f5;
+	width: 100%;
+	background-color: #333;
+	padding: 45px 0px;
 }
 .erling_tm_copyright .inner{
 	width: 100%;
@@ -1247,73 +1537,16 @@ h6 { font-size: 16px; }
 	align-items: center;
 	justify-content: space-between;
 }
-/* New Footer*/
-.erling_tm_copyright .footer-container{
-	width: 100%;
-	display: flex;
-	
-	justify-content: space-between;
-}
-
-.erling_tm_copyright ul{
-	list-style: none;
-  }
-
 .erling_tm_copyright img{
-	width: 150px;
-  }
-
+	max-width: 140px;
+	max-height: 70px;
+}
 .erling_tm_copyright p{
-	font-family: 'Lato', sans-serif;
-	line-height: 1.5;
-	color: black;
-	margin: 0.5rem 0;
-  }
-
-.erling_tm_copyright h3{
-	font-family: 'Archivo Black', sans-serif;
-	font-size: 20px;
-	margin-bottom: .75rem;
-	line-height: 1.3;
+	color: #fff;
 }
-
-.erling_tm_copyright  .list li{
-	padding-bottom: 0.5rem;
-	margin-bottom: 0.5rem;
-	border-bottom: #555 dotted 1px;
-	width: 90%;
+.erling_tm_copyright p a{
+	color: #fff;
 }
-
-.erling_tm_copyright a1{
-	color: rgb(2, 9, 190);
-	font-size: 18px;
-  }
-
-.erling_tm_copyright .footer-container{
-	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	grid-gap: 1rem;
-}
-
-.erling_tm_copyright .footer-container > *:last-child{
-	background: white;
-	grid-column: 1 / span 4;
-	padding: 0.5rem;
-	text-align: center;
-	font-size: 0.8rem;
-}
-
-.erling_tm_copyright .footer-container input[type='email']{
-	width: 90%;
-	padding: 0.5rem;
-	margin-bottom: 0.5rem;
-}
-.erling_tm_copyright .footer-container input[type='submit']{
-	width: 90%;
-}
-
-/* New Footer*/
-
 
 /*---------------------------------------------------*/
 /*	13) ERLING TOTOP
@@ -1357,11 +1590,6 @@ h6 { font-size: 16px; }
 .progressbar a{
 	text-decoration: none;
 	color: #000;
-}
-
-#cal-heatmap-2023, #cal-heatmap-2024 {
-	width: fit-content;
-	margin: 20px;
 }
 
 /*---------------------------------------------------*/
@@ -1434,15 +1662,4 @@ h6 { font-size: 16px; }
 	.erling_tm_testimonials .desc{padding: 40px 30px 60px 30px}
 	.erling_tm_experience .box .title{padding: 25px 30px;}
 	.erling_tm_experience .box ul li .list_inner{padding: 40px 30px 35px 30px;}
-	
-	.erling_tm_copyright .footer-container{grid-template-columns: 1fr;}
-	.erling_tm_copyright .footer-container > *:last-child{grid-column: 1;}
-	.erling_tm_copyright .footer-container > *:first-child,
-	.erling_tm_copyright .footer-container > *:nth-child(2){
-		border-bottom: #444 dotted 1px;
-		padding-bottom: 1rem;
-	}
-
-
-
 }
