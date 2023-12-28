@@ -123,7 +123,7 @@ h1
 .info h5 
 {
     padding-left: 14%;
-    padding-top: 88%;
+    padding-top: 50%;
     height: 1px;
     margin-bottom: 4%;
 }
@@ -155,7 +155,8 @@ h1
 
 .socialbtn ul
 {
-    padding-left: 21%;
+    padding-bottom: 30%;
+    padding-left: 0%;
 }
 
 /* Affects each social media button

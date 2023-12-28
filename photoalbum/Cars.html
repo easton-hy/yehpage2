@@ -34,6 +34,8 @@
                     <li><a href="Nature.html"> Nature </a></li>
                     <li><a href="Urban.html"> Urban </a></li>
                 </ul>
+
+            
             
             <div class="info">
                 <h5><a href="About.html">About/Contact</a></h5>
@@ -41,46 +43,62 @@
 
             <div class="socialbtn">
                 <ul>
-                    <li><a href=""><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
-                    <li><a href="https://www.instagram.com/akashrai_10/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                    <li><a href="https://github.com/muztank10" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+                    <img src="img/world.png" alt="" data-adjust="true" onload="worldImage(this)">
                 </ul>
             </div>
+
+            <script>
+                function worldImage(img) {
+                    var gridItem = img.parentElement.parentElement.parentElement;
+                    var containerHeight = gridItem.clientWidth; // 根据3:2的比例计算高度
+                    img.style.width = containerHeight + "px"; // 设置图片高度等于计算出的格子高度
+                    img.style.height = "auto";
+                }
+    
+                window.onresize = function() {
+                    var images = document.querySelectorAll('.grid-container img[data-adjust="true"]');
+                    images.forEach(function(img) {
+                        if (img.complete) { // 确保图片已加载
+                            adjustImage(img);
+                        }
+                    });
+                };
+            </script>
             
         </nav> 
         <div id="main" class="content">
             <div class="grid-container">
                 <div class="grid-item">
-                    <a href="img/icon.png" data-caption="" data-fancybox="image">
-                        <img src="img/icon.png" alt="" data-adjust="true" onload="adjustImage(this)">
+                    <a href="img/People/ARLab1@SG_231117.jpg" data-caption="" data-fancybox="image">
+                        <img src="img/People/ARLab1@SG_231117.jpg" alt="" data-adjust="true" onload="adjustImage(this)">
                     </a>
                 </div>
 
                 <div class="grid-item">
-                    <a href="img/logo.png" data-caption="" data-fancybox="image">
-                        <img src="img/logo.png" alt="" class="w">
+                    <a href="img/People/ARLab2@SG_221209.jpg" data-caption="" data-fancybox="image">
+                        <img src="img/People/ARLab2@SG_221209.jpg" alt="" class="w">
                     </a>
                 </div>
 
                 <div class="grid-item">
-                    <a href="img/logo.png" data-caption="" data-fancybox="image">
-                        <img src="img/logo.png" alt="" class="w">
+                    <a href="img/People/ARLab3@SG_230501.jpg" data-caption="" data-fancybox="image">
+                        <img src="img/People/ARLab3@SG_230501.jpg" alt="" class="w">
                     </a>
                 </div>
                 
                 <div class="grid-item">
-                    <a href="img/logo.png" data-caption="" data-fancybox="image">
-                        <img src="img/logo.png" alt="" class="w">
+                    <a href="img/People/ARLab4@SG_230928.jpg" data-caption="" data-fancybox="image">
+                        <img src="img/People/ARLab4@SG_230928.jpg" alt="" class="w">
                     </a>
                 </div>
                 <div class="grid-item">
-                    <a href="img/logo.png" data-caption="" data-fancybox="image">
-                        <img src="img/logo.png" alt="" class="w">
+                    <a href="img/People/ARLab5@SG_220927.jpg" data-caption="" data-fancybox="image">
+                        <img src="img/People/ARLab5@SG_220927.jpg" alt="" class="w">
                     </a>
                 </div>
                 <div class="grid-item">
-                    <a href="img/logo.png" data-caption="" data-fancybox="image">
-                        <img src="img/logo.png" alt="" class="w">
+                    <a href="img/People/ARLab6@SG_230502.jpg" data-caption="" data-fancybox="image">
+                        <img src="img/People/ARLab6@SG_230502.jpg" alt="" class="w">
                     </a>
                 </div>
                 <div class="grid-item">
@@ -110,7 +128,7 @@
             function adjustImage(img) {
                 var gridItem = img.parentElement.parentElement;
                 var containerHeight = gridItem.clientWidth * 2 / 3; // 根据3:2的比例计算高度
-                img.style.height = containerHeight*0.9 + "px"; // 设置图片高度等于计算出的格子高度
+                img.style.height = containerHeight*0.95 + "px"; // 设置图片高度等于计算出的格子高度
                 img.style.width = "auto";
             }
 
