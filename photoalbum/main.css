@@ -188,27 +188,17 @@ h1
 
 .grid-container {
     display: grid;
-    grid-gap: 1%; /* 设置格子之间的间隔 */
-    padding: 10px;
+    grid-gap: 0.2%; /* 设置格子之间的间隔 */
+    row-gap: 4%;
     grid-template-columns: repeat(4, 1fr);
 }
 
-.content .grid-item {
+.grid-item {
     display: flex;
     justify-content: center; /* 水平居中 */
     align-items: center; /* 垂直居中 */
     aspect-ratio: 3 / 2;
     overflow: hidden; /* 隐藏溢出的部分 */
-}
-
-.grid-item img.w {
-    width: 95%; /* 限制最大宽度，保持原始比例 */
-    height: auto;
-}
-
-.grid-item .img {
-    height: 95%; /* 限制最大宽度，保持原始比例 */
-    width: auto;
 }
 /* Affects the image when the mouse pointer is hovering over the image
  * increases the image size by 0.05 and creates a cool effect

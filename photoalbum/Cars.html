@@ -66,61 +66,70 @@
             </script>
             
         </nav> 
+
+        <!--onload="adjustImage(this)"-->
         <div id="main" class="content">
             <div class="grid-container">
                 <div class="grid-item">
                     <a href="img/People/ARLab1@SG_231117.jpg" data-caption="" data-fancybox="image">
-                        <img src="img/People/ARLab1@SG_231117.jpg" alt="" data-adjust="true" onload="adjustImage(this)">
+                        <img src="img/People/ARLab1@SG_231117.jpg" alt="" data-adjust="true" onload="adjustImage(this)">                
                     </a>
                 </div>
 
                 <div class="grid-item">
                     <a href="img/People/ARLab2@SG_221209.jpg" data-caption="" data-fancybox="image">
-                        <img src="img/People/ARLab2@SG_221209.jpg" alt="" class="w">
+                        <img src="img/People/ARLab2@SG_221209.jpg" alt="" onload="adjustImage(this)">
                     </a>
                 </div>
 
                 <div class="grid-item">
                     <a href="img/People/ARLab3@SG_230501.jpg" data-caption="" data-fancybox="image">
-                        <img src="img/People/ARLab3@SG_230501.jpg" alt="" class="w">
+                        <img src="img/People/ARLab3@SG_230501.jpg" alt="" onload="adjustImage(this)">                     
+                    </a>
+                </div>
+
+                <div class="grid-item">
+                    <a href="img/People/ARLab4@SG_230928.jpg" data-caption="" data-fancybox="image">
+                            <img src="img/People/ARLab4@SG_230928.jpg" alt="" onload="adjustImage(this)">
+                    </a>
+                </div>
+
+                <div class="grid-item">
+                    <a href="img/icon.png" data-caption="" data-fancybox="image">
+                        <img src="img/icon.png" alt="" onload="adjustImage(this)">
                     </a>
                 </div>
                 
                 <div class="grid-item">
-                    <a href="img/People/ARLab4@SG_230928.jpg" data-caption="" data-fancybox="image">
-                        <img src="img/People/ARLab4@SG_230928.jpg" alt="" class="w">
-                    </a>
-                </div>
-                <div class="grid-item">
-                    <a href="img/People/ARLab5@SG_220927.jpg" data-caption="" data-fancybox="image">
-                        <img src="img/People/ARLab5@SG_220927.jpg" alt="" class="w">
-                    </a>
-                </div>
-                <div class="grid-item">
                     <a href="img/People/ARLab6@SG_230502.jpg" data-caption="" data-fancybox="image">
-                        <img src="img/People/ARLab6@SG_230502.jpg" alt="" class="w">
+                        <img src="img/People/ARLab6@SG_230502.jpg" alt="" onload="adjustImage(this)">
                     </a>
                 </div>
+
                 <div class="grid-item">
                     <a href="img/logo.png" data-caption="" data-fancybox="image">
-                        <img src="img/logo.png" alt="" class="w">
+                        <img src="img/logo.png" alt="" onload="adjustImage(this)">
                     </a>
                 </div>
+
                 <div class="grid-item">
                     <a href="img/logo.png" data-caption="" data-fancybox="image">
-                        <img src="img/logo.png" alt="" class="w">
+                        <img src="img/logo.png" alt="" onload="adjustImage(this)">
                     </a>
                 </div>
+
                 <div class="grid-item">
                     <a href="img/logo.png" data-caption="" data-fancybox="image">
-                        <img src="img/logo.png" alt="" class="w">
+                        <img src="img/logo.png" alt="" onload="adjustImage(this)">
                     </a>
                 </div>
+
                 <div class="grid-item">
                     <a href="img/logo.png" data-caption="" data-fancybox="image">
-                        <img src="img/logo.png" alt="" class="w">
+                        <img src="img/logo.png" alt="" onload="adjustImage(this)">
                     </a>
-                </div>
+                </div>    
+                
             </div>
         </div>
 
@@ -128,8 +137,17 @@
             function adjustImage(img) {
                 var gridItem = img.parentElement.parentElement;
                 var containerHeight = gridItem.clientWidth * 2 / 3; // 根据3:2的比例计算高度
-                img.style.height = containerHeight*0.95 + "px"; // 设置图片高度等于计算出的格子高度
-                img.style.width = "auto";
+                var imageAspectRatio = img.naturalWidth / img.naturalHeight;
+
+                if (imageAspectRatio < 3 / 2) {
+                    // 图片更高，调整高度以匹配格子的高度
+                    img.style.height = containerHeight*0.95 + "px"; // 设置图片高度等于计算出的格子高度
+                    img.style.width = "auto";
+                } else {
+                    // 重置图片样式
+                    img.style.width = gridItem.clientWidth*0.95 + "px"; // 设置图片高度等于计算出的格子高度
+                    img.style.height = "auto";
+                }
             }
 
             window.onresize = function() {
@@ -164,8 +182,7 @@
             {
             });
         
-    </script>
-    
-    
+        </script>
+
     </body>
 </html>
