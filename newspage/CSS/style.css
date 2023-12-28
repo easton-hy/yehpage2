@@ -6,9 +6,9 @@
   --max-width: 1100px;
 }
 .category{
-  --sports-color: #f99500;
-  --ent-color: #a66bbe;
-  --tech-color: #009cff;
+  --univ-color: #f99500;
+  --daily-color: #a66bbe;
+  --publication-color: #009cff;
 }
 *{
   margin: 0;
@@ -55,14 +55,14 @@ h1,h2,h3,h4,h5,h6{
   border-radius: 15px;
   margin-bottom: 0.5rem;
 }
-.category-sports{
-  background: var(--sports-color);
+.category-univ{
+  background: var(--univ-color);
 }
-.category-ent{
-  background: var(--ent-color);
+.category-daily{
+  background: var(--daily-color);
 }
-.category-tech{
-  background: var(--tech-color);
+.category-publication{
+  background: var(--publication-color);
 }
 .btn{
   display: inline-block;
