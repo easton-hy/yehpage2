@@ -21,7 +21,7 @@
 body
 {
     overflow-x: hidden;
-    background-color: #ffffff;
+    background-color: #1d1d1d;
     margin: 0;
     padding: 0;
     font-family: Helvetica, Arial, sans-serif;
@@ -47,7 +47,7 @@ nav
     left: 0;
     margin-right: 0;
     width: 15.625%;
-    background-color: #ffffff;
+    background-color: #4a4a4a;
     display: inline-block;
     text-align: center;
     transition: transform 0.4s ease; 
@@ -81,7 +81,7 @@ nav ul li a
     padding-bottom: 7%;
     text-decoration: none;
     font-size: 20px;
-    color: #000000;
+    color: #ffffff;
     display: block;
     transition: 0.3s;
     text-align: center;
@@ -103,7 +103,8 @@ nav ul li a:hover, .offcanvas a:focus
 h1 a
 {
     text-decoration: none;
-    color: #000000;
+    text-align: center;
+    color: #ffffff;
 }
 
 /* Affects heading of the nav bar
@@ -128,6 +129,7 @@ h6
     font-size: 24px;
     margin-bottom: 1%;
     margin-top: 1%;
+    color: #ffffff;
 }
 
 h7
@@ -140,6 +142,7 @@ h7
     text-align: center; /* 文本居中对齐 */
     font-size: 15px;
     margin-bottom: 1%;
+    color: #ffffff;
 }
 
 /* Affects the info class and its content (in this case, the about/content text)
@@ -165,7 +168,7 @@ h7
 .info h5 a
 {
     text-decoration: none;
-    color: #000000;
+    color: #ffffff;
     transition: 0.3s;
 }
 
@@ -205,7 +208,7 @@ h7
 .socialbtn ul li
 {
     display: inline-block;
-    color: #000000;
+    color: #ffffff;
 }
 
 /* Affects the images on the page
@@ -309,7 +312,7 @@ a:hover img
     
     /*
      * creates a grey color nav toggle button (for tablets)
-     */
+     
    
     .nav-toggle-btn
     {
@@ -320,7 +323,13 @@ a:hover img
         width: 40px;
         height: 40px;
         background-color: #666;
+    }*/
+
+    .nav-toggle-btn
+    {
+        display: none;
     }
+
     .active-nav nav
     {
         transform: translate3d(0,0,0);
@@ -361,6 +370,24 @@ a:hover img
             height: 0;
             margin-top: 0.1px;
             padding-bottom: 5%;
+        }
+
+        .content
+        {
+            padding-left: 5%;
+            padding-right: 5%;
+        }
+
+        h6
+        {
+            padding-left: 5%;
+            padding-right: 5%;
+        }
+
+        h7
+        {
+            padding-left: 5%;
+            padding-right: 5%;
         }
         
         .socialbtn ul
