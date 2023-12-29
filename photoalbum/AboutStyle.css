@@ -21,10 +21,10 @@
 body
 {
     overflow-x: hidden;
-    background-color: #111;
+    background-color: #ffffff;
     margin: 0;
     padding: 0;
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: Poppins, Montserrat, sans-serif;
     color: white;
 }
 
@@ -48,10 +48,11 @@ nav
     left: 0;
     margin-right: 0;
     width: 15.625%;
-    background-color: #111;
+    background-color: #ffffff;
     display: inline-block;
-    text-align: left;
+    text-align: center; /* 文本居中对齐 */
     transition: transform 0.4s ease; 
+    padding: 0; /* 移除内边距 */
     
 }
 
@@ -62,9 +63,11 @@ nav
 nav ul
 {
    list-style: none;
-   margin-top: 10px;
+   padding: 0; /* 移除内边距 */
+   margin: 10px 0; /* 只保留上下外边距 */
    display: inline-block;
-   text-align:left;
+   justify-content: center; /* 水平居中 */
+   align-items: center; /* 垂直居中 */
 }
 
 /* Affects every link in the menu bar
@@ -80,10 +83,10 @@ nav ul li a
     padding-bottom: 7%;
     text-decoration: none;
     font-size: 20px;
-    color: #ffffff;
+    color: #000000;
     display: block;
     transition: 0.3s;
-    text-align:left;
+    text-align: center; /* 文本居中对齐 */
 }
 
 /* Affects every link in the menu bar when the mouse hovers over it
@@ -102,7 +105,7 @@ nav ul li a:hover, .offcanvas a:focus
 h1 a
 {
     text-decoration: none;
-    color: #fff;
+    color: #000000;
 }
 
 /* Affects heading of the nav bar
@@ -112,7 +115,7 @@ h1 a
 
 h1
 {
-    padding: 15% 15% 5% 5%;
+    padding: 15% 0% 5% 0%;
     text-align: center;  
 }
 
@@ -122,8 +125,12 @@ h1
 
 .info h5 
 {
-    padding-left: 14%;
-    padding-top: 88%;
+    padding-top: 50%;
+
+    display: flex; /* 使用 flex 布局 */
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+    text-align: center; /* 文本居中对齐 */
     height: 1px;
     margin-bottom: 4%;
 }
@@ -136,9 +143,11 @@ h1
 .info h5 a
 {
     text-decoration: none;
-    color: #ffffff;
+    color: #000000;
     transition: 0.3s;
+    font-family: Poppins, Montserrat, sans-serif;
 }
+
 
 /* Affects the info class and its content (in this case, the about/content text) only on hover
  * changes the text from white to grey
@@ -155,7 +164,12 @@ h1
 
 .socialbtn ul
 {
-    padding-left: 21%;
+    padding-bottom: 30%;
+    padding-left: 0%;
+}
+
+.socialbtn img{
+    width: 100%;
 }
 
 /* Affects each social media button
@@ -176,6 +190,7 @@ h1
 {
     padding-bottom: 0.2%;
     padding-top: 0;
+    color: #111;
 }
 
 /* Affects the para class which contains the text in the content of the about page
@@ -189,9 +204,10 @@ h1
     padding-left: 5%;
     padding-right: 5%;
     text-align: left;
-    padding-bottom: 5%;
     padding-top: 0;
-    margin-top: 5%;
+    margin-top: 1%;
+    color: #111;
+    
 }
 
 /* Affects the toggle button for the side nav menu
@@ -202,22 +218,11 @@ h1
 {
     display: none;
 }
-
 /* Affects the images on the page
  * creates space between each image
  * displays only a certain percentage of the images actual dimensions in order to attain a thumbnail effect
  */
 
-img
-{
-    padding-top: 0.2%;
-    padding-left: 5%;
-    width: 26.63%;
-    height: 19.53%;
-    display: inline-block;
-    margin: auto;
-    transition: transform .2s ease-in-out;
-}
 
 /* Affects the content of the page 
  * creates sace between the content and the side nav and header
@@ -226,8 +231,25 @@ img
 .content
 {
     padding-left: 15.625%;
-    padding-top: 4%;
+    padding-right: 2%;
+    padding-top: 2%;
 }
+
+.grid-container {
+    display: grid;
+    grid-gap: 0.2%; /* 设置格子之间的间隔 */
+    row-gap: 4%;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.grid-item {
+    display: flex;
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+    aspect-ratio: 3 / 2;
+    overflow: hidden; /* 隐藏溢出的部分 */
+}
+
 
 /* Affects the image when the mouse pointer is hovering over the image
  * increases the image size by 0.05 and creates a cool effect
@@ -261,6 +283,7 @@ a:hover img
         width: 100%;
         height: auto;
         position: relative;
+        text-align: center;
     }
     nav ul li a 
     {
@@ -365,6 +388,7 @@ a:hover img
             left: 15%;
             display: flex;
             margin-left: 25%;
+            visibility:hidden;
         }
         
         .socialbtn ul li
@@ -375,6 +399,11 @@ a:hover img
         .para
         {
             padding-top: 10%;
+        }
+
+        .grid-container {
+            padding-top: 8%;
+            grid-template-columns: 1fr; /* 一行一列 */
         }
         
     }

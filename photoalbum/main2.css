@@ -49,7 +49,7 @@ nav
     width: 15.625%;
     background-color: #ffffff;
     display: inline-block;
-    text-align: center;
+    text-align: left;
     transition: transform 0.4s ease; 
     
 }
@@ -61,10 +61,9 @@ nav
 nav ul
 {
    list-style: none;
-   padding: 0; /* 移除内边距 */
    margin-top: 10px;
    display: inline-block;
-   text-align: center;
+   text-align:left;
 }
 
 /* Affects every link in the menu bar
@@ -84,7 +83,7 @@ nav ul li a
     color: #000000;
     display: block;
     transition: 0.3s;
-    text-align: center;
+    text-align:left;
 }
 
 /* Affects every link in the menu bar when the mouse hovers over it
@@ -113,33 +112,8 @@ h1 a
 
 h1
 {
-    padding: 15% 0% 5% 0%;
+    padding: 15% 15% 5% 5%;
     text-align: center;  
-}
-
-h6
-{
-    padding-left: 15.625%;
-    padding-right: 2%;
-    display: flex; /* 使用 flex 布局 */
-    justify-content: center; /* 水平居中 */
-    align-items: center; /* 垂直居中 */
-    text-align: center; /* 文本居中对齐 */
-    font-size: 24px;
-    margin-bottom: 1%;
-    margin-top: 1%;
-}
-
-h7
-{
-    padding-left: 15.625%;
-    padding-right: 2%;
-    display: flex; /* 使用 flex 布局 */
-    justify-content: center; /* 水平居中 */
-    align-items: center; /* 垂直居中 */
-    text-align: center; /* 文本居中对齐 */
-    font-size: 15px;
-    margin-bottom: 1%;
 }
 
 /* Affects the info class and its content (in this case, the about/content text)
@@ -148,10 +122,7 @@ h7
 
 .info h5 
 {
-    display: flex; /* 使用 flex 布局 */
-    justify-content: center; /* 水平居中 */
-    align-items: center; /* 垂直居中 */
-    text-align: center; /* 文本居中对齐 */
+    padding-left: 14%;
     padding-top: 50%;
     height: 1px;
     margin-bottom: 4%;
@@ -178,24 +149,14 @@ h7
     color: #666;
 }
 
-.nav-toggle-btn
-{
-    display: none;
-}
-
 /* Affects all the social media buttons
  * Creates space from the left of the page in the nav bar
  */
- 
 
 .socialbtn ul
 {
     padding-bottom: 30%;
     padding-left: 0%;
-}
-
-.socialbtn img{
-    width: 100%;
 }
 
 /* Affects each social media button
@@ -213,6 +174,10 @@ h7
  * displays only a certain percentage of the images actual dimensions in order to attain a thumbnail effect
  */
 
+ .nav-toggle-btn
+{
+    display: none;
+}
 
 /* Affects the content of the page 
  * creates sace between the content and the side nav and header
@@ -222,13 +187,7 @@ h7
 {
     padding-left: 15.625%;
     padding-right: 2%;
-}
-
-.grid-title p{
-    text-align: center;
-    font-size: 24px;
-    margin-bottom: 20px; /* 设置标题下方的间距 */
-    /* 更多样式 */
+    padding-top: 4%;
 }
 
 .grid-container {
@@ -294,6 +253,7 @@ a:hover img
     .socialbtn ul
     {
         padding-left: 55%;
+        visibility:hidden;
     }
    
     img
@@ -310,17 +270,18 @@ a:hover img
     /*
      * creates a grey color nav toggle button (for tablets)
      */
+
+     .nav-toggle-btn
+     {
+         display: block;
+         position: absolute;
+         left: 200px;
+         top: 0px;
+         width: 40px;
+         height: 40px;
+         background-color: #666;
+     }
    
-    .nav-toggle-btn
-    {
-        display: block;
-        position: absolute;
-        left: 200px;
-        top: 0px;
-        width: 40px;
-        height: 40px;
-        background-color: #666;
-    }
     .active-nav nav
     {
         transform: translate3d(0,0,0);
@@ -366,9 +327,18 @@ a:hover img
         .socialbtn ul
         {
             left: 15%;
-            display: flex;
-            margin-left: 25%;
-            visibility:hidden;
+            display: block;
+        }
+
+        .nav-toggle-btn
+        {
+            display: block;
+            position: absolute;
+            left: 200px;
+            top: 0px;
+            width: 40px;
+            height: 40px;
+            background-color: #666;
         }
 
         .grid-container {

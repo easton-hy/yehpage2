@@ -24,16 +24,16 @@
         
         <nav>
             
-            <a href="#" class="nav-toggle-btn"></a>
+            <a href="#" class="nav-toggle-btn">
+                <img src="../favicon.png" alt="">
+            </a>
             
-            <h1><a href="index.html"> Akash Rai</a></h1>
+            <h1><a href="../index.html"> Mainpage</a></h1>
                 <ul>
+                    <li><a href="Travel.html"> Travel </a></li>
+                    <li><a href="Other.html"> Other </a></li>
+                    <li><a href="Family.html"> Family </a></li>
                     <li><a href="People.html"> People </a></li>
-                    <li><a href="NightLife.html"> Nightlife </a></li>
-                    <li><a href="Cars.html"> Cars </a></li>
-                    <li><a href="Museums.html"> Museums </a></li>
-                    <li><a href="Nature.html"> Nature </a></li>
-                    <li><a href="Urban.html"> Urban </a></li>
                 </ul>
 
             
@@ -44,32 +44,18 @@
 
             <div class="socialbtn">
                 <ul>
-                    <img src="img/world.png" alt="" data-adjust="true" onload="worldImage(this)">
+                    <img src="img/world.png" alt="">
                 </ul>
             </div>
-
-            <script>
-                function worldImage(img) {
-                    var gridItem = img.parentElement.parentElement.parentElement;
-                    var containerHeight = gridItem.clientWidth; // 根据3:2的比例计算高度
-                    img.style.width = containerHeight + "px"; // 设置图片高度等于计算出的格子高度
-                    img.style.height = "auto";
-                }
-    
-                window.onresize = function() {
-                    var images = document.querySelectorAll('.grid-container img[data-adjust="true"]');
-                    images.forEach(function(img) {
-                        if (img.complete) { // 确保图片已加载
-                            adjustImage(img);
-                        }
-                    });
-                };
-            </script>
             
         </nav> 
 
+        <h6> People </h6>
+        <h7> If any image offends you, please contact Easton to have it removed! </h7>
+
         <!--onload="adjustImage(this)"-->
         <div id="main" class="content">
+
             <div class="grid-container">
 
                 <div class="grid-item">
@@ -80,135 +66,146 @@
 
                 <div class="grid-item">
                     <a href="img/People/ARLab2@SG_221209.jpg" data-caption="ARLab2@SG_221209" data-fancybox="image">
-                        <img src="img/People/ARLab2@SG_221209.jpg" alt="" onload="adjustImage(this)">
+                        <img src="img/People/ARLab2@SG_221209.jpg" alt="" data-adjust="true" onload="adjustImage(this)">
                     </a>
                 </div>
 
                 <div class="grid-item">
                     <a href="img/People/ARLab3@SG_230501.jpg" data-caption="ARLab3@SG_230501" data-fancybox="image">
-                        <img src="img/People/ARLab3@SG_230501.jpg" alt="" onload="adjustImage(this)">                     
+                        <img src="img/People/ARLab3@SG_230501.jpg" alt="" data-adjust="true" onload="adjustImage(this)">                     
                     </a>
                 </div>
 
                 <div class="grid-item">
                     <a href="img/People/ARLab4@SG_230928.jpg" data-caption="ARLab4@SG_230928" data-fancybox="image">
-                            <img src="img/People/ARLab4@SG_230928.jpg" alt="" onload="adjustImage(this)">
+                        <img src="img/People/ARLab4@SG_230928.jpg" alt="" data-adjust="true" onload="adjustImage(this)">
                     </a>
                 </div>
                 
                 <div class="grid-item">
                     <a href="img/People/ARLab6@SG_230502.jpg" data-caption="ARLab6@SG_230502" data-fancybox="image">
-                        <img src="img/People/ARLab6@SG_230502.jpg" alt="" onload="adjustImage(this)">
+                        <img src="img/People/ARLab6@SG_230502.jpg" alt="" data-adjust="true" onload="adjustImage(this)">
                     </a>
                 </div>  
 
                 <div class="grid-item">
                     <a href="img/People/ARLab5@SG_220927.jpg" data-caption="ARLab5@SG_220927" data-fancybox="image">
-                        <img src="img/People/ARLab5@SG_220927.jpg" alt="" onload="adjustImage(this)">
+                        <img src="img/People/ARLab5@SG_220927.jpg" alt="" data-adjust="true" onload="adjustImage(this)">
                     </a>
                 </div> 
 
                 <div class="grid-item">
                     <a href="img/People/" data-caption="ARLab5@SG_220927" data-fancybox="image">
-                        <img src="img/People/ARLab5@SG_220927.jpg" alt="" onload="adjustImage(this)">
+                        <img src="img/People/ARLab5@SG_220927.jpg" alt="" data-adjust="true" onload="adjustImage(this)">
                     </a>
                 </div> 
                 
                 <div class="grid-item">
                     <a href="img/People/HallowUSS@SG_231104.jpg" data-caption="HallowUSS@SG_231104" data-fancybox="image">
-                        <img src="img/People/HallowUSS@SG_231104.jpg" alt="" onload="adjustImage(this)">
+                        <img src="img/People/HallowUSS@SG_231104.jpg" alt="" data-adjust="true" onload="adjustImage(this)">
                     </a>
                 </div> 
 
                 <div class="grid-item">
                     <a href="img/People/HallowUSS2@SG_231104.jpg" data-caption="HallowUSS2@SG_231104" data-fancybox="image">
-                        <img src="img/People/HallowUSS2@SG_231104.jpg" alt="" onload="adjustImage(this)">
+                        <img src="img/People/HallowUSS2@SG_231104.jpg" alt="" data-adjust="true" onload="adjustImage(this)">
                     </a>
                 </div> 
 
                 <div class="grid-item">
                     <a href="img/People/HallowUSS3@SG_231104.jpg" data-caption="HallowUSS3@SG_231104" data-fancybox="image">
-                        <img src="img/People/HallowUSS3@SG_231104.jpg" alt="" onload="adjustImage(this)">
+                        <img src="img/People/HallowUSS3@SG_231104.jpg" alt="" data-adjust="true" onload="adjustImage(this)">
                     </a>
                 </div> 
 
                 <div class="grid-item">
                     <a href="img/People/LWJ@SG_231117.jpg" data-caption="LWJ@SG_231117.jpg" data-fancybox="image">
-                        <img src="img/People/LWJ@SG_231117.jpg" alt="" onload="adjustImage(this)">
+                        <img src="img/People/LWJ@SG_231117.jpg" alt="" data-adjust="true" onload="adjustImage(this)">
                     </a>
                 </div> 
 
                 <div class="grid-item">
                     <a href="img/People/Shashank@SG_231115.jpg" data-caption="Shashank@SG_231115.jpg" data-fancybox="image">
-                        <img src="img/People/Shashank@SG_231115.jpg" alt="" onload="adjustImage(this)">
+                        <img src="img/People/Shashank@SG_231115.jpg" alt="" data-adjust="true" onload="adjustImage(this)">
                     </a>
                 </div> 
 
                 <div class="grid-item">
                     <a href="img/People/XieJiacheng@SG_230928.jpg" data-caption="XieJiacheng@SG_230928.jpg" data-fancybox="image">
-                        <img src="img/People/XieJiacheng@SG_230928.jpg" alt="" onload="adjustImage(this)">
+                        <img src="img/People/XieJiacheng@SG_230928.jpg" alt="" data-adjust="true" onload="adjustImage(this)">
                     </a>
                 </div> 
 
                 <div class="grid-item">
                     <a href="img/People/ZhangXiaoshi@SG_231104.jpg" data-caption="ZhangXiaoshi@SG_231104.jpg" data-fancybox="image">
-                        <img src="img/People/ZhangXiaoshi@SG_231104.jpg" alt="" onload="adjustImage(this)">
+                        <img src="img/People/ZhangXiaoshi@SG_231104.jpg" alt="" data-adjust="true" onload="adjustImage(this)">
                     </a>
                 </div> 
 
                 <div class="grid-item">
                     <a href="img/People/SiHailun@CS_230715.jpg" data-caption="SiHailun@CS_230715.jpg" data-fancybox="image">
-                        <img src="img/People/SiHailun@CS_230715.jpg" alt="" onload="adjustImage(this)">
+                        <img src="img/People/SiHailun@CS_230715.jpg" alt="" data-adjust="true" onload="adjustImage(this)">
                     </a>
                 </div> 
 
                 <div class="grid-item">
                     <a href="img/People/SGAF@SG_230910.jpg" data-caption="SGAF@SG_230910.jpg" data-fancybox="image">
-                        <img src="img/People/SGAF@SG_230910.jpg" alt="" onload="adjustImage(this)">
+                        <img src="img/People/SGAF@SG_230910.jpg" alt="" data-adjust="true" onload="adjustImage(this)">
                     </a>
                 </div> 
 
                 <div class="grid-item">
                     <a href="img/People/SGAF2@SG_230910.jpg" data-caption="SGAF2@SG_230910.jpg" data-fancybox="image">
-                        <img src="img/People/SGAF2@SG_230910.jpg" alt="" onload="adjustImage(this)">
+                        <img src="img/People/SGAF2@SG_230910.jpg" alt="" data-adjust="true" onload="adjustImage(this)">
                     </a>
                 </div> 
 
                 <div class="grid-item">
                     <a href="img/People/SGA3F@SG_230910.jpg" data-caption="SGAF3@SG_230910.jpg" data-fancybox="image">
-                        <img src="img/People/SGAF3@SG_230910.jpg" alt="" onload="adjustImage(this)">
+                        <img src="img/People/SGAF3@SG_230910.jpg" alt="" data-adjust="true" onload="adjustImage(this)">
                     </a>
                 </div> 
 
             </div>
+            <script>
+                function adjustImage(img) {
+                    var gridItem = img.parentElement.parentElement;
+                    var containerHeight = gridItem.clientWidth * 2 / 3; // 根据3:2的比例计算高度
+                    var imageAspectRatio = img.naturalWidth / img.naturalHeight;
+
+                    if (imageAspectRatio < 3 / 2) {
+                        // 图片更高，调整高度以匹配格子的高度
+                        img.style.height = containerHeight*0.95 + "px"; // 设置图片高度等于计算出的格子高度
+                        img.style.width = "auto";
+                    } else {
+                        // 重置图片样式
+                        img.style.width = gridItem.clientWidth*0.95 + "px"; // 设置图片高度等于计算出的格子高度
+                        img.style.height = "auto";
+                    }
+                }
+
+                window.onload = function() {
+                    var images = document.querySelectorAll('.grid-container img[data-adjust="true"]');
+                    images.forEach(function(img) {
+                        if (img.complete) { // 确保图片已加载
+                            adjustImage(img);
+                        }
+                    });
+                };
+
+                window.onresize = function() {
+                    var images = document.querySelectorAll('.grid-container img[data-adjust="true"]');
+                    images.forEach(function(img) {
+                        if (img.complete) { // 确保图片已加载
+                            adjustImage(img);
+                        }
+                    });
+                };
+            </script>
+
         </div>
 
-        <script>
-            function adjustImage(img) {
-                var gridItem = img.parentElement.parentElement;
-                var containerHeight = gridItem.clientWidth * 2 / 3; // 根据3:2的比例计算高度
-                var imageAspectRatio = img.naturalWidth / img.naturalHeight;
 
-                if (imageAspectRatio < 3 / 2) {
-                    // 图片更高，调整高度以匹配格子的高度
-                    img.style.height = containerHeight*0.95 + "px"; // 设置图片高度等于计算出的格子高度
-                    img.style.width = "auto";
-                } else {
-                    // 重置图片样式
-                    img.style.width = gridItem.clientWidth*0.95 + "px"; // 设置图片高度等于计算出的格子高度
-                    img.style.height = "auto";
-                }
-            }
-
-            window.onresize = function() {
-                var images = document.querySelectorAll('.grid-container img[data-adjust="true"]');
-                images.forEach(function(img) {
-                    if (img.complete) { // 确保图片已加载
-                        adjustImage(img);
-                    }
-                });
-            };
-        </script>
 
         
         <script src="jquery-3.2.1.min.js" type="text/javascript"></script>        
