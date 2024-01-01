@@ -394,12 +394,19 @@
 
             <script>
 
-                document.getElementById("visitingmap").addEventListener("load", function()  {
-                    setTimeout(function() {
-                        var button = document.getElementById("mygg");
-                        button.click();
-                    }, 500); // delay 50 ms
-                });
+                window.onload = function() {
+                    // 确保页面其他元素加载完成
+                    var iframe = document.getElementById("visitingmap");
+
+                    iframe.onload = function() {
+                        // 确保 iframe 内容加载完成
+                        setTimeout(function() {
+                            // 延迟1秒后点击按钮
+                            document.getElementById("mygg").click();
+                        }, 500); // 延时1000毫秒（1秒）
+                    };
+                };
+
             </script>
 
             <script>
