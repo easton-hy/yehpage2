@@ -2724,13 +2724,12 @@ body {
   grid-template-columns: repeat(1, 1fr);
 }
 
-.grid-item {
+.grid-item{
   display: flex;
   justify-content: center; /* 水平居中 */
   align-items: center; /* 垂直居中 */
   width: 100%;
-  aspect-ratio: 3 / 2;
-  overflow: hidden; /* 隐藏溢出的部分 */
+
 }
 
 .yeh{
