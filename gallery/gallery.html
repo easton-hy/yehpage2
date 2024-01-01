@@ -394,35 +394,22 @@
 
             <script>
 
-                window.onload = function() {
-                    // 确保页面其他元素加载完成
-                    var iframe = document.getElementById("visitingmap");
-
-                    iframe.onload = function() {
-                        // 确保 iframe 内容加载完成
-                        setTimeout(function() {
-                            // 延迟1秒后点击按钮
-                            document.getElementById("mygg").click();
-                        }, 500); // 延时1000毫秒（1秒）
-                    };
-                };
-
+                document.getElementById("visitingmap").addEventListener("load", function()  {
+                    setTimeout(function() {
+                        var button = document.getElementById("mygg");
+                        button.click();
+                    }, 1000); // delay 50 ms
+                });
             </script>
 
             <script>
 
-                window.onload = function() {
-                    // 确保页面其他元素加载完成
-                    var iframe = document.getElementById("visitingmap");
-
-                    iframe.onload = function() {
-                        // 确保 iframe 内容加载完成
-                        setTimeout(function() {
-                            // 延迟1秒后点击按钮
-                            document.getElementById("mygg").click();
-                        }, 1000); // 延时1000毫秒（1秒）
-                    };
-                };
+                document.getElementById("visitingmap").addEventListener("load", function()  {
+                    setTimeout(function() {
+                        var button = document.getElementById("mygg");
+                        button.click();
+                    }, 3000); // delay 50 ms
+                });
 
             </script>
             
@@ -452,7 +439,7 @@
         <div class="wrapper">
             <div class="containerUp">
                 <div class="social-info">
-                    <h2>Follow Easton6</h2>
+                    <h2>Follow Easton5</h2>
                 </div>
                 
                 <div class="row align-items-center" style="padding-right: 10%; padding-left: 10%;">
