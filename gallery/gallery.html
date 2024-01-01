@@ -394,22 +394,29 @@
 
             <script>
 
-                document.getElementById("clustrmaps").addEventListener("load", function()  {
+
+                var clustrmapsScript = document.getElementById('clustrmaps');
+
+                clustrmapsScript.onload = function() {
+                    // 假设脚本需要一些时间来执行其内部操作
                     setTimeout(function() {
-                        var button = document.getElementById("mygg");
-                        button.click();
-                    }, 1000); // delay 50 ms
-                });
+                        // 延时后执行点击操作
+                        document.getElementById('mygg').click();
+                    }, 2000); // 例如，这里设置2秒的延时
+                };
             </script>
 
             <script>
 
-                document.getElementById("clustrmaps").addEventListener("load", function()  {
+                var clustrmapsScript = document.getElementById('clustrmaps');
+
+                clustrmapsScript.onload = function() {
+                    // 假设脚本需要一些时间来执行其内部操作
                     setTimeout(function() {
-                        var button = document.getElementById("mygg");
-                        button.click();
-                    }, 3000); // delay 50 ms
-                });
+                        // 延时后执行点击操作
+                        document.getElementById('mygg').click();
+                    }, 2000); // 例如，这里设置2秒的延时
+                };
 
             </script>
             
@@ -439,7 +446,7 @@
         <div class="wrapper">
             <div class="containerUp">
                 <div class="social-info">
-                    <h2>Follow Easton8</h2>
+                    <h2>Follow Easton9</h2>
                 </div>
                 
                 <div class="row align-items-center" style="padding-right: 10%; padding-left: 10%;">
