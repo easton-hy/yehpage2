@@ -1397,7 +1397,7 @@ input:required {
 
 @media only screen and (max-width: 767px) {
   .breadcrumb-area {
-    height: 240px;
+    height: 300px;
   }
 }
 
