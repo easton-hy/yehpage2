@@ -2,20 +2,24 @@
 <html>
 <head>
     <title>Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body {
             background-repeat: no-repeat;
             font-family: Arial, sans-serif;
+            margin: 0; /* 移除默认的 body 边距 */
+            padding: 0; /* 移除默认的 padding */
         }
         
         .container {
-            max-width: 400px;
-            margin: 0 auto;
+            width: 30%; /* 默认宽度，适用于大屏幕 */
             padding: 20px;
             background-color: #fff;
             border-radius: 5px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            margin-top: 100px;
+            margin-top: 100px; /* 默认顶部边距 */
+            margin-left: auto; /* 水平居中 */
+            margin-right: auto; /* 水平居中 */
         }
         
         h1 {
@@ -24,7 +28,7 @@
         
         input[type="text"],
         input[type="password"] {
-            width: 95%;
+            width: 95%; /* 输入框宽度 */
             padding: 10px;
             margin-bottom: 10px;
             border: 1px solid #ccc;
@@ -32,7 +36,7 @@
         }
         
         input[type="submit"] {
-            width: 100%;
+            width: 100%; /* 提交按钮宽度 */
             padding: 10px;
             background-color: #4CAF50;
             color: #fff;
@@ -40,7 +44,20 @@
             border-radius: 5px;
             cursor: pointer;
         }
+
+        /* 响应式设计：针对小屏幕设备的样式 */
+        @media (max-width: 600px) {
+            .container {
+                width: 90%; /* 小屏幕上的宽度提升到90% */
+                margin-top: 50px; /* 小屏幕上的顶部边距调整 */
+                padding: 10px; /* 小屏幕上的内边距调整 */
+            }
+        }
     </style>
+
+    
+    
+    
 </head>
 <body>
     <div class="container">
@@ -55,6 +72,7 @@
         function redirectToPage() {
             var username = document.getElementById("account").value;
             var password = document.getElementById("passwordInput").value;
+            /*Change the root address*/
             var redirectBase = "../gallery/";
             var houzhuoBase = ".html";
 
