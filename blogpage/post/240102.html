@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<!-- saved from url=(0042)https://hugo-ink.netlify.app/posts/post-8/ -->
+<html class="" data-redeviation-bs-uid="100008">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>EYH's Blogs </title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" type="image/x-icon" href="../../favicon.png">
+	
+		<meta itemprop="name" content="Markdown Syntax Guide">
+		<meta itemprop="description" content="Sample article showcasing basic Markdown syntax and formatting for HTML elements.">
+
+		<meta itemprop="datePublished" content="2019-03-11T00:00:00+00:00">
+		<meta itemprop="dateModified" content="2019-03-11T00:00:00+00:00">
+		<meta itemprop="wordCount" content="446">
+
+		<meta itemprop="keywords" content="markdown,css,html,themes,">
+		<meta property="og:title" content="Markdown Syntax Guide">
+		<meta property="og:description" content="Sample article showcasing basic Markdown syntax and formatting for HTML elements.">
+		<meta property="og:type" content="article">
+		<meta property="og:url" content="/posts/post-8/"><meta property="article:published_time" content="2019-03-11T00:00:00+00:00">
+		<meta property="article:modified_time" content="2019-03-11T00:00:00+00:00">
+		<meta name="twitter:card" content="summary">
+		<meta name="twitter:title" content="Markdown Syntax Guide">
+		<meta name="twitter:description" content="Sample article showcasing basic Markdown syntax and formatting for HTML elements.">
+		<link href="../css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" media="screen" href="../css/normalize.css">
+		<link rel="stylesheet" type="text/css" media="screen" href="../css/main.css">
+        <link id="dark-scheme" rel="stylesheet" type="text/css" href="../css/dark.css">
+
+		<script src="../css/feather.min.js.download"></script>
+		<script src="../css/main.js.download"></script>
+		<script type="text/javascript" async="" src="../css/embed.js.download"></script>
+		<style class="redeviation-bs-style" data-name="content">/*! (c) Philipp König under GPL-3.0 */
+			body>div#redeviation-bs-indicator>div{
+				opacity:0;
+				pointer-events:none
+				}
+			body>#redeviation-bs-sidebar.redeviation-bs-visible,body>#redeviation-bs-overlay.redeviation-bs-visible{
+				opacity:1;
+				pointer-events:auto
+				}
+			body.redeviation-bs-noscroll{
+				overflow:hidden !important
+				}
+			body>div#redeviation-bs-indicator>div{
+				position:absolute;
+				transform:translate3d(-24px, 0, 0);
+				top:0;
+				left:0;
+				width:24px !important;
+				height:100%;
+				background:rgba(0,0,0,0.5);
+				border-radius:0 10px 10px 0;
+				transition:opacity 0.3s, transform 0.3s;
+				z-index:2
+				}
+			body>div#redeviation-bs-indicator>div>span{
+				-webkit-mask:no-repeat center/24px;
+				-webkit-mask-image:url(chrome-extension://jdbnofccmhefkmjbkkdkfiicjkgofkdh/img/icon-bookmark.svg);
+				background-color:#ffffff;
+				position:absolute;
+				display:block;
+				top:0;
+				left:0;
+				width:100%;
+				height:100%
+			}body>div#redeviation-bs-indicator[data-pos='right']{
+				left:auto;
+				right:0
+				}
+			body>div#redeviation-bs-indicator[data-pos='right']>div{
+				transform:translate3d(24px, 0, 0);
+				left:auto;right:0;
+				border-radius:10px 0 0 10px
+				}
+			body>div#redeviation-bs-indicator.redeviation-bs-fullHeight>div{
+				border-radius:0
+				}
+			body>div#redeviation-bs-indicator.redeviation-bs-hover>div{
+				transform:translate3d(0, 0, 0);
+				opacity:1
+				}
+			body>div#redeviation-bs-indicator[data-pos='left'].redeviation-bs-has-lsb{
+				height:100% !important;
+				top:0 !important
+				}
+			body>div#redeviation-bs-indicator[data-pos='left'].redeviation-bs-has-lsb>div{
+				background:transparent
+				}
+			body>div#redeviation-bs-indicator[data-pos='left'].redeviation-bs-has-lsb>div>span{
+				-webkit-mask-position-y:20px
+				}
+			body>#redeviation-bs-sidebar{
+				width:350px;
+				max-width:none;
+				height:0;
+				z-index:2147483646;
+				background-color:rgba(0, 0, 0, 0.6) !important;
+				color-scheme:normal !important;
+				speak:none;
+				border:none;
+				display:block !important;
+				transform:translate3d(-350px, 0, 0);
+				transition:width 0s 0.3s, height 0s 0.3s, opacity 0.3s, transform 0.3s
+				}
+			body>#redeviation-bs-sidebar[data-pos='right']{
+				left:auto;
+				right:0;
+				transform:translate3d(350px, 0, 0)
+				}
+			body>#redeviation-bs-sidebar.redeviation-bs-visible{
+				width:calc(100% + 350px);
+				height:100%;
+				transform:translate3d(0, 0, 0);
+				transition:opacity 0.3s, transform 0.3s
+				}
+			body>#redeviation-bs-sidebar.redeviation-bs-hideMask{
+				background:none !important
+				}
+			body>#redeviation-bs-sidebar.redeviation-bs-hideMask:not(.redeviation-bs-hover){
+				width:calc(350px + 50px)
+				}
+			body>#redeviation-bs-overlay{
+				width:100%;
+				max-width:none;
+				height:100%;
+				z-index:2147483647;
+				border:none;
+				speak:none;
+				background:rgba(0, 0, 0, 0.5) !important;
+				transition:opacity 0.3s
+				}
+		</style>
+	</head>
+
+	<body>
+		<div class="container wrapper">
+			<div class="header">
+
+				<div class="avatar">
+					<a href="../allpost.html">
+						<img src="../../favicon.png" alt="Ink">
+					</a>
+				</div>
+		
+				<h1 class="site-title">Easton's Blogs</a></h1>
+				<div class="site-description">
+					<p>Summary</p>
+				</div>
+
+				<nav class="nav">
+					<ul class="flat">
+						<li>
+							<a href="../../index.html">Mainpage</a>
+						</li>
+						<li>
+							<a href="../../newspage/newspage.html">News</a>
+						</li>
+						<li>
+							<a href="../../gallery/gallery.html">Gallery</a>
+						</li>
+						<li>
+							<a href="../allpost.html">Blogs</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+
+
+			<!-- Content -->
+			<div class="post">
+				<div class="post-header">
+					<div class="meta">
+						<div class="date">
+							<!-- Change the data-->
+							<span class="day">02</span>
+							<span class="rest">Jan 2024</span>
+						</div>
+					</div>
+
+					<!-- Change the title -->
+					<div class="matter">
+						<h1 class="title">PS Web - Gallery</h1>
+					</div>
+				</div>
+						
+				<div class="markdown">
+					<!-- Summary of your daily life -->
+					<ol>
+						<li>Design the gallery page that can resize different size of photo.</li>
+						<li>Add a password page for gallery's private page.</li>
+					</ol>
+
+					<h2 id="headings">PS Web - Gallery</h2>
+						<p>
+							Today, I used a Javascript algrithm to achieve auto resize photo's size to let all of the photo will be resized to
+							the same height. The origin template can fill the photo to the same weight to arrange all the photos to 4 columns, 
+							but the height is different, which causes the photos are messy. Even thought the algrithm can resize the photo once 
+							the photos are loaded, the page still is arranged by the photos' size before resizing. The outcome is that all of
+							photos are resized to the same height, but the photos are still arranges messy.
+						</p>
+
+						<p>
+							To figure out the problem, the strategy is to create the blank photos with the same size and place on the page, 
+							this will avoid the photos are arranged messy. Then, the images will be loaded and be resized to fit well with the
+							blank photos. The Javascript is shown below:
+						</p>
+
+						<h4 id="code-block-with-backticks">Javascript for resizing photo</h4>
+							<div class="highlight">
+								<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+&lt;script&gt;
+	document.addEventListener("DOMContentLoaded", function() {
+		var placeholders = document.querySelectorAll('.image-placeholder');
+
+		placeholders.forEach(function(placeholder) {
+			// 假设占位符宽度与其父元素相同
+			var width = placeholder.parentElement.clientWidth;
+			var height = width * 9 / 16;  // 根据16:9的比例计算高度
+
+			// 设置占位符的初始样式
+			placeholder.style.width = width + 'px';
+			placeholder.style.height = height + 'px';
+			placeholder.style.backgroundColor = 'transparent'; // 可以设置为任意占位色
+
+			var imgSrc = placeholder.getAttribute('data-src');
+			var img = new Image();
+
+			img.onload = function() {
+				placeholder.innerHTML = ''; // 清空占位符
+				placeholder.appendChild(this); // 添加图片
+				adjustImage(this);  // 调整图片大小
+			};
+
+			img.src = imgSrc;
+		});
+	});
+
+	function adjustImage(img) {
+		var gridItem = img.parentElement;
+		var containerWidth = gridItem.clientWidth;
+		var containerHeight = containerWidth * 9 / 16; // 假定16:9的比例
+		var imageAspectRatio = img.naturalWidth / img.naturalHeight;
+
+		img.style.position = 'absolute';
+		img.style.top = '50%';
+		img.style.left = '50%';
+		img.style.transform = 'translate(-50%, -50%)';
+
+		if (imageAspectRatio < 16 / 9) {
+			img.style.height = containerHeight + "px";
+			img.style.width = 'auto';
+		} else {
+			img.style.width = containerWidth + "px";
+			img.style.height = 'auto';
+		}
+	}
+&lt;/script&gt;
+								</pre>
+							</div>
+
+
+					<h2 id="headings">PS Web - Password Page</h2>
+						<p>
+							The problems are:
+							<ol>
+								<li>The developer mode will shows the determine statement which indicates the correct password.</li>
+								<li>The statement will also indicate the url.</li>
+								<li>My page does have the server to storage different password for each users.</li>
+							</ol>
+							To address this problem, I encrypted the password and the following url. First, I used the user name and '.' as the 
+							determine statement, meaning the users are required to input a user name and the input user name will a the first part
+							of the corresponding password, e.g. the user name is 'yeh' and the password's first part should be 'yeh.', if not,
+							the determine statement will show the 'Password is incorrect...'. The latter part of the password is the name of the
+							following url's name. By this way, the correct password is depend on the name of the html page and the user name. If 
+							the latter part of input password isn't correct name of page, the page jump to the page with the latter part of the
+							 password and the page isn't exist so that the password is hard to decipher.
+						</p>
+
+						<h4 id="code-block-with-backticks">Javascript for password</h4>
+						<div class="highlight">
+							<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+&lt;script&gt;
+function redirectToPage() {
+	var username = document.getElementById("account").value;
+	var password = document.getElementById("passwordInput").value;
+	var redirectBase = "../blogpage/";
+	var houzhuoBase = ".html";
+
+	var correctPasswordFormat = username + ".";
+
+	if (password.startsWith(correctPasswordFormat)) {
+		var remainingPart = password.substring(username.length + 1);
+		var fullPath = redirectBase + remainingPart+houzhuoBase;
+
+		console.log("Redirecting to: " + fullPath); 
+
+		window.location.href = fullPath;
+	} else {
+		alert("Password is incorrect..."); 
+	}
+	return false;
+}
+&lt;/script&gt;
+							</pre>
+						</div>
+
+			</div>
+
+			<!-- End of Content -->
+
+			<!-- Footer -->
+			<div class="footer wrapper">
+				<nav class="nav">
+					<div>This website is based on <a href="https://github.com/knadh/hugo-ink"> hugo-ink</a>. © Easton, Yi HUANG 2023-2024.</div>
+				</nav>
+			</div>
+			<!-- End of Footer -->
+
+
+		</div>
+
+		<script type="application/javascript">
+		var doNotTrack = false;
+		if (!doNotTrack) {
+			window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+			ga('create', 'UA-123-45', 'auto');
+			
+			ga('send', 'pageview');
+		}
+		</script>
+		<script async="" src="./Markdown Syntax Guide - Ink_files/analytics.js.download"></script>
+		<script>feather.replace()</script>
+
+
+		<iframe style="display: none;" src="./Markdown Syntax Guide - Ink_files/saved_resource(1).html"></iframe>
+		<app-frame-100008 id="redeviation-bs-sidebar" class="notranslate" aria-hidden="true" data-theme="default" data-pos="right"></app-frame-100008>
+		<div id="redeviation-bs-indicator" data-theme="default" class="redeviation-bs-fullHeight" style="height: 100%; top: 0%;"></div>
+
+	</body>
+
+</html>
