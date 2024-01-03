@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<!-- saved from url=(0042)https://hugo-ink.netlify.app/posts/post-8/ -->
+<html class="" data-redeviation-bs-uid="100008">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Markdown Syntax Guide - Ink</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+		<meta itemprop="name" content="Markdown Syntax Guide">
+		<meta itemprop="description" content="Sample article showcasing basic Markdown syntax and formatting for HTML elements.">
+
+		<meta itemprop="datePublished" content="2019-03-11T00:00:00+00:00">
+		<meta itemprop="dateModified" content="2019-03-11T00:00:00+00:00">
+		<meta itemprop="wordCount" content="446">
+
+		<meta itemprop="keywords" content="markdown,css,html,themes,">
+		<meta property="og:title" content="Markdown Syntax Guide">
+		<meta property="og:description" content="Sample article showcasing basic Markdown syntax and formatting for HTML elements.">
+		<meta property="og:type" content="article">
+		<meta property="og:url" content="/posts/post-8/"><meta property="article:published_time" content="2019-03-11T00:00:00+00:00">
+		<meta property="article:modified_time" content="2019-03-11T00:00:00+00:00">
+		<meta name="twitter:card" content="summary">
+		<meta name="twitter:title" content="Markdown Syntax Guide">
+		<meta name="twitter:description" content="Sample article showcasing basic Markdown syntax and formatting for HTML elements.">
+		<link href="../css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" media="screen" href="../css/normalize.css">
+		<link rel="stylesheet" type="text/css" media="screen" href="../css/main.css">
+        <link id="dark-scheme" rel="stylesheet" type="text/css" href="../css/dark.css">
+
+		<script src="../css/feather.min.js.download"></script>
+		<script src="../css/main.js.download"></script>
+		<script type="text/javascript" async="" src="../css/embed.js.download"></script>
+		<style class="redeviation-bs-style" data-name="content">/*! (c) Philipp König under GPL-3.0 */
+			body>div#redeviation-bs-indicator>div{
+				opacity:0;
+				pointer-events:none
+				}
+			body>#redeviation-bs-sidebar.redeviation-bs-visible,body>#redeviation-bs-overlay.redeviation-bs-visible{
+				opacity:1;
+				pointer-events:auto
+				}
+			body.redeviation-bs-noscroll{
+				overflow:hidden !important
+				}
+			body>div#redeviation-bs-indicator>div{
+				position:absolute;
+				transform:translate3d(-24px, 0, 0);
+				top:0;
+				left:0;
+				width:24px !important;
+				height:100%;
+				background:rgba(0,0,0,0.5);
+				border-radius:0 10px 10px 0;
+				transition:opacity 0.3s, transform 0.3s;
+				z-index:2
+				}
+			body>div#redeviation-bs-indicator>div>span{
+				-webkit-mask:no-repeat center/24px;
+				-webkit-mask-image:url(chrome-extension://jdbnofccmhefkmjbkkdkfiicjkgofkdh/img/icon-bookmark.svg);
+				background-color:#ffffff;
+				position:absolute;
+				display:block;
+				top:0;
+				left:0;
+				width:100%;
+				height:100%
+			}body>div#redeviation-bs-indicator[data-pos='right']{
+				left:auto;
+				right:0
+				}
+			body>div#redeviation-bs-indicator[data-pos='right']>div{
+				transform:translate3d(24px, 0, 0);
+				left:auto;right:0;
+				border-radius:10px 0 0 10px
+				}
+			body>div#redeviation-bs-indicator.redeviation-bs-fullHeight>div{
+				border-radius:0
+				}
+			body>div#redeviation-bs-indicator.redeviation-bs-hover>div{
+				transform:translate3d(0, 0, 0);
+				opacity:1
+				}
+			body>div#redeviation-bs-indicator[data-pos='left'].redeviation-bs-has-lsb{
+				height:100% !important;
+				top:0 !important
+				}
+			body>div#redeviation-bs-indicator[data-pos='left'].redeviation-bs-has-lsb>div{
+				background:transparent
+				}
+			body>div#redeviation-bs-indicator[data-pos='left'].redeviation-bs-has-lsb>div>span{
+				-webkit-mask-position-y:20px
+				}
+			body>#redeviation-bs-sidebar{
+				width:350px;
+				max-width:none;
+				height:0;
+				z-index:2147483646;
+				background-color:rgba(0, 0, 0, 0.6) !important;
+				color-scheme:normal !important;
+				speak:none;
+				border:none;
+				display:block !important;
+				transform:translate3d(-350px, 0, 0);
+				transition:width 0s 0.3s, height 0s 0.3s, opacity 0.3s, transform 0.3s
+				}
+			body>#redeviation-bs-sidebar[data-pos='right']{
+				left:auto;
+				right:0;
+				transform:translate3d(350px, 0, 0)
+				}
+			body>#redeviation-bs-sidebar.redeviation-bs-visible{
+				width:calc(100% + 350px);
+				height:100%;
+				transform:translate3d(0, 0, 0);
+				transition:opacity 0.3s, transform 0.3s
+				}
+			body>#redeviation-bs-sidebar.redeviation-bs-hideMask{
+				background:none !important
+				}
+			body>#redeviation-bs-sidebar.redeviation-bs-hideMask:not(.redeviation-bs-hover){
+				width:calc(350px + 50px)
+				}
+			body>#redeviation-bs-overlay{
+				width:100%;
+				max-width:none;
+				height:100%;
+				z-index:2147483647;
+				border:none;
+				speak:none;
+				background:rgba(0, 0, 0, 0.5) !important;
+				transition:opacity 0.3s
+				}
+		</style>
+	</head>
+
+	<body>
+		<div class="container wrapper">
+			<div class="header">
+
+				<div class="avatar">
+					<a href="https://hugo-ink.netlify.app/">
+						<img src="../css/icon.jpg" alt="Ink">
+					</a>
+				</div>
+		
+				<h1 class="site-title">
+					<a href="https://hugo-ink.netlify.app/">Ink</a>
+				</h1>
+
+				<div class="site-description">
+					<p>Crisp, minimal personal <a href="https://github.com/knadh/hugo-ink">blog theme for Hugo</a></p>
+					<nav class="nav social">
+						<ul class="flat">
+							<li>
+								<a href="https://github.com/knadh/hugo-ink" title="Github">
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github">
+										<path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+									</svg>
+								</a>
+							</li>
+							<li>
+								<a href="https://hugo-ink.netlify.app/index.xml" title="RSS">
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss">
+										<path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path>
+										<circle cx="5" cy="19" r="1"></circle>
+									</svg>
+								</a>
+							</li>
+							<li>
+								<a href="https://hugo-ink.netlify.app/posts/post-8/#" class="light" id="scheme-toggle">
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+									</svg>
+								</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+
+				<nav class="nav">
+					<ul class="flat">
+						<li>
+							<a href="https://hugo-ink.netlify.app/">Home</a>
+						</li>
+						<li>
+							<a href="https://hugo-ink.netlify.app/posts">All posts</a>
+						</li>
+						<li>
+							<a href="https://hugo-ink.netlify.app/about">About</a>
+						</li>
+						<li>
+							<a href="https://hugo-ink.netlify.app/tags">Tags</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+
+			<div class="post">
+				<div class="post-header">
+					<div class="meta">
+						<div class="date">
+							<span class="day">11</span>
+							<span class="rest">Mar 2019</span>
+						</div>
+					</div>
+					
+					<div class="matter">
+						<h1 class="title">Markdown Syntax Guide</h1>
+					</div>
+				</div>
+						
+				<div class="markdown">
+					<p>
+						This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.
+					</p>
+					<h2 id="headings">Headings</h2>
+						<p>The following HTML <code>&lt;h1&gt;</code>—<code>&lt;h6&gt;</code> elements represent six levels of section headings. <code>&lt;h1&gt;</code> is the highest section level while <code>&lt;h6&gt;</code> is the lowest.</p>
+					
+					<h1 id="h1">H1</h1>
+					<h2 id="h2">H2</h2>
+					<h3 id="h3">H3</h3>
+					<h4 id="h4">H4</h4>
+					<h5 id="h5">H5</h5>
+					<h6 id="h6">H6</h6>
+
+					<h2 id="paragraph">Paragraph</h2>
+						<p>Xerum, quo qui aut unt expliquam qui dolut labo. Aque venitatiusda cum, voluptionse latur sitiae dolessi aut parist aut dollo enim qui voluptate ma dolestendit peritin re plis aut quas inctum laceat est volestemque commosa as cus endigna tectur, offic to cor sequas etum rerum idem sintibus eiur? Quianimin porecus evelectur, cum que nis nust voloribus ratem aut omnimi, sitatur? Quiatem. Nam, omnis sum am facea corem alique molestrunt et eos evelece arcillit ut aut eos eos nus, sin conecerem erum fuga. Ri oditatquam, ad quibus unda veliamenimin cusam et facea ipsamus es exerum sitate dolores editium rerore eost, temped molorro ratiae volorro te reribus dolorer sperchicium faceata tiustia prat.</p>
+						<p>Itatur? Quiatae cullecum rem ent aut odis in re eossequodi nonsequ idebis ne sapicia is sinveli squiatum, core et que aut hariosam ex eat.</p>
+
+					<h2 id="blockquotes">Blockquotes</h2>
+						<p>The blockquote element represents content that is quoted from another source, optionally with a citation which must be within a <code>footer</code> or <code>cite</code> element, and optionally with in-line changes such as annotations and abbreviations.</p>
+
+						<h4 id="blockquote-without-attribution">Blockquote without attribution</h4>
+							<blockquote>
+								<p>
+									Tiam, ad mint andaepu dandae nostion secatur sequo quae.<strong>Note</strong> that you can use <em>Markdown syntax</em> within a blockquote.
+								</p>
+							</blockquote>
+
+						<h4 id="blockquote-with-attribution">Blockquote with attribution</h4>
+							<blockquote>
+								<p>
+									Don’t communicate by sharing memory, share memory by communicating.
+								</p>
+								— 
+								<cite>Rob Pike
+									<sup class="footnote-ref" id="fnref:1">
+										<a href="https://hugo-ink.netlify.app/posts/post-8/#fn:1">1</a>
+									</sup>
+								</cite>
+							</blockquote>
+
+					<h2 id="tables">Tables</h2>
+						<p>Tables aren’t part of the core Markdown spec, but Hugo supports supports them out-of-the-box.</p>
+						<table>
+							<thead>
+								<tr>
+									<th>Name</th>
+									<th>Age</th>
+								</tr>
+							</thead>
+
+							<tbody>
+								<tr>
+									<td>Bob</td>
+									<td>27</td>
+								</tr>
+
+								<tr>
+									<td>Alice</td>
+									<td>23</td>
+								</tr>
+							</tbody>
+						</table>
+
+						<h4 id="inline-markdown-within-tables">Inline Markdown within tables</h4>
+
+							<table>
+								<thead>
+									<tr>
+										<th>Inline&nbsp;&nbsp;&nbsp;</th>
+										<th>Markdown&nbsp;&nbsp;&nbsp;</th>
+										<th>In&nbsp;&nbsp;&nbsp;</th>
+										<th>Table</th>
+									</tr>
+								</thead>
+
+								<tbody>
+									<tr>
+										<td><em>italics</em></td>
+										<td><strong>bold</strong></td>
+										<td><del>strikethrough</del>&nbsp;&nbsp;&nbsp;</td>
+										<td><code>code</code></td>
+									</tr>
+								</tbody>
+							</table>
+
+					<h2 id="code-blocks">Code Blocks</h2>	
+
+						<h4 id="code-block-with-backticks">Code block with backticks</h4>
+							<div class="highlight">
+								<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+	html
+	&lt;!DOCTYPE html&gt;
+	&lt;html lang="en"&gt;
+	&lt;head&gt;
+	&lt;meta charset="UTF-8"&gt;
+	&lt;title&gt;Example HTML5 Document&lt;/title&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+	&lt;p&gt;Test&lt;/p&gt;
+	&lt;/body&gt;
+	&lt;/html&gt;</pre></div>
+	<h4 id="code-block-indented-with-four-spaces">Code block indented with four spaces</h4>
+	<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;!DOCTYPE html&gt;
+	&lt;html lang="en"&gt;
+	&lt;head&gt;
+	&lt;meta charset="UTF-8"&gt;
+	&lt;title&gt;Example HTML5 Document&lt;/title&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+	&lt;p&gt;Test&lt;/p&gt;
+	&lt;/body&gt;
+	&lt;/html&gt;
+								</pre>
+							</div>
+
+						<h4 id="code-block-with-hugo-s-internal-highlight-shortcode">Code block with Hugo’s internal highlight shortcode</h4>
+							<div class="highlight">
+								<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+									<code class="language-html" data-lang="html">
+	<span style="color:#00f">&lt;!DOCTYPE html&gt;</span>
+	&lt;html lang=<span style="color:#a31515">"en"</span>&gt;
+	&lt;head&gt;
+	&lt;meta charset=<span style="color:#a31515">"UTF-8"</span>&gt;
+	&lt;title&gt;Example HTML5 Document&lt;/title&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+	&lt;p&gt;Test&lt;/p&gt;
+	&lt;/body&gt;
+	&lt;/html&gt;
+									</code>
+								</pre>
+							</div>
+
+					<h2 id="list-types">List Types</h2>
+						<h4 id="ordered-list">Ordered List</h4>
+							<ol>
+								<li>First item</li>
+								<li>Second item</li>
+								<li>Third item</li>
+							</ol>
+
+						<h4 id="unordered-list">Unordered List</h4>
+							<ul>
+								<li>List item</li>
+								<li>Another item</li>
+								<li>And another item</li>
+							</ul>
+
+						<h4 id="nested-list">Nested list</h4>
+							<ul>
+								<li>Item</li>
+								<li>First Sub-item</li>
+								<li>Second Sub-item</li>
+							</ul>
+
+					<h2 id="other-elements-abbr-sub-sup-kbd-mark">Other Elements — abbr, sub, sup, kbd, mark</h2>
+						<p><abbr title="Graphics Interchange Format">GIF</abbr> is a bitmap image format.</p>
+						<p>H<sub>2</sub>O</p>
+						<p>X<sup>n</sup> + Y<sup>n</sup> = Z<sup>n</sup></p>
+						<p>Press <kbd><kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>Delete</kbd></kbd> to end the session.</p>
+						<p>Most <mark>salamanders</mark> are nocturnal, and hunt for insects, worms, and other small creatures.</p>
+				<div class="footnotes">
+					<hr>
+						<ol>
+							<li id="fn:1">
+								The above quote is excerpted from Rob Pike’s <a href="https://www.youtube.com/watch?v=PAAkCSZUG1c">talk</a> during Gopherfest, November 18, 2015.
+								<a class="footnote-return" href="https://hugo-ink.netlify.app/posts/post-8/#fnref:1"><sup>[return]</sup></a>
+							</li>
+						</ol>
+					</div>
+				</div>
+
+				<div class="tags">
+					<ul class="flat">
+						<li><a href="https://hugo-ink.netlify.app/tags/markdown">markdown</a></li>
+						<li><a href="https://hugo-ink.netlify.app/tags/css">css</a></li>
+						<li><a href="https://hugo-ink.netlify.app/tags/html/">html</a></li>
+						<li><a href="https://hugo-ink.netlify.app/tags/themes">themes</a></li>
+					</ul>	
+				</div>
+
+				<div id="disqus_thread">
+					<iframe id="dsq-app3231" name="dsq-app3231" allowtransparency="true" frameborder="0" scrolling="no" tabindex="0" title="Disqus" width="100%" src="./Markdown Syntax Guide - Ink_files/saved_resource.html" style="width: 1px !important; min-width: 100% !important; border: none !important; overflow: hidden !important; height: 75px !important;" horizontalscrolling="no" verticalscrolling="no"></iframe>
+				</div>
+
+				<script type="text/javascript">
+					(function () {
+						
+						
+						if (window.location.hostname == "localhost")
+							return;
+
+						var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+						var disqus_shortname = 'ink-demo';
+						dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+						(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+					})();
+				</script>
+
+				<noscript>Please enable JavaScript to view the </a></noscript>
+
+			</div>
+
+			<div class="footer wrapper">
+				<nav class="nav">
+					<div>2022  © Copyright notice |  <a href="https://github.com/knadh/hugo-ink">Ink</a> theme on <a href="https://gohugo.io/">Hugo</a></div>
+				</nav>
+			</div>
+		</div>
+
+		<script type="application/javascript">
+		var doNotTrack = false;
+		if (!doNotTrack) {
+			window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+			ga('create', 'UA-123-45', 'auto');
+			
+			ga('send', 'pageview');
+		}
+		</script>
+		<script async="" src="./Markdown Syntax Guide - Ink_files/analytics.js.download"></script>
+		<script>feather.replace()</script>
+
+
+		<iframe style="display: none;" src="./Markdown Syntax Guide - Ink_files/saved_resource(1).html"></iframe>
+		<app-frame-100008 id="redeviation-bs-sidebar" class="notranslate" aria-hidden="true" data-theme="default" data-pos="right"></app-frame-100008>
+		<div id="redeviation-bs-indicator" data-theme="default" class="redeviation-bs-fullHeight" style="height: 100%; top: 0%;"></div>
+
+	</body>
+
+</html>
