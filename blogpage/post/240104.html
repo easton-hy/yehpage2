@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<!-- saved from url=(0042)https://hugo-ink.netlify.app/posts/post-8/ -->
+<html class="" data-redeviation-bs-uid="100008">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>EYH's Blogs </title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" type="image/x-icon" href="../../favicon.png">
+	
+		<meta itemprop="name" content="Markdown Syntax Guide">
+		<meta itemprop="description" content="Sample article showcasing basic Markdown syntax and formatting for HTML elements.">
+
+		<meta itemprop="datePublished" content="2019-03-11T00:00:00+00:00">
+		<meta itemprop="dateModified" content="2019-03-11T00:00:00+00:00">
+		<meta itemprop="wordCount" content="446">
+
+		<meta itemprop="keywords" content="markdown,css,html,themes,">
+		<meta property="og:title" content="Markdown Syntax Guide">
+		<meta property="og:description" content="Sample article showcasing basic Markdown syntax and formatting for HTML elements.">
+		<meta property="og:type" content="article">
+		<meta property="og:url" content="/posts/post-8/"><meta property="article:published_time" content="2019-03-11T00:00:00+00:00">
+		<meta property="article:modified_time" content="2019-03-11T00:00:00+00:00">
+		<meta name="twitter:card" content="summary">
+		<meta name="twitter:title" content="Markdown Syntax Guide">
+		<meta name="twitter:description" content="Sample article showcasing basic Markdown syntax and formatting for HTML elements.">
+		<link href="../css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" media="screen" href="../css/normalize.css">
+		<link rel="stylesheet" type="text/css" media="screen" href="../css/main.css">
+        <link id="dark-scheme" rel="stylesheet" type="text/css" href="../css/dark.css">
+
+		<script src="../css/feather.min.js.download"></script>
+		<script src="../css/main.js.download"></script>
+		<script type="text/javascript" async="" src="../css/embed.js.download"></script>
+		<style class="redeviation-bs-style" data-name="content">/*! (c) Philipp König under GPL-3.0 */
+			body>div#redeviation-bs-indicator>div{
+				opacity:0;
+				pointer-events:none
+				}
+			body>#redeviation-bs-sidebar.redeviation-bs-visible,body>#redeviation-bs-overlay.redeviation-bs-visible{
+				opacity:1;
+				pointer-events:auto
+				}
+			body.redeviation-bs-noscroll{
+				overflow:hidden !important
+				}
+			body>div#redeviation-bs-indicator>div{
+				position:absolute;
+				transform:translate3d(-24px, 0, 0);
+				top:0;
+				left:0;
+				width:24px !important;
+				height:100%;
+				background:rgba(0,0,0,0.5);
+				border-radius:0 10px 10px 0;
+				transition:opacity 0.3s, transform 0.3s;
+				z-index:2
+				}
+			body>div#redeviation-bs-indicator>div>span{
+				-webkit-mask:no-repeat center/24px;
+				-webkit-mask-image:url(chrome-extension://jdbnofccmhefkmjbkkdkfiicjkgofkdh/img/icon-bookmark.svg);
+				background-color:#ffffff;
+				position:absolute;
+				display:block;
+				top:0;
+				left:0;
+				width:100%;
+				height:100%
+			}body>div#redeviation-bs-indicator[data-pos='right']{
+				left:auto;
+				right:0
+				}
+			body>div#redeviation-bs-indicator[data-pos='right']>div{
+				transform:translate3d(24px, 0, 0);
+				left:auto;right:0;
+				border-radius:10px 0 0 10px
+				}
+			body>div#redeviation-bs-indicator.redeviation-bs-fullHeight>div{
+				border-radius:0
+				}
+			body>div#redeviation-bs-indicator.redeviation-bs-hover>div{
+				transform:translate3d(0, 0, 0);
+				opacity:1
+				}
+			body>div#redeviation-bs-indicator[data-pos='left'].redeviation-bs-has-lsb{
+				height:100% !important;
+				top:0 !important
+				}
+			body>div#redeviation-bs-indicator[data-pos='left'].redeviation-bs-has-lsb>div{
+				background:transparent
+				}
+			body>div#redeviation-bs-indicator[data-pos='left'].redeviation-bs-has-lsb>div>span{
+				-webkit-mask-position-y:20px
+				}
+			body>#redeviation-bs-sidebar{
+				width:350px;
+				max-width:none;
+				height:0;
+				z-index:2147483646;
+				background-color:rgba(0, 0, 0, 0.6) !important;
+				color-scheme:normal !important;
+				speak:none;
+				border:none;
+				display:block !important;
+				transform:translate3d(-350px, 0, 0);
+				transition:width 0s 0.3s, height 0s 0.3s, opacity 0.3s, transform 0.3s
+				}
+			body>#redeviation-bs-sidebar[data-pos='right']{
+				left:auto;
+				right:0;
+				transform:translate3d(350px, 0, 0)
+				}
+			body>#redeviation-bs-sidebar.redeviation-bs-visible{
+				width:calc(100% + 350px);
+				height:100%;
+				transform:translate3d(0, 0, 0);
+				transition:opacity 0.3s, transform 0.3s
+				}
+			body>#redeviation-bs-sidebar.redeviation-bs-hideMask{
+				background:none !important
+				}
+			body>#redeviation-bs-sidebar.redeviation-bs-hideMask:not(.redeviation-bs-hover){
+				width:calc(350px + 50px)
+				}
+			body>#redeviation-bs-overlay{
+				width:100%;
+				max-width:none;
+				height:100%;
+				z-index:2147483647;
+				border:none;
+				speak:none;
+				background:rgba(0, 0, 0, 0.5) !important;
+				transition:opacity 0.3s
+				}
+		</style>
+	</head>
+
+	<body>
+		<div class="container wrapper">
+			<div class="header">
+
+				<div class="avatar">
+					<a href="../allpost.html">
+						<img src="../../favicon.png" alt="Ink">
+					</a>
+				</div>
+		
+				<h1 class="site-title">Easton's Blogs</a></h1>
+				<div class="site-description">
+					<p>Summary</p>
+				</div>
+
+				<nav class="nav">
+					<ul class="flat">
+						<li>
+							<a href="../../index.html">Mainpage</a>
+						</li>
+						<li>
+							<a href="../../newspage/newspage.html">News</a>
+						</li>
+						<li>
+							<a href="../../gallery/gallery.html">Gallery</a>
+						</li>
+						<li>
+							<a href="../allpost.html">Blogs</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+
+
+			<!-- Content -->
+			<div class="post">
+				<div class="post-header">
+					<div class="meta">
+						<div class="date">
+							<!-- Change the data-->
+							<span class="day">04</span>
+							<span class="rest">Jan 2024</span>
+						</div>
+					</div>
+
+					<!-- Change the title -->
+					<div class="matter">
+						<h1 class="title">PS Web Blogspage, ME5001 Package, and PhD Salary</h1>
+					</div>
+				</div>
+						
+				<div class="markdown">
+					<!-- Summary of your daily life -->
+					<ol>
+						<li>Finished a blogs web part with main page and post page.</li>
+						<li>Was Working on publishing my ME5001 project's script to a .exe file.</li>
+						<li>Recevied the Graduate Assistant Contract to support my PhD.</li>
+					</ol>
+
+					<h2 id="headings">PS Web - Blogspage</h2>
+						<p>
+							The blogspage is based on <a href="https://github.com/knadh/hugo-ink">hugo-ink</a>, but this github link doesn't give
+							an example of html file, but a demo website link. Therefore, I used developer mode to copy the html file of the demo
+							website. This template has a function to label each post with tag and the tags page will show the number of posts on
+							each tags. However, I want to use the tag buttons to filter the post, like the function in gallery page. The following
+							script is to achieve <b>using tags buttons to filter the post</b>.
+						</p>
+
+						<h4 id="code-block-with-backticks">CSS of Menu of Tags Button</h4>
+							<div class="highlight">
+								<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+.lx-projects-menu {
+	position: relative;
+	z-index: 1;
+	margin-bottom: 10px;
+	}
+
+.lx-projects-menu .portfolio-menu .btn {
+position: relative;
+z-index: 1;
+padding: 0;
+border: 0;
+background-color: transparent;
+font-size: 20px;
+font-weight: 600;
+border-radius: 0;
+margin: 0 25px;
+-webkit-transition-duration: 500ms;
+-o-transition-duration: 500ms;
+transition-duration: 500ms;
+}
+
+@media only screen and (max-width: 400px) {
+.lx-projects-menu .portfolio-menu .btn {
+	font-size: 14px;
+	margin: 0 5px;
+}
+}
+
+.lx-projects-menu .portfolio-menu .btn::after {
+-webkit-transition-duration: 500ms;
+-o-transition-duration: 500ms;
+transition-duration: 500ms;
+position: absolute;
+width: 0%;
+height: 3px;
+background-color: #fc6060;
+content: "";
+bottom: -5px;
+left: 0;
+right: 0;
+z-index: 1;
+}
+
+.lx-projects-menu .portfolio-menu .btn.active::after {
+width: 100%;
+}
+									</pre>
+								</div>
+						
+						<h4 id="code-block-with-backticks">Html of Menu of Tags Button</h4>
+							<div class="highlight">
+								<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+&lt;!-- 1. Change Tags--&gt;
+&lt;div class="tags"&gt;
+&lt;a data-filter=".sg"&gt;Singapore&lt;/a&gt;
+&lt;a data-filter=".pswbs"&gt;PS Web&lt;/a&gt;
+&lt;a data-filter=".html"&gt;Html&lt;/a&gt;
+&lt;/div&gt;
+								</pre>
+							</div>
+
+							<p>
+								The content of the main page includes all of daily posts. The title of the posts should give a concise summary of this post
+								and the tags below title should indicate the project or period of the post. <b>Use the Chatgpt to convert html to code text</b>
+								and the order is '我想将html代码转为code text写在我的blog中。以下是我的html代码：'
+							</p>
+
+							<h4 id="code-block-with-backticks">Html of Each Posts</h4>
+								<div class="highlight">
+									<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+&lt;div class="post * sg pswbs html"&gt;
+&lt;div class="post-header"&gt;
+	&lt;div class="meta"&gt;
+		&lt;!-- 2. Change data--&gt;
+		&lt;div class="date"&gt;
+			&lt;span class="day"&gt;02&lt;/span&gt;
+			&lt;span class="rest"&gt;Jan 2024&lt;/span&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class="matter"&gt;
+		&lt;h4 class="title small"&gt;
+			&lt;!-- 3. Change Link--&gt; &lt;!-- 4. Change the summary--&gt;
+			&lt;a href="./post/240102.html"&gt;Add a Gallery page to my PS Web.&lt;/a&gt;
+		&lt;/h4&gt;
+		&lt;!-- 1. Change Tags--&gt;
+		&lt;div class="tags"&gt;
+			&lt;a data-filter=".sg"&gt;Singapore&lt;/a&gt;
+			&lt;a data-filter=".pswbs"&gt;PS Web&lt;/a&gt;
+			&lt;a data-filter=".html"&gt;Html&lt;/a&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;													
+									</pre>
+								</div>
+						<p>
+							There is a <b>future work</b>. So far I can only filter the post by single tags, however all of the posts are multi-tags. Sometime
+							it is inconvenient to find the post with two or more specific tags.
+						</p>
+
+
+					<h2 id="headings">Publish ME5001 Proj as .exe File</h2>
+						<p>
+							The only input of my ME5001 project is the IP address, so I used <b>PyQt5</b> to design a UI to text the IP address and publish
+							the UI as a exe file. At first, I used <b>pyinstaller</b> and <b>auto-py-to-exe</b> (also based on pyinstaller) to publish the
+							python file, but because of torch the exe file cannot be used. The pyinstaller has limitation in publishing a complicate project
+							with the packages like torch, tensorflow. Instead, I was trying to use <b>nuitka</b>. 
+							<a href="https://blog.csdn.net/u012219045/article/details/130941814">Here</a> is the comparison of nuitka and pyinstaller. In a word,
+							pyinstaller is suitable for small python project with advantages of easy getting start, while the nuitka suits for complex and large
+							project. The nuitka's parameters are list <a href="https://blog.csdn.net/m0_66570838/article/details/132232023?ops_request_misc=&request_id=&biz_id=102&utm_term=nuitka&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-1-132232023.nonecase&spm=1018.2226.3001.4187">here</a>.
+							I hadn't publish project by nuitka yet, and I spent five hours for the first trial to publish the project.
+						</p>
+
+			</div>
+
+			<!-- End of Content -->
+
+			<!-- Footer -->
+			<div class="footer wrapper">
+				<nav class="nav">
+					<div>This website is based on <a href="https://github.com/knadh/hugo-ink"> hugo-ink</a>. © Easton, Yi HUANG 2023-2024.</div>
+				</nav>
+			</div>
+			<!-- End of Footer -->
+
+
+		</div>
+
+		<script type="application/javascript">
+		var doNotTrack = false;
+		if (!doNotTrack) {
+			window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+			ga('create', 'UA-123-45', 'auto');
+			
+			ga('send', 'pageview');
+		}
+		</script>
+		<script async="" src="./Markdown Syntax Guide - Ink_files/analytics.js.download"></script>
+		<script>feather.replace()</script>
+
+
+		<iframe style="display: none;" src="./Markdown Syntax Guide - Ink_files/saved_resource(1).html"></iframe>
+		<app-frame-100008 id="redeviation-bs-sidebar" class="notranslate" aria-hidden="true" data-theme="default" data-pos="right"></app-frame-100008>
+		<div id="redeviation-bs-indicator" data-theme="default" class="redeviation-bs-fullHeight" style="height: 100%; top: 0%;"></div>
+
+	</body>
+
+</html>
