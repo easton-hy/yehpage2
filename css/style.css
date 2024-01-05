@@ -348,7 +348,7 @@ nav .menu a:hover {
     border-radius: 1000px;
     z-index: -900;
     transition: all 1s ease-in-out;
-    background: linear-gradient(45deg, rgba(255, 0, 118, 0.75) 0%, rgba(89, 15, 183, 0.75) 100%);
+    background: linear-gradient(45deg, rgba(158, 158, 158, 0.75) 0%, rgba(58, 58, 58, 0.75) 100%);
 }
 
 .profile-img:hover .mask-circle {
@@ -368,7 +368,7 @@ nav .menu a:hover {
 #svgCircle circle {
     transform: rotate(-90deg);
     transform-origin: center center;
-    stroke: #1FA1B8;
+    stroke: #1f1f1f;
 }
 
 .profile-img img[alt="head"] {
