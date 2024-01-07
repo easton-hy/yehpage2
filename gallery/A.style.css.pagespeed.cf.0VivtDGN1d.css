@@ -389,13 +389,14 @@ textarea:invalid, input:invalid, textarea:required, input:required {
   z-index: 1;
   margin-bottom: 50px
 }
-
+/*change color*/
 .section-heading h2 {
   font-size: 36px;
   text-transform: capitalize;
   margin-bottom: 5px;
   display: block;
-  line-height: 1.2
+  line-height: 1.2;
+  color: white;
 }
 
 @media only screen and (max-width:767px) {
@@ -404,8 +405,10 @@ textarea:invalid, input:invalid, textarea:required, input:required {
   }
 }
 
+/*change color*/
 .section-heading p {
-  margin-bottom: 0
+  margin-bottom: 0;
+  color: white;
 }
 
 .section-heading.white p, .section-heading.white h2 {
@@ -1963,7 +1966,8 @@ textarea:invalid, input:invalid, textarea:required, input:required {
   margin: 0 25px;
   -webkit-transition-duration: 500ms;
   -o-transition-duration: 500ms;
-  transition-duration: 500ms
+  transition-duration: 500ms;
+  color: white;
 }
 
 @media only screen and (max-width:767px) {
@@ -2261,10 +2265,12 @@ footer {
 
 /* moving body background   */
 
+
+/*change body color*/
 body {
   height: 100%;
   width: 100%;
-  background: linear-gradient(45deg, yellow, violet, orange, grey);
+  background: linear-gradient(45deg, rgb(0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0));
   background-size: 300% 300%;
   animation: color 5s ease-in-out infinite;
 }
