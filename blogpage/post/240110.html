@@ -132,6 +132,19 @@
 				background:rgba(0, 0, 0, 0.5) !important;
 				transition:opacity 0.3s
 				}
+
+				.grid-container {
+				display: grid;
+				grid-template-columns: repeat(3, 1fr);
+				grid-gap: 10px;
+				padding: 10px;
+				}
+
+				.grid-item {
+				background-color: transparent;
+				padding: 20px;
+				text-align: center;
+				}
 		</style>
 	</head>
 
@@ -175,137 +188,150 @@
 					<div class="meta">
 						<div class="date">
 							<!-- Change the data-->
-							<span class="day">02</span>
+							<span class="day">10</span>
 							<span class="rest">Jan 2024</span>
 						</div>
 					</div>
 
 					<!-- Change the title -->
 					<div class="matter">
-						<h1 class="title">PS Web - Gallery</h1>
+						<h1 class="title">PS's logo and Package ME5001</h1>
 					</div>
 				</div>
 						
 				<div class="markdown">
 					<!-- Summary of your daily life -->
 					<ol>
-						<li>Design the gallery page that can resize different size of photo.</li>
-						<li>Add a password page for gallery's private page.</li>
+						<li>Bought a series of logos for web.</li>
+						<li>Successful packaged a sample.</li>
 					</ol>
 
-					<h2 id="headings">PS Web - Gallery</h2>
+					<h2 id="headings">PS Web - Logo</h2>
 						<p>
-							Today, I used a Javascript algrithm to achieve auto resize photo's size to let all of the photo will be resized to
-							the same height. The origin template can fill the photo to the same weight to arrange all the photos to 4 columns, 
-							but the height is different, which causes the photos are messy. Even thought the algrithm can resize the photo once 
-							the photos are loaded, the page still is arranged by the photos' size before resizing. The outcome is that all of
-							photos are resized to the same height, but the photos are still arranges messy.
+							There are 2 logos and 4 portraits which were printed by Taobao printers with 100 rmb for logo and 50 rmb for portraits.
 						</p>
+						
+						<div class="grid-container">
+							<div class="grid-item">
+								<img src="./img/240110/EYH2.png">
+								<figcaption>Logo 1</figcaption>
+							</div>
+
+							<div class="grid-item">
+								<img src="./img/240110/EYH.png">
+								<figcaption>Logo 2</figcaption>
+							</div>
+
+							<div class="grid-item">
+								<img src="./img/240110/fullbody.png">
+								<figcaption>Portrait 1</figcaption>
+							</div>
+
+							<div class="grid-item">
+								<img src="./img/240110/fullbody2.png">
+								<figcaption>Portrait 2</figcaption>
+							</div>
+
+							<div class="grid-item">
+								<img src="./img/240110/fullbody4.jpg">
+								<figcaption>Portrait 3</figcaption>
+							</div>
+
+							<div class="grid-item">
+								<img src="./img/240110/fullbody3.jpg">
+								<figcaption>Portrait 4</figcaption>
+							</div>
+
+						</div>
 
 						<p>
-							To figure out the problem, the strategy is to create the blank photos with the same size and place on the page, 
-							this will avoid the photos are arranged messy. Then, the images will be loaded and be resized to fit well with the
-							blank photos. The Javascript is shown below:
+							By the way, How to achieve different layout of the gird? The answear is to delete the item of the gird you want to let
+							it be blank. As the grid above, that is the grid with 3*3 items. If I want to 2 items for the first line and 3 items
+							for the second line, the code is shown as below:
 						</p>
 
-						<h4 id="code-block-with-backticks">Javascript for resizing photo</h4>
+						
+						<h4 id="code-block-with-backticks">Change layout of the grid</h4>
 							<div class="highlight">
 								<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
-&lt;script&gt;
-	document.addEventListener("DOMContentLoaded", function() {
-		var placeholders = document.querySelectorAll('.image-placeholder');
+&lt;div class="grid-container"&gt;
+&lt;div class="grid-item"&gt;
+	&lt;img src="./img/240110/EYH2.png"&gt;
+	&lt;figcaption&gt;Logo 1&lt;/figcaption&gt;
+&lt;/div&gt;
 
-		placeholders.forEach(function(placeholder) {
-			// 假设占位符宽度与其父元素相同
-			var width = placeholder.parentElement.clientWidth;
-			var height = width * 9 / 16;  // 根据16:9的比例计算高度
+&lt;div class="grid-item"&gt;
+	&lt;img src="./img/240110/EYH.png"&gt;
+	&lt;figcaption&gt;Logo 2&lt;/figcaption&gt;
+&lt;/div&gt;
 
-			// 设置占位符的初始样式
-			placeholder.style.width = width + 'px';
-			placeholder.style.height = height + 'px';
-			placeholder.style.backgroundColor = 'transparent'; // 可以设置为任意占位色
+&lt;div class="grid-item"&gt;
+&lt;/div&gt;
 
-			var imgSrc = placeholder.getAttribute('data-src');
-			var img = new Image();
+&lt;div class="grid-item"&gt;
+	&lt;img src="./img/240110/fullbody2.png"&gt;
+	&lt;figcaption&gt;Portrait 2&lt;/figcaption&gt;
+&lt;/div&gt;
 
-			img.onload = function() {
-				placeholder.innerHTML = ''; // 清空占位符
-				placeholder.appendChild(this); // 添加图片
-				adjustImage(this);  // 调整图片大小
-			};
+&lt;div class="grid-item"&gt;
+	&lt;img src="./img/240110/fullbody4.jpg"&gt;
+	&lt;figcaption&gt;Portrait 3&lt;/figcaption&gt;
+&lt;/div&gt;
 
-			img.src = imgSrc;
-		});
-	});
-
-	function adjustImage(img) {
-		var gridItem = img.parentElement;
-		var containerWidth = gridItem.clientWidth;
-		var containerHeight = containerWidth * 9 / 16; // 假定16:9的比例
-		var imageAspectRatio = img.naturalWidth / img.naturalHeight;
-
-		img.style.position = 'absolute';
-		img.style.top = '50%';
-		img.style.left = '50%';
-		img.style.transform = 'translate(-50%, -50%)';
-
-		if (imageAspectRatio < 16 / 9) {
-			img.style.height = containerHeight + "px";
-			img.style.width = 'auto';
-		} else {
-			img.style.width = containerWidth + "px";
-			img.style.height = 'auto';
-		}
-	}
-&lt;/script&gt;
+&lt;div class="grid-item"&gt;
+	&lt;img src="./img/240110/fullbody3.jpg"&gt;
+	&lt;figcaption&gt;Portrait 4&lt;/figcaption&gt;
+&lt;/div&gt;
+&lt;/div&gt;		
 								</pre>
 							</div>
 
 
-					<h2 id="headings">PS Web - Password Page</h2>
+					<h2 id="headings">Publish ME5001 Proj as .exe File</h2>
 						<p>
-							The problems are:
+							The only input of my ME5001 project is the IP address, so I used <b>PyQt5</b> to design a UI to text the IP address and publish
+							the UI as a exe file. 
 							<ol>
-								<li>The developer mode will shows the determine statement which indicates the correct password.</li>
-								<li>The statement will also indicate the url.</li>
-								<li>My page does have the server to storage different password for each users.</li>
+								<li>The project requires torch module.</li>
+								<li>The errors from exe file are same as the IDE, so it is hard to debug.</li>
 							</ol>
-							To address this problem, I encrypted the password and the following url. First, I used the user name and '.' as the 
-							determine statement, meaning the users are required to input a user name and the input user name will a the first part
-							of the corresponding password, e.g. the user name is 'yeh' and the password's first part should be 'yeh.', if not,
-							the determine statement will show the 'Password is incorrect...'. The latter part of the password is the name of the
-							following url's name. By this way, the correct password is depend on the name of the html page and the user name. If 
-							the latter part of input password isn't correct name of page, the page jump to the page with the latter part of the
-							 password and the page isn't exist so that the password is hard to decipher.
 						</p>
+						<h3 id="headings">Using nuitka</h3>
+							<p>
+								I have tried package by nuitka, but finally was fail. 
+								<a href="https://jwndv2g391c.feishu.cn/wiki/Kqh1w1CeMis64HkLb4Lc6ODknob">Here</a> is the nuitka guide and 
+								<a href="https://jwndv2g391c.feishu.cn/wiki/OEcSwIbxhivZ6HklckMcUloPnkb">here</a> is the common order.
+							</p>
 
-						<h4 id="code-block-with-backticks">Javascript for password</h4>
-						<div class="highlight">
-							<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
-&lt;script&gt;
-function redirectToPage() {
-	var username = document.getElementById("account").value;
-	var password = document.getElementById("passwordInput").value;
-	var redirectBase = "../blogpage/";
-	var houzhuoBase = ".html";
+							<div class="highlight">
+								<pre>
+nuitka --mingw64 --standalone --show-progress --show-memory --enable-plugin=pyqt5 --plugin-enable=torch,numpy --jobs=4 --output-dir=o2 240104package2.py
+								</pre>
+							</div>
+							
+							<p>
+								The some of the packages of python are required to using <i>--plugin-enable</i>, and they are checked
+								<a href="http://t.csdnimg.cn/JY3uj">here</a>. The error is:
+								<img src="./img/240110/error.png">
+								<a href="https://zhuanlan.zhihu.com/p/509994141">This</a> is the method. To summary, copy the <i>numpy</i> from
+								<i>/Anaconda3/envs/torch1.9/Lib/site-packages/numpy.libs</i> to <i>/o2/240104package2.dist/</i>. Then the GUI can
+								be shown. But there is still a error from numpy's version. Someone mention should try to change lower version, and
+								<a href="https://jwndv2g391c.feishu.cn/wiki/ZQlxw2XBhiUTelkYL8DcPr6Gn2d">here</a> are the vision of each modules.
+								<img src="./img/240110/error2.png">
+								However, finally I <b>gave up</b> using the nuitka.
+							</p>
+						<h3 id="headings">Using pyinstaller</h3>
+							<p>
+								There is the order and guide vide.
+								<div class="highlight">
+									<pre>
+pyinstaller --noconfirm --onedir --console  --copy-metadata numpy --copy-metadata importlib_metadata --copy-metadata tqdm --copy-metadata requests --copy-metadata packaging --copy-metadata filelock --add-data "E:/Anaconda3/envs/torch1.9/Library/bin;."  240104package2.py
+									</pre>
+								</div>
+								<iframe width="560" height="315" src="https://www.youtube.com/embed/2EiWULwSp2o?si=iiRCyiIR05wFRFAD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+								
+							</p>
 
-	var correctPasswordFormat = username + ".";
-
-	if (password.startsWith(correctPasswordFormat)) {
-		var remainingPart = password.substring(username.length + 1);
-		var fullPath = redirectBase + remainingPart+houzhuoBase;
-
-		console.log("Redirecting to: " + fullPath); 
-
-		window.location.href = fullPath;
-	} else {
-		alert("Password is incorrect..."); 
-	}
-	return false;
-}
-&lt;/script&gt;
-							</pre>
-						</div>
 
 			</div>
 

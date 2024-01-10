@@ -7,10 +7,14 @@ body {
     line-height: 1.8em;
     font-size: 17px;
 }
+i {
+    background-color: #ececec;
+    font-style: italic;
+}
 
 a {
     color: #3700ff;
-    text-decoration: none;
+    text-decoration: underline;
     word-break: break-word;
 }
     a:hover {
@@ -201,17 +205,18 @@ ul {
 }
 
 
-
 .highlight pre {
     margin-bottom: 0;
     margin-top: 0;
     padding: 20px;
     background-color: transparent !important;
+    white-space: pre-wrap; /* 允许自动换行 */
+    word-wrap: break-word; /* 确保长单词或 URL 在必要时换行 */
 }
 
 .highlight {
     background: 0 0;
-    background-color: #FAFAFA;
+    background-color: #ececec;
 }
 
 .wrapper {
