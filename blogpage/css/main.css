@@ -538,3 +538,17 @@ z-index: 1;
 .lx-projects-menu .portfolio-menu .btn.active::after {
 width: 100%;
 }
+
+.grid-containerblog {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    padding: 10px;
+    overflow: hidden;
+    }
+
+.grid-itemblog {
+background-color: transparent;
+padding: 20px;
+text-align: center;
+}
