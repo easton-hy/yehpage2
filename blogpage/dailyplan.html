@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<!-- saved from url=(0042)https://hugo-ink.netlify.app/posts/post-8/ -->
+<html class="" data-redeviation-bs-uid="100008">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>EYH's Blogs </title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" type="image/x-icon" href="../favicon.png">
+	
+		<meta itemprop="name" content="Markdown Syntax Guide">
+		<meta itemprop="description" content="Sample article showcasing basic Markdown syntax and formatting for HTML elements.">
+
+		<meta itemprop="datePublished" content="2019-03-11T00:00:00+00:00">
+		<meta itemprop="dateModified" content="2019-03-11T00:00:00+00:00">
+		<meta itemprop="wordCount" content="446">
+
+		<meta itemprop="keywords" content="markdown,css,html,themes,">
+		<meta property="og:title" content="Markdown Syntax Guide">
+		<meta property="og:description" content="Sample article showcasing basic Markdown syntax and formatting for HTML elements.">
+		<meta property="og:type" content="article">
+		<meta property="og:url" content="/posts/post-8/"><meta property="article:published_time" content="2019-03-11T00:00:00+00:00">
+		<meta property="article:modified_time" content="2019-03-11T00:00:00+00:00">
+		<meta name="twitter:card" content="summary">
+		<meta name="twitter:title" content="Markdown Syntax Guide">
+		<meta name="twitter:description" content="Sample article showcasing basic Markdown syntax and formatting for HTML elements.">
+		<link href="./css/css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" media="screen" href="./css/normalize.css">
+		<link rel="stylesheet" type="text/css" media="screen" href="./css/main.css">
+        <link id="dark-scheme" rel="stylesheet" type="text/css" href="./css/dark.css">
+
+		<script src="./css/feather.min.js.download"></script>
+		<script src="./css/main.js.download"></script>
+		<script type="text/javascript" async="" src="./css/embed.js.download"></script>
+
+	</head>
+
+	<body>
+		<div class="container wrapper">
+			<div class="header">
+
+				<div class="avatar">
+					<a href="./allpost.html">
+						<img src="../logo/fullbody2.png" alt="Ink">
+					</a>
+				</div>
+		
+				<h1 class="site-title">Easton's Daily Plan</a></h1>
+
+				<!---->
+				<div class="site-description">
+					<nav class="nav">
+						<ul class="flat">
+							<li>
+								<a href="../../index.html">Mainpage</a>
+							</li>
+							<li>
+								<a href="../../newspage/newspage.html">News</a>
+							</li>
+							<li>
+								<a href="../../gallery/gallery.html">Gallery</a>
+							</li>
+							<li>
+								<a href="../allpost.html">Blogs</a>
+							</li>
+							<li>
+								<a href="../dailyplan.html">Daily</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+
+			</div>
+
+			<nav class="nav">
+				<div class="row">
+					<div class="col-12">
+						<div class="lx-projects-menu" data-wow-delay="100ms">
+							<div class="portfolio-menu text-center">
+								<button class="btn active" data-filter="*">All</button>
+								<button class="btn" data-filter=" .plan">Plan</button>
+								<button class="btn" data-filter=" .done">Summary</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</nav>
+
+
+			<!-- Content -->
+			<div class="post">
+
+				<!-- 240102 -->
+				<div class="markdown done">
+					<h3>240112	Weight:74.60</h3>
+					<p>
+						<ol>
+							<li><b>Bulky household removal:</b> Get in touch with dover town counil.</li>
+							<li><b>ME5001 paper:</b>discuss with Yukun.</li>
+						</ol>						
+					</p>
+				</div>
+				<div class="markdown plan">
+					<h3>240112	Weight:74.60</h3>
+					<p>
+						<ol>
+							<li><b>Bulky household removal:</b> Get in touch with dover town counil.</li>
+							<li><b>ME5001 paper:</b> discuss with Yukun.</li>
+							<li><b>Add daily plan & summary page:</b> Plan items and Summary items.</li>
+						</ol>						
+					</p>
+				</div>
+				<!-- End of 240102 -->
+
+				<div class="markdown done">
+					<h3>240113	Weight:74.60</h3>
+					<p>
+						<ol>
+							<li><b>Bulky household removal:</b> Get in touch with dover town counil.</li>
+							<li><b>ME5001 paper:</b>discuss with Yukun.</li>
+						</ol>						
+					</p>
+				</div>
+				<div class="markdown plan">
+					<h3>240112	Weight:74.60</h3>
+					<p>
+						<ol>
+							<li><b>Bulky household removal:</b> Get in touch with dover town counil.</li>
+							<li><b>ME5001 paper:</b>discuss with Yukun.</li>
+						</ol>						
+					</p>
+				</div>
+						
+
+
+			</div>
+
+			<!-- End of Content -->
+
+			<!-- filter button -->
+
+			<script>
+				document.querySelectorAll('.btn').forEach(button => {
+					button.addEventListener('click', function() {
+						document.querySelectorAll('.portfolio-menu button.btn').forEach(btn => {
+							btn.classList.remove('active');
+						});
+						this.classList.add('active');
+						let filter = this.getAttribute('data-filter');
+						let items = document.querySelectorAll('.post .markdown');
+			
+						items.forEach(item => {
+							if (filter === '*') {
+								item.style.display = 'block';
+								item.style.marginBottom = '10px';
+							} else if (item.classList.contains(filter.slice(2))) {
+								item.style.display = 'block';
+								item.style.marginBottom = '10px';
+							} else {
+								item.style.display = 'none';
+							}
+						});
+					});
+				});
+			</script>
+
+			<!-- end of filter button -->
+
+			<!-- Footer -->
+			<div class="footer wrapper">
+				<nav class="nav">
+					<div>This website is based on <a href="https://github.com/knadh/hugo-ink"> hugo-ink</a>. © Easton, Yi HUANG 2023-2024.</div>
+				</nav>
+			</div>
+			<!-- End of Footer -->
+
+
+		</div>
+
+		<script type="application/javascript">
+		var doNotTrack = false;
+		if (!doNotTrack) {
+			window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+			ga('create', 'UA-123-45', 'auto');
+			
+			ga('send', 'pageview');
+		}
+		</script>
+		<script async="" src="./Markdown Syntax Guide - Ink_files/analytics.js.download"></script>
+		<script>feather.replace()</script>
+
+
+		<iframe style="display: none;" src="./Markdown Syntax Guide - Ink_files/saved_resource(1).html"></iframe>
+		<app-frame-100008 id="redeviation-bs-sidebar" class="notranslate" aria-hidden="true" data-theme="default" data-pos="right"></app-frame-100008>
+		<div id="redeviation-bs-indicator" data-theme="default" class="redeviation-bs-fullHeight" style="height: 100%; top: 0%;"></div>
+
+	</body>
+
+</html>
