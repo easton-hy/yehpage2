@@ -125,6 +125,10 @@ blockquote em {
     font-weight: 600;
 }
 
+.daily-h4{
+    margin: 5px 0 5px 0;
+}
+
 
 h1, h2, h3, h4, h5, h6 {
     color: #333;
@@ -566,4 +570,11 @@ text-align: center;
     width: 100%;
     height: 100%;
     border: none;
+}
+
+
+.black-line {
+    border: 1.5px solid ;
+    color: #000;
+    background-color:black;
 }
