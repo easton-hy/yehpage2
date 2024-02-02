@@ -75,23 +75,72 @@
 					<div class="meta">
 						<div class="date">
 							<!-- Change the data-->
-							<span class="day">10</span>
-							<span class="rest">Jan 2024</span>
+							<span class="day">02</span>
+							<span class="rest">Feb 2024</span>
 						</div>
 					</div>
 
 					<!-- Change the title -->
 					<div class="matter">
-						<h1 class="title">PS's logo and Package ME5001</h1>
+						<h1 class="title">Digital Twin Integrated Finite Element Analysis</h1>
 					</div>
 				</div>
 						
 				<div class="markdown">
 					<!-- Summary of your daily life -->
-					<ol>
-						<li>Bought a series of logos for Web.</li>
-						<li>Successful packaged a sample.</li>
-					</ol>
+					<h2 id="headings">Summary</h2>
+						<ol>
+							<li>Real-time bridge Structure Health Monitoring (SHM) using DT integrated FEA.</li>
+							<li>Simulate a car going through the bridge which is subjected dynamic loading conditions.</li>
+							<li>Map FEA pattern on the physical structure for detail health condition monitoring.</li>
+							<li>High-fidelity Reduce Order Model (ROM) based on machine learning for real-time FEA computation.</li>
+						</ol>
+						<p><b>Keywords:</b> Structure Health Monitoring; Digital Twin; Finite Element Analysis; Reduced Order Model.</p>
+
+					<h2 id="headings">Tools/Software</h2>
+						<p>
+							<ul>
+								<li><b>Python:</b>
+									<ul>
+										<li style="margin: 0"><b>Jupyter Notebook:</b> Reduced-order Model training. It is better for 
+										result visualization and parameter modification.</li>
+										<li style="margin: 0"><b>Pycharm:</b> Back-end Main Script Running. Main script includes: servers/clients
+										communications, ROMs for FEA Comp, Decision-making, Platform setup.</li>
+									</ul>
+								</li>
+								<li><b>Solidworks:</b> Structure ModellingZ.</li>
+								<li><b>Ansys:</b>
+									<ul>
+										<li style="margin: 0"><b>Workbench:</b> Structure Modals Analysis and Single Loading Condition visualization. 
+										For resonance simulation, it requires to address the structure's natural frequencies. The ROM result should
+										be validated with Workbench's.</li>
+										<li style="margin: 0"><b>APDL:</b> Database. To achieve high accuracy prediction of dynamics loading 
+											conditions, a large volume of data is required for machine learning training. Workbench is time-comsuming 
+											for collecting the large database.</li>
+									</ul>
+								</li>
+								<li><b>Unity3D:</b> FEA visualization and Platform interface.
+									<ul>
+										<li style="margin: 0"><b>Vuforia:</b> map digital model on real structure.</li>
+										<li style="margin: 0"><b>Uduino:</b> connect the Arduino directly in Unity3D.</li>
+									</ul>
+								</li>
+								<li><b>Arduino:</b> Sensor Network and Equipment Control.
+									<ul>
+										<li style="margin: 0"><b>Arduino Board:</b> WeMos D1 WiFi and Uno. WeMos D1 WiFi has the WiFi modules but only one A port.</li>
+										<li style="margin: 0"><b>Ultrasonic Sensor HC-SR04+:</b> distance sensor. Not in used now because it is unstable.</li>
+										<li style="margin: 0"><b>Distance Sensor VL53L1X:</b> distance sensor for car localization.</li>
+										<li style="margin: 0"><b>Anemometer:</b> wind speed sensor.</li>
+										<li style="margin: 0"><b>LED:</b> green and Red for traffic light simulation.</li>
+										<li style="margin: 0"><b>Servo Motor MG996R 180 degree:</b> bridge gate simulation.</li>
+										<li style="margin: 0"><b>Thin Film Pressure Sensor:</b> pressure sensor for weight measurement.</li>
+										<li style="margin: 0"><b>Motor Drive 4 Channels:</b> car's actions control.</li>
+										<li style="margin: 0"><b>8V Motor:</b> drive the car.</li>
+									</ul>
+								</li>
+								<li><b>Raspberry Pi:</b> Send Sensor Data and Recevie Order to Control Car.</li>
+							</ul>						
+						</p>
 
 					<h2 id="headings">PS Web - Logo</h2>
 						<p>
