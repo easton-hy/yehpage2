@@ -142,86 +142,16 @@
 							</ul>						
 						</p>
 
-					<h2 id="headings">PS Web - Logo</h2>
-						<p>
-							There are 2 logos and 4 portraits which were printed by Taobao printers with 100 rmb for logo and 50 rmb for portraits.
-						</p>
-						
-						<div class="grid-containerblog">
-							<div class="grid-itemblog">
-								<img src="./img/240110/EYH2.png">
-								<figcaption>Logo 1</figcaption>
-							</div>
-
-							<div class="grid-itemblog">
-								<img src="./img/240110/EYH.png">
-								<figcaption>Logo 2</figcaption>
-							</div>
-
-							<div class="grid-itemblog">
-								<img src="./img/240110/fullbody.png">
-								<figcaption>Portrait 1</figcaption>
-							</div>
-
-							<div class="grid-itemblog">
-								<img src="./img/240110/fullbody2.png">
-								<figcaption>Portrait 2</figcaption>
-							</div>
-
-							<div class="grid-itemblog">
-								<img src="./img/240110/fullbody4.jpg">
-								<figcaption>Portrait 3</figcaption>
-							</div>
-
-							<div class="grid-itemblog">
-								<img src="./img/240110/fullbody3.jpg">
-								<figcaption>Portrait 4</figcaption>
-							</div>
-
-						</div>
-
-						<p>
-							By the way, How to achieve different layout of the gird? The answear is to delete the item of the gird you want to let
-							it be blank. As the grid above, that is the grid with 3*3 items. If I want to 2 items for the first line and 3 items
-							for the second line, the code is shown as below. The <b>style of html should be storaged in .css file</b>, rather than html's
-							head style, especially large website project. Otherwise, after uploading to github, the style will be ineffective.
-						</p>
-
-						
-						<h4 id="code-block-with-backticks">Change layout of the grid</h4>
-							<div class="highlight">
-								<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
-&lt;div class="grid-container"&gt;
-&lt;div class="grid-item"&gt;
-	&lt;img src="./img/240110/EYH2.png"&gt;
-	&lt;figcaption&gt;Logo 1&lt;/figcaption&gt;
-&lt;/div&gt;
-
-&lt;div class="grid-item"&gt;
-	&lt;img src="./img/240110/EYH.png"&gt;
-	&lt;figcaption&gt;Logo 2&lt;/figcaption&gt;
-&lt;/div&gt;
-
-&lt;div class="grid-item"&gt;
-&lt;/div&gt;
-
-&lt;div class="grid-item"&gt;
-	&lt;img src="./img/240110/fullbody2.png"&gt;
-	&lt;figcaption&gt;Portrait 2&lt;/figcaption&gt;
-&lt;/div&gt;
-
-&lt;div class="grid-item"&gt;
-	&lt;img src="./img/240110/fullbody4.jpg"&gt;
-	&lt;figcaption&gt;Portrait 3&lt;/figcaption&gt;
-&lt;/div&gt;
-
-&lt;div class="grid-item"&gt;
-	&lt;img src="./img/240110/fullbody3.jpg"&gt;
-	&lt;figcaption&gt;Portrait 4&lt;/figcaption&gt;
-&lt;/div&gt;
-&lt;/div&gt;		
-								</pre>
-							</div>
+					<h2 id="headings">Physical Setup</h2>
+						<h3 id="headings">Bridge Modelling</h3>
+							The bridge draw is shown below, and click <a href="https://drive.google.com/drive/folders/1qBsBwMo7uwSuUCAlJFmF4F2AVgLUnWcF?usp=drive_link">here</a> for all the structure files. The <a href="https://drive.google.com/file/d/1IhT09KN6eENu0gXlmfb4eSf8m0oGOZWs/view?usp=drive_link">structure</a> is modeled by Solidworks, and is exported as <b>.x_t</b> and <b>.stl</b>
+							file, while .x_t file can be import to Ansys and .stl file will be used in Unity3D.
+							<img src="./img/ME5001SUM/ori_bg.JPG">
+						<h3 id="headings">Bridge FEA</h3>
+							The Bridge should be analyzed by ANSYS Workbenck ahead and <b>ANSYS 2020 R2</b> is recommanded as the <b>Finite Element Modeler</b>
+							cannot be found in higher vision. The modules in used are shown below.
+							<img src="./img/ME5001SUM/WBmodules.jpg">
+							<img src="./img/ME5001SUM/WBmodules2.jpg">
 
 
 					<h2 id="headings">Publish ME5001 Proj as .exe File</h2>
