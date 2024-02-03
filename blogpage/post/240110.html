@@ -32,6 +32,21 @@
 		<script src="../css/feather.min.js.download"></script>
 		<script src="../css/main.js.download"></script>
 		<script type="text/javascript" async="" src="../css/embed.js.download"></script>
+		<style>
+			.gird_two{
+				display: grid;
+				grid-template-columns: repeat(2, 1fr);
+				grid-gap: 10px;
+				padding: 10px;
+				overflow: hidden;
+			}
+
+			@media screen and (max-width: 768px) {
+				.gird_two {
+					grid-template-columns: 1fr;
+				}
+			}
+		</style>
 
 	</head>
 
