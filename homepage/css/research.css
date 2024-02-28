@@ -20,7 +20,8 @@
 .pro-container{
     display: grid;
     grid-template-columns: 1fr 2fr;
-    grid-gap: 20px;
+	column-gap: 20px;
+	row-gap: 30px;
     padding: 10px;
     overflow: hidden;
 	align-items: center;
