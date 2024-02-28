@@ -1,0 +1,102 @@
+@charset "utf-8";
+
+:root{
+    --font-syne: 'Syne', sans-serif;
+}
+
+/*---------------------------------------------------*/
+/*	14) research
+/*---------------------------------------------------*/
+.erling_tm_research{
+	width: 100%;
+	background-color: #f7f7f7;
+	padding: 80px 0px;
+}
+.erling_tm_research .about_inner{
+	width: 100%;
+	display: flex;
+}
+
+.pro-container{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 20px;
+    padding: 10px;
+    overflow: hidden;
+	align-items: center;
+}
+
+.pro-container .pro-item{
+	text-align: left;
+}
+
+.pro-container .pro-item img{
+	align-items: center;
+}
+
+.pro-container .pro-item h1{
+	font-weight:500;
+	line-height: 1.3;
+	padding: 2px 0px;
+	font-family: var(--font-syne);
+	color: #000;
+	font-variant-numeric: lining-nums proportional-nums;
+	font-size: 25px;
+}
+
+.pro-container .pro-item h2{
+	text-transform: uppercase;
+	font-weight:500;
+	line-height: 1.3;
+	padding: 5px 0px;
+	font-family: var(--font-syne);
+	color: #000;
+	font-variant-numeric: lining-nums proportional-nums;
+	font-size: 20px;
+	font-style: italic;
+}
+
+.pro-container .pro-item h3{
+	font-weight:500;
+	line-height: 1.3;
+	padding: 5px 0px;
+	font-family: var(--font-syne);
+	color: #6a6a6a;
+	font-variant-numeric: lining-nums proportional-nums;
+	font-size: 20px;
+}
+
+.transparent-button {
+	text-transform: uppercase;
+	font-family: var(--font-syne);
+	padding: 0px 8px; /* 按钮内边距 */
+	background-color: transparent; /* 设置背景颜色为透明 */
+	color: rgb(0, 0, 0); /* 文字颜色 */
+	font-size: 13px;
+	border: 2px solid rgb(0, 0, 0); /* 白色边框 */
+	border-radius: 20px; /* 圆角边框 */
+	cursor: pointer; /* 鼠标悬停时的手形光标 */
+	font-weight: bold; /* 加粗文字 */
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 阴影效果 */
+	transition: all 0.3s ease; /* 过渡效果，让按钮的交互更平滑 */
+	text-align: center; /* 文字居中 */
+	display: inline-block; /* 使button支持宽度和margin */
+	text-decoration: none; /* 去除下划线 */
+	margin-right: 15px;
+}
+
+.transparent-button:hover {
+	background-color: rgba(56, 56, 56, 0.2); /* 悬停时轻微显示背景色 */
+	box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* 悬停时阴影更大 */
+	transform: translateY(-2px); /* 悬停时轻微上移，增加交互感 */
+}
+
+.transparent-button:active {
+	background-color: rgba(255, 255, 255, 0.3); /* 点击时背景色更明显 */
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 点击时阴影更小 */
+	transform: translateY(1px); /* 点击时轻微下移，模拟按压效果 */
+}
+
+@media (max-width: 768px){
+	.pro-container{grid-template-columns: 1fr;}
+}
