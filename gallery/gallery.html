@@ -1864,17 +1864,19 @@
                         img.onload = function() {
                             placeholder.innerHTML = ''; // 清空占位符
                             placeholder.appendChild(this); // 添加图片
-                            adjustImage(this);  // 调整图片大小
+                            adjustImage(this,width,height);  // 调整图片大小
                         };
 
                         img.src = imgSrc;
                     });
                 });
 
-                function adjustImage(img) {
-                    var gridItem = img.parentElement;
-                    var containerWidth = gridItem.clientWidth;
-                    var containerHeight = containerWidth * 9 / 16; // 假定16:9的比例
+                function adjustImage(img,width,height) {
+                    //var gridItem = img.parentElement;
+                    //var containerWidth = gridItem.clientWidth;
+                    var containerWidth=width;
+                    //var containerHeight = containerWidth * 9 / 16; // 假定16:9的比例
+                    var containerHeight=height;
                     var imageAspectRatio = img.naturalWidth / img.naturalHeight;
 
                     img.style.position = 'absolute';
@@ -1882,6 +1884,9 @@
                     img.style.left = '50%';
                     img.style.transform = 'translate(-50%, -50%)';
 
+                    img.style.height = containerHeight + "px";
+                    img.style.width = 'auto';
+                    /*
                     if (imageAspectRatio < 16 / 9) {
                         img.style.height = containerHeight + "px";
                         img.style.width = 'auto';
@@ -1889,6 +1894,7 @@
                         img.style.width = containerWidth + "px";
                         img.style.height = 'auto';
                     }
+                    */
                 }
 
             </script>
