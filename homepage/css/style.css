@@ -483,7 +483,7 @@ h6 { font-size: 16px; }
 
 .erling_tm_hero{
 	width: 100%;
-	min-height: 100vh;
+	min-height: 105vh;
 	position: relative;
 }
 
@@ -551,7 +551,6 @@ h6 { font-size: 16px; }
 	font-weight: 600;
 	line-height: 1.1;
 	color: rgb(0, 0, 0);
-	text-transform: uppercase;
 	font-family: KaiTi;
 }
 
@@ -1410,10 +1409,11 @@ h6 { font-size: 16px; }
 }
 @media (max-width: 768px) {
 	.erling_tm_hero .details{flex-direction: column;}
-	.erling_tm_hero .image{width: 300px;height: 300px;margin-bottom: 40px;}
-	.erling_tm_hero .text{padding-left: 0px;}
-	.erling_tm_hero .text h3{font-size: 60px;}
-	.erling_tm_hero .job{font-size: 10px 25px; margin-top: 0px; margin-bottom: 10px}
+	.erling_tm_hero .image{width: 300px;height: 300px; margin-top: 100px;}
+	.erling_tm_hero .text{padding-left: 0px; text-align: center; margin-top: -20px;}
+	.erling_tm_hero .text h3{font-size: 50px;}
+	.erling_tm_hero .text chnh3{font-size: 50px;}
+	.erling_tm_hero .job{font-size: 10px 25px; margin-top: 10px; margin-bottom: 10px}
 	.erling_tm_service .service_list > ul{margin: 0px;}
 	.erling_tm_service .service_list > ul > li{width: 100%;padding-left: 0px;}
 	.erling_tm_news .news_list ul{margin: 0px;}
