@@ -1411,11 +1411,12 @@ h6 { font-size: 16px; }
 }
 @media (max-width: 768px) {
 	.erling_tm_hero .details{flex-direction: column;}
-	.erling_tm_hero .image{width: 300px;height: 300px; margin-top: 80px;}
-	.erling_tm_hero .text{padding-left: 0px; text-align: center; margin-top: -20px;}
+	.erling_tm_hero .image{width: 300px;height: 300px; margin-top: 70px;}
+	.erling_tm_hero .text{padding-left: 0px; text-align: center; margin-top: -30px;}
 	.erling_tm_hero .text h3{font-size: 50px;}
 	.erling_tm_hero .text chnh3{font-size: 50px; font-family: KaiTi;}
-	.erling_tm_hero .job{font-size: 10px 25px; margin-top: 10px; margin-bottom: 10px}
+	.erling_tm_hero .job{font-size: 25px; margin-top: 0px; margin-bottom: 10px; padding: 15px 70px;}
+	.erling_tm_hero .job span {font-size: 18px; margin-top: 10px; margin-bottom: 10px;}
 	.erling_tm_service .service_list > ul{margin: 0px;}
 	.erling_tm_service .service_list > ul > li{width: 100%;padding-left: 0px;}
 	.erling_tm_news .news_list ul{margin: 0px;}
