@@ -210,7 +210,7 @@ nav .menu a:hover {
     left: 50%;
     
     background-color: transparent;
-    transform: translate(-50%, -60%);
+    transform: translate(-50%, -57%);    /*adjust the position of the content   (horizontal and vertical)*/
 
     gap: 5%;
     display: flex;
@@ -656,6 +656,7 @@ nav .menu a:hover {
         width: 100%;
         gap: 50px;
         flex-direction: column;
+        transform: translate(-50%, -63%);
     }
 
     .home-content .profile-img {
