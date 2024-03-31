@@ -656,7 +656,7 @@ nav .menu a:hover {
         width: 100%;
         gap: 50px;
         flex-direction: column;
-        transform: translate(-50%, -63%);
+        transform: translate(-50%, -70%);
     }
 
     .home-content .profile-img {
