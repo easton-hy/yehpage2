@@ -483,7 +483,7 @@ h6 { font-size: 16px; }
 
 .erling_tm_hero{
 	width: 100%;
-	min-height: 105vh;
+	min-height: 100vh;
 	position: relative;
 }
 
@@ -530,6 +530,8 @@ h6 { font-size: 16px; }
 	display: flex;
 	margin-left: auto;
 	margin-right: auto;
+	margin-top: auto;
+	margin-bottom: auto;
 }
 .erling_tm_hero .text{
 	padding-left: 70px;
