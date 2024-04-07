@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.6.27)  30 MAR 2024 16:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.6.27)  7 APR 2024 16:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -711,41 +711,46 @@ Overfull \hbox (30.0pt too wide) in paragraph at lines 45--45
 [] 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 78--81
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 89--90
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 103--104
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 108--109
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 113--114
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 118--119
-
- []
-
-LaTeX Font Info:    Trying to load font information for C70+rm on input line 12
-7.
+LaTeX Font Info:    Trying to load font information for C70+rm on input line 74
+.
 (e:/Latex/texlive/2022/texmf-dist/tex/latex/ctex/fd/c70rm.fd
 File: c70rm.fd 2021/12/12 v2.5.8 Chinese font definition (CTEX)
 )
+Underfull \hbox (badness 10000) in paragraph at lines 80--83
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 99--100
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 104--105
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 109--110
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 114--115
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--124
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 125--126
+
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 127--128
 
  []
@@ -761,27 +766,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 131--132
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 133--134
+Underfull \hbox (badness 10000) in paragraph at lines 144--145
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 135--136
+Underfull \hbox (badness 10000) in paragraph at lines 146--147
 
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 148--149
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 150--151
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 152--153
 
  []
 
@@ -793,12 +788,7 @@ eX and DVIPDFMx (CTEX)
 Unicode.sfd}) [1
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 162--163
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 163--164
+Underfull \hbox (badness 10000) in paragraph at lines 155--156
 
  []
 
@@ -813,12 +803,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 165--166
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 173--174
+Underfull \hbox (badness 10000) in paragraph at lines 166--167
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 174--175
+Underfull \hbox (badness 10000) in paragraph at lines 167--168
 
  []
 
@@ -832,6 +822,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 176--177
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 177--178
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 178--179
+
+ []
+
 [2] (./HY_Resume(CHN).aux)
 
 LaTeX Font Warning: Size substitutions with differences
@@ -841,31 +841,31 @@ Package rerunfilecheck Info: File `HY_Resume(CHN).out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 14843 strings out of 478268
- 248233 string characters out of 5847351
- 561819 words of memory out of 5000000
- 32532 multiletter control sequences out of 15000+600000
- 501232 words of font info for 143 fonts, out of 8000000 for 9000
+ 14871 strings out of 478268
+ 248643 string characters out of 5847351
+ 561972 words of memory out of 5000000
+ 32556 multiletter control sequences out of 15000+600000
+ 501772 words of font info for 145 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  90i,5n,92p,737b,350s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/Windows/Fonts/simfang.ttf><c:/Windows/Fonts/simfang.ttf><c:/Windows/Fonts
 /simfang.ttf><c:/Windows/Fonts/simfang.ttf><c:/Windows/Fonts/simfang.ttf><c:/Wi
 ndows/Fonts/simfang.ttf><c:/Windows/Fonts/simfang.ttf><c:/Windows/Fonts/simfang
-.ttf><c:/Windows/Fonts/simfang.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fon
-ts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Win
-dows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simfang.tt
+.ttf><c:/Windows/Fonts/simfang.ttf><c:/Windows/Fonts/simfang.ttf><c:/Windows/Fo
+nts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Wi
+ndows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.tt
 f><c:/Windows/Fonts/simfang.ttf><c:/Windows/Fonts/simfang.ttf><c:/Windows/Fonts
-/simfang.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Wind
-ows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf>
-<c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/sim
-hei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/F
-onts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/W
-indows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.t
-tf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/
-simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Window
-s/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c
-:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simfa
-ng.ttf><c:/Windows/Fonts/simfang.ttf><c:/Windows/Fonts/simfang.ttf><c:/Windows/
+/simfang.ttf><c:/Windows/Fonts/simfang.ttf><c:/Windows/Fonts/simhei.ttf><c:/Win
+dows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf
+><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/si
+mhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/
+Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/
+Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.
+ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts
+/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windo
+ws/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><
+c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simh
+ei.ttf><c:/Windows/Fonts/simfang.ttf><c:/Windows/Fonts/simfang.ttf><c:/Windows/
 Fonts/simfang.ttf><c:/Windows/Fonts/simfang.ttf><c:/Windows/Fonts/simfang.ttf><
 c:/Windows/Fonts/simfang.ttf><c:/Windows/Fonts/simfang.ttf><c:/Windows/Fonts/si
 mfang.ttf><c:/Windows/Fonts/simfang.ttf><c:/Windows/Fonts/simfang.ttf><c:/Windo
@@ -877,24 +877,25 @@ ndows/Fonts/simfang.ttf><c:/Windows/Fonts/simfang.ttf><c:/Windows/Fonts/simfang
 nts/simfang.ttf><c:/Windows/Fonts/simfang.ttf><c:/Windows/Fonts/simfang.ttf><c:
 /Windows/Fonts/simfang.ttf><c:/Windows/Fonts/simfang.ttf><c:/Windows/Fonts/simf
 ang.ttf><c:/Windows/Fonts/simfang.ttf><c:/Windows/Fonts/simfang.ttf><c:/Windows
-/Fonts/simfang.ttf><c:/Windows/Fonts/simfang.ttf><c:/Windows/Fonts/simfang.ttf>
-<c:/Windows/Fonts/simfang.ttf><c:/Windows/Fonts/simfang.ttf><c:/Windows/Fonts/s
-imfang.ttf><c:/Windows/Fonts/simfang.ttf><c:/Windows/Fonts/simfang.ttf><c:/Wind
-ows/Fonts/simfang.ttf><c:/Windows/Fonts/simfang.ttf><c:/Windows/Fonts/simfang.t
-tf><c:/Windows/Fonts/simfang.ttf><c:/Windows/Fonts/simfang.ttf><c:/Windows/Font
-s/simfang.ttf><c:/Windows/Fonts/simfang.ttf><c:/Windows/Fonts/simfang.ttf><c:/W
-indows/Fonts/simfang.ttf><c:/Windows/Fonts/simfang.ttf><c:/Windows/Fonts/simfan
-g.ttf><c:/Windows/Fonts/simfang.ttf><c:/Windows/Fonts/simfang.ttf><e:/Latex/tex
-live/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><e:/Latex/texliv
-e/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><e:/Latex/texlive/2
-022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><e:/Latex/texlive/2022/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><e:/Latex/texlive/2022/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><e:/Latex/texlive/2022/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on HY_Resume(CHN).pdf (2 pages, 347995 bytes).
+/Fonts/simfang.ttf><c:/Windows/Fonts/simfang.ttf><c:/Windows/Fonts/simkai.ttf><
+c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simfang.ttf><c:/Windows/Fonts/sim
+fang.ttf><c:/Windows/Fonts/simfang.ttf><c:/Windows/Fonts/simfang.ttf><c:/Window
+s/Fonts/simfang.ttf><c:/Windows/Fonts/simfang.ttf><c:/Windows/Fonts/simfang.ttf
+><c:/Windows/Fonts/simfang.ttf><c:/Windows/Fonts/simfang.ttf><c:/Windows/Fonts/
+simfang.ttf><c:/Windows/Fonts/simfang.ttf><c:/Windows/Fonts/simfang.ttf><c:/Win
+dows/Fonts/simfang.ttf><c:/Windows/Fonts/simfang.ttf><c:/Windows/Fonts/simfang.
+ttf><c:/Windows/Fonts/simfang.ttf><c:/Windows/Fonts/simfang.ttf><c:/Windows/Fon
+ts/simfang.ttf><c:/Windows/Fonts/simfang.ttf><e:/Latex/texlive/2022/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmbx10.pfb><e:/Latex/texlive/2022/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmbx12.pfb><e:/Latex/texlive/2022/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmr10.pfb><e:/Latex/texlive/2022/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmsy10.pfb><e:/Latex/texlive/2022/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmti10.pfb><e:/Latex/texlive/2022/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmtt10.pfb>
+Output written on HY_Resume(CHN).pdf (2 pages, 354139 bytes).
 PDF statistics:
- 509 PDF objects out of 1000 (max. 8388607)
- 325 compressed objects within 4 object streams
+ 517 PDF objects out of 1000 (max. 8388607)
+ 331 compressed objects within 4 object streams
  3 named destinations out of 1000 (max. 500000)
  265 words of extra memory for PDF output out of 10000 (max. 10000000)
 
