@@ -687,6 +687,7 @@ h6 { font-size: 16px; }
 .erling_tm_about .text{
 	width: 100%;
 	margin-bottom: 40px;
+	text-align: justify;
 }
 .erling_tm_button{
 	width: 100%;
@@ -1413,7 +1414,9 @@ h6 { font-size: 16px; }
 	.erling_tm_news .news_list ul li{width: 50%;}
 }
 @media (max-width: 768px) {
-	.container{padding: 0px 25px;}
+	.container{padding: 0px 35px;}
+	.erling_tm_about .text{margin-bottom: 0px;}
+	.erling_tm_hero .content{height: 115vh;}    /*调一个模块大小的*/
 	.erling_tm_hero .details{flex-direction: column;}
 	.erling_tm_hero .image{width: 300px;height: 300px; margin-top: 70px;}
 	.erling_tm_hero .text{padding-left: 0px; text-align: center; margin-top: -30px;}
@@ -1448,7 +1451,9 @@ h6 { font-size: 16px; }
 		border-bottom: #444 dotted 1px;
 		padding-bottom: 1rem;
 	}
-
+	.progressbar.animate{
+		right: 18px;
+	}
 
 
 }

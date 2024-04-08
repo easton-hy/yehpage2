@@ -109,4 +109,8 @@
 
 @media (max-width: 768px){
 	.pro-container{grid-template-columns: 1fr;}
+	.pro-container .pro-item h1{font-size: 18px;}
+	.pro-container .pro-item h2{font-size: 14px;}
+	.pro-container .pro-item h3{font-size: 14px;}
+	.pro-container .pro-item h4{font-size: 14px;}
 }
