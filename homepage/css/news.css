@@ -1,0 +1,47 @@
+@charset "utf-8";
+
+:root{
+    --font-syne: 'Syne', sans-serif;
+}
+
+/*---------------------------------------------------*/
+/*	14) research
+/*---------------------------------------------------*/
+.erling_tm_news{
+	width: 100%;
+	background-color: #ffffff;
+	padding: 80px 0px;
+}
+
+.erling_tm_news .new_inner{
+	width: 100%;
+	display: flex;
+}
+
+.new-container{
+    display: flex;
+}
+
+.new-container ul{
+	list-style-type:disc;
+	list-style-position: outside;
+	margin: 0px -20px;
+	padding: 0px;
+}
+.new-container ul li{
+	margin: 0px;
+	padding: 0px;
+}
+
+.new-container ul li h1{
+	font-variant-numeric: lining-nums tabular-nums;   /*tabular-nums 让数字等宽吧*/
+	text-align: left;
+	font-weight:500;
+	font-family: var(--font-syne);
+	color: #000000;
+	font-size: 20px;
+}
+
+@media (max-width: 768px){
+	.new-container ul{margin: 0px 25px;}
+}

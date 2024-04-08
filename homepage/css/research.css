@@ -9,10 +9,10 @@
 /*---------------------------------------------------*/
 .erling_tm_research{
 	width: 100%;
-	background-color: #ffffff;
+	background-color: #f7f7f7;
 	padding: 80px 0px;
 }
-.erling_tm_research .about_inner{
+.erling_tm_research .research_inner{
 	width: 100%;
 	display: flex;
 }
@@ -36,38 +36,47 @@
 }
 
 .pro-container .pro-item h1{
+	font-weight:bold;
+	line-height: 1.3;
+	padding: 2px 0px;
+	font-family: var(--font-syne);
+	color: #000;
+	font-variant-numeric: lining-nums proportional-nums;
+	font-size: 22px;
+}
+
+.pro-container .pro-item h2{
+	text-transform: uppercase;
+	line-height: 1.3;
+	padding: 2px 0px;
+	font-family: var(--font-syne);
+	color: #000;
+	font-variant-numeric: lining-nums proportional-nums;
+	font-size: 18px;
+	font-style: italic;
+}
+
+.pro-container .pro-item h3{
+	line-height: 1.3;
+	padding: 2px 0px;
+	font-family: var(--font-syne);
+	color: #6a6a6a;
+	font-variant-numeric: lining-nums proportional-nums;
+	font-size: 18px;
+}
+
+.pro-container .pro-item h4{
 	font-weight:500;
 	line-height: 1.3;
 	padding: 2px 0px;
 	font-family: var(--font-syne);
 	color: #000;
 	font-variant-numeric: lining-nums proportional-nums;
-	font-size: 25px;
-}
-
-.pro-container .pro-item h2{
-	text-transform: uppercase;
-	font-weight:500;
-	line-height: 1.3;
-	padding: 5px 0px;
-	font-family: var(--font-syne);
-	color: #000;
-	font-variant-numeric: lining-nums proportional-nums;
-	font-size: 20px;
-	font-style: italic;
-}
-
-.pro-container .pro-item h3{
-	font-weight:500;
-	line-height: 1.3;
-	padding: 5px 0px;
-	font-family: var(--font-syne);
-	color: #6a6a6a;
-	font-variant-numeric: lining-nums proportional-nums;
-	font-size: 20px;
+	font-size: 18px;
 }
 
 .transparent-button {
+	margin-top: 5px;
 	text-transform: uppercase;
 	font-family: var(--font-syne);
 	padding: 0px 8px; /* 按钮内边距 */
