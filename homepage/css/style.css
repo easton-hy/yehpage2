@@ -1382,6 +1382,7 @@ h6 { font-size: 16px; }
 	.erling_tm_experience .box .occ h3{font-size: 16px;}
 }
 @media (max-width: 1040px) {
+	.container{padding: 0px 25px;}
 	.erling_tm_header{display: none;}
 	.erling_tm_sidebar_menu{display: none;}
 	.erling_tm_mobile_menu{display: block;}
@@ -1412,6 +1413,7 @@ h6 { font-size: 16px; }
 	.erling_tm_news .news_list ul li{width: 50%;}
 }
 @media (max-width: 768px) {
+	.container{padding: 0px 25px;}
 	.erling_tm_hero .details{flex-direction: column;}
 	.erling_tm_hero .image{width: 300px;height: 300px; margin-top: 70px;}
 	.erling_tm_hero .text{padding-left: 0px; text-align: center; margin-top: -30px;}
