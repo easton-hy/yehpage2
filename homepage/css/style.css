@@ -1391,7 +1391,7 @@ h6 { font-size: 16px; }
 	.erling_tm_mainpart{padding-left: 0px;}
 	.erling_tm_hero .content{margin-top: auto;}/*本来没有*/
 	/*.erling_tm_hero .details{flex-direction: column;}*/
-	.erling_tm_hero .image{width: 300px;height: 300px;margin-top: 70px;}
+	.erling_tm_hero .image{width: 300px;height: 300px;}
 	.erling_tm_hero .text{padding-left: auto;}
 	.erling_tm_hero .text h3{font-size: 60px;}
 	.erling_tm_hero .job{font-size: 10px 25px;}
@@ -1425,11 +1425,11 @@ h6 { font-size: 16px; }
 	.erling_tm_hero .content{height: auto;}    /*调一个模块大小的*/
 	.erling_tm_hero .details{flex-direction: column;}
 	.erling_tm_hero .image{width: 300px;height: 300px; margin-top: 70px;}
-	.erling_tm_hero .text{padding-left: 0px; text-align: center; margin-top: -30px;}
+	.erling_tm_hero .text{padding-left: 0px; text-align: center; margin-top: 10px;}
 	.erling_tm_hero .text h3{font-size: 40px;}
 	.erling_tm_hero .text chnh3{font-size: 40px; font-family: KaiTi;}
-	.erling_tm_hero .job{font-size: 25px; margin-top: 0px; margin-bottom: 10px;}
-	.erling_tm_hero .job span {font-size: 18px; margin-top: 10px; margin-bottom: 10px;}
+	.erling_tm_hero .job{font-size: 25px; margin-top: 10px; margin-bottom: 10px; padding: auto;}
+	.erling_tm_hero .job span {font-size: 18px; margin-top: 10px; margin-bottom: 10px; white-space:nowrap;}	
 	.erling_tm_service .service_list > ul{margin: 0px;}
 	.erling_tm_service .service_list > ul > li{width: 100%;padding-left: 0px;}
 	.erling_tm_news .news_list ul{margin: 0px;}
