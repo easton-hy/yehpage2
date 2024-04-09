@@ -1384,14 +1384,15 @@ h6 { font-size: 16px; }
 	.erling_tm_experience .box .occ h3{font-size: 16px;}
 }
 @media (max-width: 1040px) {
-	.container{padding: 0px 25px;}
+	.container{padding: 0px 55px;}
 	.erling_tm_header{display: none;}
 	.erling_tm_sidebar_menu{display: none;}
 	.erling_tm_mobile_menu{display: block;}
 	.erling_tm_mainpart{padding-left: 0px;}
-	.erling_tm_hero .details{flex-direction: column;}
-	.erling_tm_hero .image{width: 300px;height: 300px;margin-bottom: 40px;}
-	.erling_tm_hero .text{padding-left: 0px;}
+	.erling_tm_hero .content{margin-top: auto;}/*本来没有*/
+	/*.erling_tm_hero .details{flex-direction: column;}*/
+	.erling_tm_hero .image{width: 300px;height: 300px;margin-top: 70px;}
+	.erling_tm_hero .text{padding-left: auto;}
 	.erling_tm_hero .text h3{font-size: 60px;}
 	.erling_tm_hero .job{font-size: 10px 25px;}
 	.erling_tm_about .about_inner{flex-direction: column;}
@@ -1414,6 +1415,9 @@ h6 { font-size: 16px; }
 	.erling_tm_experience .right{width: 100%;padding-left: 0px;}
 	.erling_tm_experience .box .occ h3{font-size: 16px;}
 	.erling_tm_news .news_list ul li{width: 50%;}
+	.progressbar.animate{
+		right: 18px;
+	}
 }
 @media (max-width: 768px) {
 	.container{padding: 0px 35px;}
@@ -1456,6 +1460,15 @@ h6 { font-size: 16px; }
 	.progressbar.animate{
 		right: 18px;
 	}
-
-
 }
+
+
+/*
+1.调整平板的大小：
+	.erling_tm_hero .content{margin-top: auto;}  hero居中
+	.erling_tm_hero .text{padding-left: auto;}	照片和名字间隔
+	删掉：.erling_tm_hero .details{flex-direction: column;}
+	.container{padding: 0px 55px;}	整体两边边距
+	.progressbar.animate{right: 18px;}	滑块位置
+
+*/
