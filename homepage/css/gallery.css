@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+:root{
+    --font-syne: 'Syne', sans-serif;
+}
+
+/*---------------------------------------------------*/
+/*	11) ERLING GALLERY
+/*---------------------------------------------------*/
+.erling_tm_interests{
+	width: 100%;
+	padding: 80px 0px 30px 0px;
+	background-color: #ffffff; /*white: eaeaea  grey:f7f7f7*/
+}
+
+.erling_tm_interests .interests_inner{
+	width: 100%;
+}
+
+.gallery-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+	column-gap: 10px;
+	row-gap: 10px;
+    overflow: hidden;
+	align-items: center;
+}
+
+.gallery-container .gallery-item{
+	align-items: center;
+}
+
+
+@media (max-width: 768px) {
+	.gallery-container{grid-template-columns: repeat(2, 1fr)}
+}

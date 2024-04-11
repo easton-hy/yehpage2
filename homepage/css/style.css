@@ -741,7 +741,7 @@ h6 { font-size: 16px; }
 .accordion_wrap .accordion_header{
 	width: 100%;
 	background-color: #eaeaea;
-	padding: 25px 40px;
+	padding: 25px 20px;
 	cursor: pointer;
 }
 .accordion_wrap .accordion_header h3{
@@ -750,7 +750,7 @@ h6 { font-size: 16px; }
 }
 .accordion_wrap .accordion_content{
 	width: 100%;
-	padding: 40px;
+	padding: 20px;
 	background-color: #fff;
 	display: none;
 }
@@ -1461,8 +1461,8 @@ h6 { font-size: 16px; }
 	.erling_tm_copyright .logo img{max-width: 110px;max-height: 70px;}
 	.erling_tm_service .service_list .list_inner{padding: 60px 30px;}
 	.erling_tm_experience .box ul li .list_inner{padding: 40px 35px 35px 35px;}
-	.accordion_wrap .accordion_header{padding: 25px 30px;}
-	.accordion_wrap .accordion_content{padding: 30px;}
+	.accordion_wrap .accordion_header{padding: 20px 20px;}
+	.accordion_wrap .accordion_content{padding: 20px;}
 	.erling_tm_testimonials .short{padding: 25px 30px;}
 	.erling_tm_testimonials .desc{padding: 40px 30px 60px 30px}
 	.erling_tm_experience .box .title{padding: 25px 30px;}
