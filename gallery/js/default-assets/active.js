@@ -196,13 +196,14 @@
     // ****************************
     // :: 13.0 Scrollup Active Code
     // ****************************
+    /*
     if ($.fn.scrollUp) {
         lx_window.scrollUp({
             scrollSpeed: 1000,
             scrollText: '<i class="fas fa-arrow-up"></i>'
         });
     }
-
+    */
     // *********************************
     // :: 14.0 Prevent Default 'a' Click
     // *********************************
