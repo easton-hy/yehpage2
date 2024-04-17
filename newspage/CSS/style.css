@@ -275,9 +275,10 @@ h1,h2,h3,h4,h5,h6{
   color: #fff;
 }
 #main-footer .footer-container{
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 1rem;
+	display: grid;
+	/*grid-template-columns: repeat(4, 1fr);*/
+	grid-template-columns: 0.8fr 0.5fr 1fr 1fr;
+	grid-gap: 10px; /*1rem*/
 }
 #main-footer .footer-container > *:last-child{
   background: #444;
@@ -294,3 +295,15 @@ h1,h2,h3,h4,h5,h6{
 #main-footer .footer-container input[type='submit']{
   width: 90%;
 }
+
+.footer-container .contact-container {
+	display: grid;
+	grid-template-columns: 1fr 5fr; /* 两列，每列占用可用空间的等份 */
+	gap: 10px; /* 行列间隙 */
+  }
+  
+.footer-container .contact-item {
+	background-color: transparent; /* 背景颜色 */
+	border: none; /* 边框 */
+	text-align: left; /* 文本居中 */
+  }
