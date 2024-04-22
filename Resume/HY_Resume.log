@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.6.27)  15 APR 2024 22:47
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.6.27)  18 APR 2024 17:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -795,7 +795,7 @@ Package rerunfilecheck Info: File `HY_Resume.out' has not changed.
 Here is how much of TeX's memory you used:
  13497 strings out of 478268
  225630 string characters out of 5847351
- 527807 words of memory out of 5000000
+ 527827 words of memory out of 5000000
  31415 multiletter control sequences out of 15000+600000
  480172 words of font info for 65 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -815,7 +815,7 @@ sfonts/cm/cmr10.pfb><e:/Latex/texlive/2022/texmf-dist/fonts/type1/public/amsfon
 ts/cm/cmsy10.pfb><e:/Latex/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmti10.pfb><e:/Latex/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/
 cmtt10.pfb>
-Output written on HY_Resume.pdf (2 pages, 152574 bytes).
+Output written on HY_Resume.pdf (2 pages, 152600 bytes).
 PDF statistics:
  158 PDF objects out of 1000 (max. 8388607)
  97 compressed objects within 1 object stream
