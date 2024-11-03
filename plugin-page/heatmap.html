@@ -411,7 +411,7 @@
 {date: '2024-01-08', value: 4},
 {date: '2024-01-09', value: 6},
 {date: '2024-08-23', value: 8},
-		,
+,
 {date: '2024-11-02', value: 0.879500000000001}];
 		/*月份会加一   所以是现在的（月份-1）输入现在的月份就行*/
 		var highlightDays2024 = [
@@ -420,7 +420,8 @@
 		];
 		
 		function convertDateToTimestamp(dateString) {
-			return new Date(dateString).getTime()/1000;
+			let date = new Date(dateString + "T00:00:00"); // 明确设置到本地的午夜
+			return date.getTime() / 1000;  // 返回秒为单位的时间戳
 		}
 
 		datas2023.forEach(function(item) {
@@ -429,6 +430,7 @@
 
 		datas2024.forEach(function(item) {
 			item.date = convertDateToTimestamp(item.date);
+			console.log(item.date);  // 确认时间戳是否正确
 		});
 		
 		var parser = function(data) {

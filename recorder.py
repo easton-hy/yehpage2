@@ -207,7 +207,7 @@ def monitor_usage():
         if total_time_cal.minute == 0 and 0 <= total_time_cal.second <= 9:
             read_duration_hours(total_time_cal,log_file_path)
 
-        if total_time_cal.hour == 11 and total_time_cal.minute == 47 and 0 <= total_time_cal.second <= 9:
+        if total_time_cal.hour == 11 and total_time_cal.minute == 55 and 0 <= total_time_cal.second <= 9:
             add_data_to_html(html_file_path,log_total_path_pre, local_repo_path, commit_message)
         # Update the previous locked state
         previous_locked_state = current_locked_state
