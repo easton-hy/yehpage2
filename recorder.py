@@ -15,6 +15,9 @@ html_file_path="G:/yehpage2/plugin-page/heatmap.html"
 local_repo_path = r'G:\yehpage2'
 commit_message = f'Automated heatmap update on {datetime.now().strftime("%Y-%m-%d %H:%M:%S")}'
 
+up_load_hour=3
+up_load_min=0
+
 # Initialize variables
 start_time = None
 minute_usage_time = timedelta()
@@ -207,7 +210,7 @@ def monitor_usage():
         if total_time_cal.minute == 0 and 0 <= total_time_cal.second <= 9:
             read_duration_hours(total_time_cal,log_file_path)
 
-        if total_time_cal.hour == 12 and total_time_cal.minute == 5 and 0 <= total_time_cal.second <= 9:
+        if total_time_cal.hour == up_load_hour and total_time_cal.minute == up_load_min and 0 <= total_time_cal.second <= 9:
             add_data_to_html(html_file_path,log_total_path_pre, local_repo_path, commit_message)
         # Update the previous locked state
         previous_locked_state = current_locked_state

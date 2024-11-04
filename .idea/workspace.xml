@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bbd839f7-b656-4a57-b7bd-a85556d3b762" name="Changes" comment="" />
+    <list default="true" id="bbd839f7-b656-4a57-b7bd-a85556d3b762" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/build/recorder/Analysis-00.toc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/recorder/EXE-00.toc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/recorder/PKG-00.toc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/recorder/PYZ-00.pyz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/recorder/PYZ-00.toc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/recorder/base_library.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/recorder/recorder.pkg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/recorder/warn-recorder.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/recorder/xref-recorder.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/recorder.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugin-page/heatmap_record/usage_time_log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/plugin-page/heatmap_record/usage_time_log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recorder.exe" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,6 +43,7 @@
       <option name="presentableId" value="Default" />
       <updated>1710770805158</updated>
       <workItem from="1710770808799" duration="48000" />
+      <workItem from="1730653706543" duration="4000" />
     </task>
     <servers />
   </component>
