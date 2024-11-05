@@ -30,7 +30,23 @@
 	align-items: center;
 }
 
+.heatmap-container {
+    display: flex;
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+	height: auto;
+}
+
+#heatmap-iframe {
+	width: 100%;
+	height: 200px;
+	justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+}
+
 
 @media (max-width: 768px) {
 	.gallery-container{grid-template-columns: repeat(1, 1fr)}
+	#heatmap-iframe {width: auto; height: 110%; margin-bottom: 0px;}
+
 }

@@ -11,7 +11,7 @@
 			display: flex;
 			flex-direction: column;
 			align-items: center;
-			height: 100vh;
+			height: auto;
 			margin: 0;
 		}
 		#cal-heatmap-2023, #cal-heatmap-2024 {
@@ -458,7 +458,7 @@
 					itemName: ["research hour", "research hours"],
 					data: dataday,
 					afterLoadData: parser,
-					subDomainTextFormat: "%d",
+					subDomainTextFormat: "",
 					range: window.innerWidth > 768 ? 12 : 3,
 					domainGutter: 0,
 					displayLegend: legendornot,
@@ -468,12 +468,17 @@
 					start: window.innerWidth > 768 ? new Date(year, 0, 1) : new Date(year, now.getMonth() - 2, 1),
 					end: new Date(year, 11, 31),
 					scale: [10, 20, 80],
+					label:{color: 'black'},
+					displayLegend: false,
 					legendVerticalPosition: legendposi,
-					legend: [2, 4, 6, 8, 10],
+					legend: [4, 6, 8, 10, 12],
 					legendColors: {
-						min: '#ededed',
-						max: '#f20013',
-						empty: '#ededed'
+						min: '#ededed', 
+						low: '#a8d3e6', 
+						mid: '#2C82C9',
+						high: '#1A4D7E', 
+						max: '#004E89', 
+						empty: '#ededed' 
 					}
 				};
 			}
@@ -483,11 +488,11 @@
 					itemSelector: "#cal-heatmap-" + year,
 					domain: "month",
 					subDomain: "day",
-					cellSize: 11,
+					cellSize: 13,
 					itemName: ["research hour", "research hours"],
 					data: dataday,
 					afterLoadData: parser,
-					subDomainTextFormat: "%d",
+					//subDomainTextFormat: "",//
 					range: window.innerWidth > 768 ? 12 : 3,
 					domainGutter: 0,
 					displayLegend: legendornot,
@@ -501,16 +506,20 @@
 						position: 'top',
 						height: 0,
 						offset:{x:0,y:-3},
+						color: 'black'
 					},
 					legendVerticalPosition: 'center',
 					legendHorizontalPosition: 'right',
 					legendOrientation: 'vertical',
 					legendMargin: [0, 10, 0, 0],
-					legend: [2, 4, 6, 8, 10],
+					legend: [4, 6, 8, 10, 12],
 					legendColors: {
-						min: '#ededed',
-						max: '#f20013',
-						empty: '#ededed'
+						min: '#ededed', 
+						low: '#a8d3e6', 
+						mid: '#2C82C9',
+						high: '#1A4D7E', 
+						max: '#004E89', 
+						empty: '#ededed' 
 					}
 				};
 			}
