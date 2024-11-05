@@ -7,10 +7,6 @@ import subprocess
 
 # Path to save log file
 log_file_path = "G:/yehpage2/plugin-page/heatmap_record/usage_time_log.txt"
-file_today = datetime.now()
-log_total_path = "G:/yehpage2/plugin-page/heatmap_record/"+file_today.strftime("%Y-%m-%d") + ".txt"
-pre_date=file_today - timedelta(days=1)
-log_total_path_pre="G:/yehpage2/plugin-page/heatmap_record/"+pre_date.strftime("%Y-%m-%d") + ".txt"
 html_file_path="G:/yehpage2/plugin-page/heatmap.html"
 local_repo_path = r'G:\yehpage2'
 commit_message = f'Automated heatmap update on {datetime.now().strftime("%Y-%m-%d %H:%M:%S")}'
@@ -113,7 +109,7 @@ def log_minute_usage(minute_start, duration):
 
     print(f"Logged 1-minute usage: {timestamp}, {duration_hours} hours")
 
-def read_duration_hours(minute_start,filename):
+def read_duration_hours(minute_start,filename, log_total_path):
     timestamp = minute_start.strftime('%Y-%m-%d %H:%M')
     duration_hours_list = []
     try:
@@ -206,11 +202,16 @@ def monitor_usage():
                 minute_usage_time = timedelta()
 
         total_time_cal=datetime.now()
+        log_total_path = "G:/yehpage2/plugin-page/heatmap_record/"+total_time_cal.strftime("%Y-%m-%d") + ".txt"
+        pre_date=total_time_cal - timedelta(days=1)
+        log_total_path_pre="G:/yehpage2/plugin-page/heatmap_record/"+pre_date.strftime("%Y-%m-%d") + ".txt"
+
         # Every two minutes, combine records
         if total_time_cal.minute == 0 and 0 <= total_time_cal.second <= 9:
-            read_duration_hours(total_time_cal,log_file_path)
+            read_duration_hours(total_time_cal,log_file_path, log_total_path)
 
         if total_time_cal.hour == up_load_hour and total_time_cal.minute == up_load_min and 0 <= total_time_cal.second <= 9:
+            commit_message = f'Automated heatmap update on {total_time_cal.strftime("%Y-%m-%d %H:%M:%S")}'
             add_data_to_html(html_file_path,log_total_path_pre, local_repo_path, commit_message)
         # Update the previous locked state
         previous_locked_state = current_locked_state
