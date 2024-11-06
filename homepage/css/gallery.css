@@ -36,6 +36,7 @@
     align-items: center;
 	margin: 0;
     padding: 0;
+	width: 101%;
 }
 
 #heatmap-iframe {
@@ -43,6 +44,7 @@
 	height: 212px;
 	justify-content: center;
     align-items: center;
+	
 }
 
 
