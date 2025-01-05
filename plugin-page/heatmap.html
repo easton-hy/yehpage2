@@ -757,7 +757,8 @@
 {date: '2024-12-31', value: 0.10019999999999998},
 {date: '2025-01-01', value: 5.819800000000004},
 {date: '2025-01-02', value: 5.185000000000003},
-{date: '2025-01-03', value: 2.8363000000000023}];
+{date: '2025-01-03', value: 2.8363000000000023},
+{date: '2025-01-04', value: 2.1937000000000024}];
 		/*月份会加一   所以是现在的（月份-1）输入现在的月份就行*/
 		var highlightDays2024 = [
 			new Date(2024, 1-1, 20),
@@ -778,6 +779,12 @@
 			console.log(item.date);  // 确认时间戳是否正确
 		});
 		
+
+		datas2025.forEach(function(item) {
+			item.date = convertDateToTimestamp(item.date);
+			console.log(item.date);  // 确认时间戳是否正确
+		});
+
 		var parser = function(data) {
 			var stats = {};
 			for (var d in data) {
