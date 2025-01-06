@@ -842,14 +842,14 @@
 				};
 			}
 
-			function initCalHeatMapPhone(year,dataday,highlightDays,legendornot) {
+			function initCalHeatMapPhone(year,dataday1,dataday2,highlightDays,legendornot) {
 				return {
 					itemSelector: "#cal-heatmap-" + year,
 					domain: "month",
 					subDomain: "day",
 					cellSize: 13,
 					itemName: ["research hour", "research hours"],
-					data: dataday,
+					data: dataday1,dataday2,
 					afterLoadData: parser,
 					//subDomainTextFormat: "",//
 					range: window.innerWidth > 768 ? 12 : 3,
@@ -890,7 +890,7 @@
 				cal.init(initCalHeatMap(2025,datas2025,highlightDays2025,false));
 			} else {
 				cal = new CalHeatMap();
-				cal.init(initCalHeatMapPhone(year,datas2025,highlightDays2025,true));
+				cal.init(initCalHeatMapPhone(year,datas2024,datas2025,highlightDays2025,true));
 			}
 		}
 
