@@ -14,9 +14,10 @@
 			height: auto;
 			margin: 0;
 		}
-		#cal-heatmap-2023, #cal-heatmap-2024 {
-			width: 100%;
+		#cal-heatmap-2023, #cal-heatmap-2024, #cal-heatmap-2025 {
+			width: auto;
 			margin: 0px;
+			align-items: center;
 		}
 	</style> 
 </head>    
@@ -25,6 +26,7 @@
 
     <div id="cal-heatmap-2023"></div>
     <div id="cal-heatmap-2024"></div>  
+	<div id="cal-heatmap-2025"></div>
 
     <script type="text/javascript"> 
 		var datas2023 = [
@@ -754,17 +756,24 @@
 {date: '2024-12-25', value: 4.049600000000003},
 {date: '2024-12-27', value: 10.53600000000001},
 {date: '2024-12-30', value: 6.384600000000006},
-{date: '2024-12-31', value: 0.10019999999999998},
-{date: '2025-01-01', value: 5.819800000000004},
-{date: '2025-01-02', value: 5.185000000000003},
-{date: '2025-01-03', value: 2.8363000000000023},
-{date: '2025-01-04', value: 2.1937000000000024}];
+{date: '2024-12-31', value: 0.10019999999999998},];
 		/*月份会加一   所以是现在的（月份-1）输入现在的月份就行*/
 		var highlightDays2024 = [
 			new Date(2024, 1-1, 20),
 			new Date(2024, 7-1, 15),
 		];
 		
+		var datas2025 = [
+			{date: '2025-01-01', value: 5.819800000000004},
+			{date: '2025-01-02', value: 5.185000000000003},
+			{date: '2025-01-03', value: 2.8363000000000023},
+			{date: '2025-01-04', value: 2.1937000000000024},
+		];
+
+		var highlightDays2025 = [
+			new Date(2025, 2-1, 6),
+			new Date(2025, 7-1, 15),
+		];
 		function convertDateToTimestamp(dateString) {
 			let date = new Date(dateString + "T00:00:00"); // 明确设置到本地的午夜
 			return date.getTime() / 1000;  // 返回秒为单位的时间戳
@@ -803,7 +812,7 @@
 					itemSelector: "#cal-heatmap-" + year,
 					domain: "month",
 					subDomain: "day",
-					cellSize: 11,
+					cellSize: 12,
 					itemName: ["research hour", "research hours"],
 					data: dataday,
 					afterLoadData: parser,
@@ -874,13 +883,13 @@
 			}
 
 			if (window.innerWidth > 768) {
+				//cal = new CalHeatMap();
+				//cal.init(initCalHeatMap(2024,datas2024,highlightDays2024,true));
 				cal = new CalHeatMap();
-				cal.init(initCalHeatMap(2023,datas2023,highlightDays2023,true));
-				cal = new CalHeatMap();
-				cal.init(initCalHeatMap(2024,datas2024,highlightDays2024,false));
+				cal.init(initCalHeatMap(2025,datas2025,highlightDays2025,false));
 			} else {
 				cal = new CalHeatMap();
-				cal.init(initCalHeatMapPhone(year,datas2024,highlightDays2024,true));
+				cal.init(initCalHeatMapPhone(year,datas2025,highlightDays2025,true));
 			}
 		}
 
