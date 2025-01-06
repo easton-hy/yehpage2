@@ -20,6 +20,8 @@ log_file_path = "G:/yehpage2/plugin-page/heatmap_record/usage_time_log.txt"
 html_file_path="G:/yehpage2/plugin-page/heatmap.html"
 local_repo_path = r'G:\yehpage2'
 commit_message = f'Automated heatmap update on {datetime.now().strftime("%Y-%m-%d %H:%M:%S")}'
+username = 'easton-hy'
+personal_access_token = 'hy@456123'
 
 up_load_hour=3
 up_load_min=0
@@ -37,10 +39,15 @@ user32 = ctypes.windll.User32
 def upload_web(repo_path, commit_message):
     try:
         os.chdir(repo_path)
+        subprocess.run(['git', 'config', '--global', 'credential.helper', 'store'], check=True)
+        subprocess.run(['git', 'config', '--global', 'user.name', username], check=True)
+        subprocess.run(['git', 'config', '--global', 'user.password', personal_access_token], check=True)
+
         subprocess.run(['git', 'pull'], check=True)
         subprocess.run(['git', 'add', '.'], check=True)
         subprocess.run(['git', 'commit', '-m', commit_message], check=True)
         subprocess.run(['git', 'push'], check=True)
+        subprocess.run(['git', 'push', f'https://{username}:{personal_access_token}@github.com/{username}/{os.path.basename(repo_path)}.git'], check=True)
 
         print("Update and push completed successfully.")
     
