@@ -31,20 +31,16 @@
 }
 
 .heatmap-container {
-    display: flex;
+    display:flex ;
     justify-content: center;
     align-items: center;
-	margin: 0;
-    padding: 0;
-	width: 101%;
+	width: 100%;
 }
 
 #heatmap-iframe {
-	width: 100%;
-	height: auto;
+	width:max-content;
 	justify-content: center;
     align-items: center;
-	
 }
 
 
