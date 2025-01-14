@@ -11,8 +11,9 @@
 			display: flex;
 			flex-direction: column;
 			align-items: center;
-			height: auto;
 			margin: 0;
+			flex-direction: column;
+			width: auto;
 		}
 		#cal-heatmap-2023, #cal-heatmap-2024, #cal-heatmap-2025 {
 			width: auto;
@@ -773,7 +774,8 @@
 {date: '2025-01-06', value: 7.953000000000008},
 {date: '2025-01-08', value: 10.367600000000008},
 {date: '2025-01-09', value: 3.9603000000000006},
-{date: '2025-01-10', value: 3.5542000000000025}];
+{date: '2025-01-10', value: 3.5542000000000025},
+{date: '2025-01-13', value: 7.711000000000004}];
 
 		var highlightDays2025 = [
 			new Date(2025, 2-1, 6),
@@ -817,7 +819,7 @@
 					itemSelector: "#cal-heatmap-" + year,
 					domain: "month",
 					subDomain: "day",
-					cellSize: 12,
+					cellSize: 10,
 					itemName: ["research hour", "research hours"],
 					data: dataday,
 					afterLoadData: parser,
@@ -894,7 +896,7 @@
 				cal.init(initCalHeatMap(2025,datas2025,highlightDays2025,true));
 			} else {
 				cal = new CalHeatMap();
-				cal.init(initCalHeatMapPhone(year,datas2024,datas2025,highlightDays2025,true));
+				cal.init(initCalHeatMapPhone(year,datas2025,highlightDays2025,true));
 			}
 		}
 

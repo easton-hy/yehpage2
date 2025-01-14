@@ -31,14 +31,14 @@
 }
 
 .heatmap-container {
-    display:flex ;
+    display: contents;
     justify-content: center;
     align-items: center;
-	width: 100%;
 }
 
 #heatmap-iframe {
-	width:max-content;
+	width: 100%;
+	zoom: 0.9;
 	justify-content: center;
     align-items: center;
 }
