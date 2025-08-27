@@ -396,7 +396,8 @@ h6 { font-size: 16px; }
 	left: 0px;
 	right: 0px;
 	z-index: 10;
-	background-color: #fff;
+	/* background-color: #fff; */
+	background-color: rgba(245, 245, 245, 0.5);
 }
 .erling_tm_header .header_inner{
 	width: 100%;
@@ -478,6 +479,31 @@ h6 { font-size: 16px; }
 }
 
 /*---------------------------------------------------*/
+/*	04) ERLING HERO BACKGROUND VIDEO
+/*---------------------------------------------------*/
+
+.background-video {
+    position: fixed;   /* stays behind everything */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* covers entire area */
+    z-index: -2;
+}
+
+/* Bottom 40% transparent black overlay */
+.bottom-overlay {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.4); /* 40% transparency */
+    z-index: -1;
+}
+
+/*---------------------------------------------------*/
 /*	04) ERLING HERO
 /*---------------------------------------------------*/
 
@@ -485,6 +511,7 @@ h6 { font-size: 16px; }
 	width: 100%;
 	min-height: 100vh;
 	position: relative;
+	z-index: 1;
 }
 
 .erling_tm_hero .content{
@@ -508,6 +535,7 @@ h6 { font-size: 16px; }
 	background-repeat: no-repeat;
 	background-position:center;
 	background-size: cover;
+	background-color: rgba(255, 255, 255, 0.5);
 	/*animation: morph 8s ease-in-out infinite;      remove the animation*/
 	border-radius: 45% 35% 70% 40% / 45% 55% 50% 60%;
 	background-blend-mode: multiply;
@@ -539,11 +567,12 @@ h6 { font-size: 16px; }
 	padding-left: 70px;
 }
 .erling_tm_hero .text .stroke{
-	color: transparent;
+	font-size: 110px;
+	color: white;
 	 -webkit-text-stroke: 1px #000;
 }
 .erling_tm_hero .text h3{
-	font-size: 130px;
+	font-size: 110px;
 	font-weight: 800;
 	line-height: 1.1;
 	text-transform: uppercase;
@@ -560,7 +589,7 @@ h6 { font-size: 16px; }
 
 .erling_tm_hero .job{
 	display: inline-block;
-	background-color: #f5f5f5;
+	background-color: rgba(255, 255, 255, 0.7);
 	padding: 15px 30px;
 	margin-top: 30px;
 }
