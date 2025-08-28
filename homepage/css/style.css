@@ -539,9 +539,9 @@ h6 { font-size: 16px; }
 	/*animation: morph 8s ease-in-out infinite;      remove the animation*/
 	border-radius: 45% 35% 70% 40% / 45% 55% 50% 60%;
 	background-blend-mode: multiply;
-	-webkit-box-shadow: inset 0px 0px 0px 18px rgba(213, 213, 213, 0.8);
-    -moz-box-shadow: inset 0px 0px 0px 18px rgba(213, 213, 213,.8);
-    box-shadow: inset 0px 0px 0px 18px rgba(213, 213, 213,.8);
+	-webkit-box-shadow: inset 0px 0px 0px 18px rgba(213, 213, 213, 0.5);
+    -moz-box-shadow: inset 0px 0px 0px 18px rgba(213, 213, 213,.5);
+    box-shadow: inset 0px 0px 0px 18px rgba(213, 213, 213,.5);
 }
 /*
 @keyframes morph {
