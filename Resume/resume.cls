@@ -27,6 +27,7 @@
 \usepackage{ifthen} % Required for ifthenelse statements
 \usepackage{ctex}
 \newcommand{\stxk}{\CJKfamily{mhwxk}}
+\newcommand{\pubitem}[2]{\item[\text{#1.}] #2}
 
 \pagestyle{empty} % Suppress page numbers
 
@@ -108,6 +109,23 @@
   \end{list}
 }
 
+\newenvironment{rSection_pub}[1]{%
+  \sectionskip
+  \MakeUppercase{\bf #1}%
+  \sectionlineskip
+  \hrule
+  \begin{list}{}{%
+    \setlength{\labelwidth}{2.5em}% width for labels (e.g., "C10.")
+    \setlength{\labelsep}{0.5em}%
+    \setlength{\leftmargin}{3em}% = labelwidth + labelsep
+    \setlength{\itemsep}{0.8ex}%
+    \setlength{\parsep}{0pt}%
+    \setlength{\topsep}{0.5ex}%
+  }%
+}{%
+  \end{list}\vspace{-0.5em}%
+}
+
 \newenvironment{eduexp}[4]{ % 4 input arguments - company name, year(s) employed, job title and location
  {\bf #1} \hfill {#2} % Bold company name and date on the right
  \ifthenelse{\equal{#3}{}}{}{ % If the third argument is not specified, don't print the job title and location line
@@ -133,7 +151,6 @@
   \end{list}
   \vspace{-1em} % Some space after the list of bullet points
 }
-
 
 \newenvironment{rSubsubsection}[6]{ % 4 input arguments - company name, year(s) employed, job title and location
 	{\bf #1} \hfill {#2} % Bold company name and date on the right
