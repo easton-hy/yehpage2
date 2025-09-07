@@ -120,11 +120,41 @@
     \setlength{\leftmargin}{3em}% = labelwidth + labelsep
     \setlength{\itemsep}{0.8ex}%
     \setlength{\parsep}{0pt}%
-    \setlength{\topsep}{0.5ex}%
+    %\setlength{\topsep}{0.5ex}%
   }%
+  \item[]
 }{%
-  \end{list}\vspace{-0.5em}%
+  \end{list}
 }
+
+\newenvironment{rSection_review}[1]{%
+  \sectionskip
+  \MakeUppercase{\bf #1}%
+  \sectionlineskip
+  \hrule
+  \begin{list}{}{%
+    %\setlength{\labelwidth}{2.5em}% width for labels (e.g., "C10.")
+    %\setlength{\labelsep}{0.5em}%
+    %\setlength{\leftmargin}{3em}% = labelwidth + labelsep
+    \setlength{\itemsep}{0.8ex}%
+    \setlength{\parsep}{0pt}%
+    \setlength{\leftmargin}{1.5em}
+    %\setlength{\topsep}{0.5ex}%
+  }%
+  \item[]
+}{%
+  \end{list}
+}
+
+\newcommand{\reviewitem}[2]{%
+  \item[\labelitemi] % force the bullet symbol
+  \begin{tabular*}{\linewidth}{@{}l@{\extracolsep{\fill}}r@{}}
+    #1 & \textit{#2} \\
+  \end{tabular*}%
+}
+
+
+
 
 \newenvironment{eduexp}[4]{ % 4 input arguments - company name, year(s) employed, job title and location
  {\bf #1} \hfill {#2} % Bold company name and date on the right
