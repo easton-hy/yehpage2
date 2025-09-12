@@ -163,7 +163,7 @@
 }
 .erling_tm_modalbox .news_popup_informations .text p{
 	margin-bottom: 10px;
-	text-align: justify;
+	/* text-align: left; */
 }
 .erling_tm_modalbox .news_popup_informations .text p:last-child{
 	margin-bottom: 0px;
