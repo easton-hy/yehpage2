@@ -15,7 +15,7 @@ window.addEventListener('scroll', function (e) {
 
 // typing
 const typing = new Typed(".typing", {
-    strings: ["PhD Student", "Graduate Assist.", "Photographer", "Scarlet Knight"],
+    strings: ["PhD Candidate", "Graduate Assist.", "Photographer", "Scarlet Knight"],
     typeSpeed: 100,
     backSpeed: 50,
     loop: true,
