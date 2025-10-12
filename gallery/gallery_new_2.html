@@ -10,15 +10,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <title>EYH's Gallery</title>
+    <!--
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
         integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    -->
     <link rel="shortcut icon" type="image/x-icon" href="../favicon.png">
 
     <link rel="stylesheet" href="A.style.css.pagespeed.cf.0VivtDGN1d.css">
     <!-- animate on scroll css  -->
+    <!---->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
+    
     <style>
         h1 {
             color: #eaeaea;
@@ -38,6 +41,10 @@
 </head>
 
 <body>
+
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
 
     <header class="header-area">
 
@@ -64,7 +71,7 @@
                             <div class="classynav" data-aos="fade-left" data-aos-duration="3000">
                                 <ul id="nav">
                                     <li><a href="../index.html">Home</a></li>
-                                    <li class="active"><a href="gallery.html">Public</a></li>
+                                    <li class="active"><a href="gallery_new.html">Public</a></li>
                                     <li><a href="../pwdpage/gallerypwd.html">Private</a></li>
                                 </ul>
 
@@ -107,15 +114,17 @@
             <!--Grid System bootstrap-->
             <div class="row">
                 <div class="col-12">
-                    <div class="lx-projects-menu" data-wow-delay="100ms">
+                    <div class="lx-projects-menu" data-wow-delay="0ms">
                         <div class="portfolio-menu text-center">
                             <button id="mygg" class="btn active" data-filter=" *">All</button>
                             <button id="mydd" class="btn" data-filter=" .top8">Top8</button>
                             <button class="btn" data-filter=" .other">Other</button>
-                            <button class="btn" data-filter=" .china">China</button>
-                            <button class="btn" data-filter=" .sg">Singapore</button>
-                            <button class="btn" data-filter=" .mys">Malaysia</button>
-                            <button class="btn" data-filter=" .idn">Indonesia</button>
+                            <button class="btn" data-filter=" .china">CHN</button>
+                            <button class="btn" data-filter=" .sg">SGP</button>
+                            <button class="btn" data-filter=" .usa">USA</button>
+                            <button class="btn" data-filter=" .jap">JPN</button>
+                            <button class="btn" data-filter=" .mys">MYS</button>
+                            <button class="btn" data-filter=" .idn">IDN</button>
                         </div>
                     </div>
                 </div>
@@ -128,45 +137,54 @@
                 <!-- end of try-->
 
                 <!-- 2024-->
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item other china mb-30 wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item other china mb-30 wow fadeInUp" data-wow-delay="0ms">
                     <div class="single-portfolio-content">
-                        <img src="img/public/240312@DGlib.jpg" alt="">
+                        <img src="img/public_reduce/241028@mygirl.jpg" alt="">
+                        <div class="hover-content">
+                            <a href="img/public/241028@mygirl.jpg" class="portfolio-img">+</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item other china mb-30 wow fadeInUp" data-wow-delay="0ms">
+                    <div class="single-portfolio-content">
+                        <img src="img/public_reduce/240312@DGlib.jpg" alt="">
                         <div class="hover-content">
                             <a href="img/public/240312@DGlib.jpg" class="portfolio-img">+</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="0ms">
                     <div class="single-portfolio-content">
-                        <img src="img/public/240310@DGshuilianshan2.jpg" alt="">
+                        <img src="img/public_reduce/240310@DGshuilianshan2.jpg" alt="">
                         <div class="hover-content">
                             <a href="img/public/240310@DGshuilianshan2.jpg" class="portfolio-img">+</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="0ms">
                     <div class="single-portfolio-content">
-                        <img src="img/public/240310@DGshuilianshan1.jpg" alt="">
+                        <img src="img/public_reduce/240310@DGshuilianshan1.jpg" alt="">
                         <div class="hover-content">
                             <a href="img/public/240310@DGshuilianshan1.jpg" class="portfolio-img">+</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item other china mb-30 wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item other china mb-30 wow fadeInUp" data-wow-delay="0ms">
                     <div class="single-portfolio-content">
-                        <img src="img/public/240308@DGmom.jpg" alt="">
+                        <img src="img/public_reduce/240308@DGmom.jpg" alt="">
                         <div class="hover-content">
                             <a href="img/public/240308@DGmom.jpg" class="portfolio-img">+</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item other sg mb-30 wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item other sg mb-30 wow fadeInUp" data-wow-delay="0ms">
                     <div class="single-portfolio-content">
-                        <img src="img/public/240101@SGmarinabay.jpg" alt="">
+                        <img src="img/public_reduce/240101@SGmarinabay.jpg" alt="">
                         <div class="hover-content">
                             <a href="img/public/240101@SGmarinabay.jpg" class="portfolio-img">+</a>
                         </div>
@@ -179,99 +197,81 @@
                 
                 <!-- china-->
 
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item other china mb-30 wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item other china mb-30 wow fadeInUp" data-wow-delay="0ms">
                     <div class="single-portfolio-content">
-                        <img src="img/public/231204@XMplane2.jpg" alt="">
-                        <div class="hover-content">
-                            <a href="img/public/231204@XMplane2.jpg" class="portfolio-img">+</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item other china mb-30 wow fadeInUp" data-wow-delay="100ms">
-                    <div class="single-portfolio-content">
-                        <img src="img/public/231204@XMplane.jpg" alt="">
+                        <img src="img/public_reduce/231204@XMplane.jpg" alt="">
                         <div class="hover-content">
                             <a href="img/public/231204@XMplane.jpg" class="portfolio-img">+</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item sg mb-30 wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item other sg mb-30 wow fadeInUp" data-wow-delay="0ms">
                     <div class="single-portfolio-content">
-                        <img src="img/public/231008@SGchinatown.jpg" alt="">
-                        <div class="hover-content">
-                            <a href="img/public/231008@SGchinatown.jpg" class="portfolio-img">+</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item other sg mb-30 wow fadeInUp" data-wow-delay="100ms">
-                    <div class="single-portfolio-content">
-                        <img src="img/public/230928@SGnus.jpg" alt="">
+                        <img src="img/public_reduce/230928@SGnus.jpg" alt="">
                         <div class="hover-content">
                             <a href="img/public/230928@SGnus.jpg" class="portfolio-img">+</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item mys mb-30 wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item mys mb-30 wow fadeInUp" data-wow-delay="0ms">
                     <div class="single-portfolio-content">
-                        <img src="img/public/230805@Penang.jpg" alt="">
+                        <img src="img/public_reduce/230805@Penang.jpg" alt="">
                         <div class="hover-content">
                             <a href="img/public/230805@Penang.jpg" class="portfolio-img">+</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="0ms">
                     <div class="single-portfolio-content">
-                        <img src="img/public/230627@DLdut.JPG" alt="">
+                        <img src="img/public_reduce/230627@DLdut.jpg" alt="">
                         <div class="hover-content">
                             <a href="img/public/230627@DLdut.JPG" class="portfolio-img">+</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="0ms">
                     <div class="single-portfolio-content">
-                        <img src="img/public/230625@XM4.jpg" alt="">
+                        <img src="img/public_reduce/230625@XM4.jpg" alt="">
                         <div class="hover-content">
                             <a href="img/public/230625@XM4.jpg" class="portfolio-img">+</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="0ms">
                     <div class="single-portfolio-content">
-                        <img src="img/public/230625@XM3.JPG" alt="">
+                        <img src="img/public_reduce/230625@XM3.jpg" alt="">
                         <div class="hover-content">
                             <a href="img/public/230625@XM3.JPG" class="portfolio-img">+</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="0ms">
                     <div class="single-portfolio-content">
-                        <img src="img/public/230625@XM2.JPG" alt="">
+                        <img src="img/public_reduce/230625@XM2.jpg" alt="">
                         <div class="hover-content">
                             <a href="img/public/230625@XM2.JPG" class="portfolio-img">+</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="0ms">
                     <div class="single-portfolio-content">
-                        <img src="img/public/230625@XM.JPG" alt="">
+                        <img src="img/public_reduce/230625@XM.jpg" alt="">
                         <div class="hover-content">
                             <a href="img/public/230625@XM.JPG" class="portfolio-img">+</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item other top8 mb-30 wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item other top8 mb-30 wow fadeInUp" data-wow-delay="0ms">
                     <div class="single-portfolio-content">
-                        <img src="img/public/230605@XM.jpg" alt="">
+                        <img src="img/public_reduce/230605@XM.jpg" alt="">
                         <div class="hover-content">
                             <a href="img/public/230605@XM.jpg" class="portfolio-img">+</a>
                         </div>
@@ -281,216 +281,189 @@
 
                 <!-- malaysia-->
 
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item mys other mb-30 wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item mys other mb-30 wow fadeInUp" data-wow-delay="0ms">
                     <div class="single-portfolio-content">
-                        <img src="img/public/230511@LGW4.jpg" alt="">
+                        <img src="img/public_reduce/230511@LGW4.jpg" alt="">
                         <div class="hover-content">
                             <a href="img/public/230511@LGW4.jpg" class="portfolio-img">+</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item mys other mb-30 wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item mys other mb-30 wow fadeInUp" data-wow-delay="0ms">
                     <div class="single-portfolio-content">
-                        <img src="img/public/230511@LGW3.jpg" alt="">
+                        <img src="img/public_reduce/230511@LGW3.jpg" alt="">
                         <div class="hover-content">
                             <a href="img/public/230511@LGW3.jpg" class="portfolio-img">+</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item mys mb-30 wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item mys mb-30 wow fadeInUp" data-wow-delay="0ms">
                     <div class="single-portfolio-content">
-                        <img src="img/public/230511@LGW2.JPG" alt="">
+                        <img src="img/public_reduce/230511@LGW2.jpg" alt="">
                         <div class="hover-content">
                             <a href="img/public/230511@LGW2.JPG" class="portfolio-img">+</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item mys mb-30 wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item mys mb-30 wow fadeInUp" data-wow-delay="0ms">
                     <div class="single-portfolio-content">
-                        <img src="img/public/230511@LGW.JPG" alt="">
+                        <img src="img/public_reduce/230511@LGW.jpg" alt="">
                         <div class="hover-content">
                             <a href="img/public/230511@LGW.JPG" class="portfolio-img">+</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item mys mb-30 wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item mys mb-30 wow fadeInUp" data-wow-delay="0ms">
                     <div class="single-portfolio-content">
-                        <img src="img/public/230511@KL9.jpg" alt="">
+                        <img src="img/public_reduce/230511@KL9.jpg" alt="">
                         <div class="hover-content">
                             <a href="img/public/230511@KL9.jpg" class="portfolio-img">+</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item mys mb-30 wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item mys mb-30 wow fadeInUp" data-wow-delay="0ms">
                     <div class="single-portfolio-content">
-                        <img src="img/public/230511@KL8.jpg" alt="">
-                        <div class="hover-content">
-                            <a href="img/public/230511@KL8.jpg" class="portfolio-img">+</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item mys mb-30 wow fadeInUp" data-wow-delay="100ms">
-                    <div class="single-portfolio-content">
-                        <img src="img/public/230511@KL7.jpg" alt="">
-                        <div class="hover-content">
-                            <a href="img/public/230511@KL7.jpg" class="portfolio-img">+</a>
-                        </div>
-                    </div>
-                </div> 
-
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item mys mb-30 wow fadeInUp" data-wow-delay="100ms">
-                    <div class="single-portfolio-content">
-                        <img src="img/public/230511@KL6.JPG" alt="">
+                        <img src="img/public_reduce/230511@KL6.jpg" alt="">
                         <div class="hover-content">
                             <a href="img/public/230511@KL6.JPG" class="portfolio-img">+</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item mys mb-30 wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item mys mb-30 wow fadeInUp" data-wow-delay="0ms">
                     <div class="single-portfolio-content">
-                        <img src="img/public/230511@KL5.JPG" alt="">
+                        <img src="img/public_reduce/230511@KL5.jpg" alt="">
                         <div class="hover-content">
                             <a href="img/public/230511@KL5.JPG" class="portfolio-img">+</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item mys mb-30 wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item mys mb-30 wow fadeInUp" data-wow-delay="0ms">
                     <div class="single-portfolio-content">
-                        <img src="img/public/230511@KL4.JPG" alt="">
+                        <img src="img/public_reduce/230511@KL4.jpg" alt="">
                         <div class="hover-content">
                             <a href="img/public/230511@KL4.JPG" class="portfolio-img">+</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item mys mb-30 wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item mys mb-30 wow fadeInUp" data-wow-delay="0ms">
                     <div class="single-portfolio-content">
-                        <img src="img/public/230511@KL3.JPG" alt="">
+                        <img src="img/public_reduce/230511@KL3.jpg" alt="">
                         <div class="hover-content">
                             <a href="img/public/230511@KL3.JPG" class="portfolio-img">+</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item mys other mb-30 wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item mys other mb-30 wow fadeInUp" data-wow-delay="0ms">
                     <div class="single-portfolio-content">
-                        <img src="img/public/230511@KL2.JPG" alt="">
-                        <div class="hover-content">
-                            <a href="img/public/230511@KL2.JPG" class="portfolio-img">+</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item mys other mb-30 wow fadeInUp" data-wow-delay="100ms">
-                    <div class="single-portfolio-content">
-                        <img src="img/public/230511@KL.JPG" alt="">
+                        <img src="img/public_reduce/230511@KL.jpg" alt="">
                         <div class="hover-content">
                             <a href="img/public/230511@KL.JPG" class="portfolio-img">+</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item idn mb-30 wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item idn mb-30 wow fadeInUp" data-wow-delay="0ms">
                     <div class="single-portfolio-content">
-                        <img src="img/public/230502@IDbatan3.jpg" alt="">
+                        <img src="img/public_reduce/230502@IDbatan3.jpg" alt="">
                         <div class="hover-content">
                             <a href="img/public/230502@IDbatan3.jpg" class="portfolio-img">+</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item idn mb-30 wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item idn mb-30 wow fadeInUp" data-wow-delay="0ms">
                     <div class="single-portfolio-content">
-                        <img src="img/public/230502@IDbatan2.jpg" alt="">
+                        <img src="img/public_reduce/230502@IDbatan2.jpg" alt="">
                         <div class="hover-content">
                             <a href="img/public/230502@IDbatan2.jpg" class="portfolio-img">+</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item idn mb-30 wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item idn mb-30 wow fadeInUp" data-wow-delay="0ms">
                     <div class="single-portfolio-content">
-                        <img src="img/public/230502@IDbatan.JPG" alt="">
+                        <img src="img/public_reduce/230502@IDbatan.jpg" alt="">
                         <div class="hover-content">
                             <a href="img/public/230502@IDbatan.JPG" class="portfolio-img">+</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item idn other mb-30 wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item idn other mb-30 wow fadeInUp" data-wow-delay="0ms">
                     <div class="single-portfolio-content">
-                        <img src="img/public/230501@IDbatan7.jpg" alt="">
+                        <img src="img/public_reduce/230501@IDbatan7.jpg" alt="">
                         <div class="hover-content">
                             <a href="img/public/230501@IDbatan7.jpg" class="portfolio-img">+</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item idn other mb-30 wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item idn other mb-30 wow fadeInUp" data-wow-delay="0ms">
                     <div class="single-portfolio-content">
-                        <img src="img/public/230501@IDbatan6.jpg" alt="">
+                        <img src="img/public_reduce/230501@IDbatan6.jpg" alt="">
                         <div class="hover-content">
                             <a href="img/public/230501@IDbatan6.jpg" class="portfolio-img">+</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item idn mb-30 wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item idn mb-30 wow fadeInUp" data-wow-delay="0ms">
                     <div class="single-portfolio-content">
-                        <img src="img/public/230501@IDbatan5.JPG" alt="">
+                        <img src="img/public_reduce/230501@IDbatan5.jpg" alt="">
                         <div class="hover-content">
                             <a href="img/public/230501@IDbatan5.JPG" class="portfolio-img">+</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item idn other mb-30 wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item idn other mb-30 wow fadeInUp" data-wow-delay="0ms">
                     <div class="single-portfolio-content">
-                        <img src="img/public/230501@IDbatan4.jpg" alt="">
+                        <img src="img/public_reduce/230501@IDbatan4.jpg" alt="">
                         <div class="hover-content">
                             <a href="img/public/230501@IDbatan4.jpg" class="portfolio-img">+</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item idn mb-30 wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item idn mb-30 wow fadeInUp" data-wow-delay="0ms">
                     <div class="single-portfolio-content">
-                        <img src="img/public/230501@IDbatan3.jpg" alt="">
+                        <img src="img/public_reduce/230501@IDbatan3.jpg" alt="">
                         <div class="hover-content">
                             <a href="img/public/230501@IDbatan3.jpg" class="portfolio-img">+</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item idn other mb-30 wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item idn other mb-30 wow fadeInUp" data-wow-delay="0ms">
                     <div class="single-portfolio-content">
-                        <img src="img/public/230501@IDbatan2.JPG" alt="">
+                        <img src="img/public_reduce/230501@IDbatan2.jpg" alt="">
                         <div class="hover-content">
                             <a href="img/public/230501@IDbatan2.JPG" class="portfolio-img">+</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item idn mb-30 wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item idn mb-30 wow fadeInUp" data-wow-delay="0ms">
                     <div class="single-portfolio-content">
-                        <img src="img/public/230501@IDbatan.JPG" alt="">
+                        <img src="img/public_reduce/230501@IDbatan.jpg" alt="">
                         <div class="hover-content">
                             <a href="img/public/230501@IDbatan.JPG" class="portfolio-img">+</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item sg other mb-30 wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item sg other mb-30 wow fadeInUp" data-wow-delay="0ms">
                     <div class="single-portfolio-content">
-                        <img src="img/public/230115@SGMacRitchie.JPG" alt="">
+                        <img src="img/public_reduce/230115@SGMacRitchie.jpg" alt="">
                         <div class="hover-content">
                             <a href="img/public/230115@SGMacRitchie.JPG" class="portfolio-img">+</a>
                         </div>
@@ -501,301 +474,223 @@
 
                 <!-- 2022-->
 
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item sg mb-30 wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item sg mb-30 wow fadeInUp" data-wow-delay="0ms">
                     <div class="single-portfolio-content">
-                        <img src="img/public/221002@SGmarinabay.jpg"alt="">
+                        <img src="img/public_reduce/221002@SGmarinabay.jpg"alt="">
                         <div class="hover-content">
                             <a href="img/public/221002@SGmarinabay.jpg" class="portfolio-img">+</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item sg mb-30 wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item sg mb-30 wow fadeInUp" data-wow-delay="0ms">
                     <div class="single-portfolio-content">
-                        <img src="img/public/221002@SGdover.JPG"alt="">
-                        <div class="hover-content">
-                            <a href="img/public/221002@SGdover.JPG" class="portfolio-img">+</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item sg mb-30 wow fadeInUp" data-wow-delay="100ms">
-                    <div class="single-portfolio-content">
-                        <img src="img/public/221002@SGchinatown.JPG"alt="">
-                        <div class="hover-content">
-                            <a href="img/public/221002@SGchinatown.JPG" class="portfolio-img">+</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item sg mb-30 wow fadeInUp" data-wow-delay="100ms">
-                    <div class="single-portfolio-content">
-                        <img src="img/public/220728@SGNUS2.JPG"alt="">
+                        <img src="img/public_reduce/220728@SGNUS2.jpg"alt="">
                         <div class="hover-content">
                             <a href="img/public/220728@SGNUS2.JPG" class="portfolio-img">+</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item sg mb-30 wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item sg mb-30 wow fadeInUp" data-wow-delay="0ms">
                     <div class="single-portfolio-content">
-                        <img src="img/public/220728@SGNUS.JPG"alt="">
+                        <img src="img/public_reduce/220728@SGNUS.jpg"alt="">
                         <div class="hover-content">
                             <a href="img/public/220728@SGNUS.JPG" class="portfolio-img">+</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="0ms">
                     <div class="single-portfolio-content">
-                        <img src="img/public/220707@CZ5.jpg"alt="">
+                        <img src="img/public_reduce/220707@CZ5.jpg"alt="">
                         <div class="hover-content">
                             <a href="img/public/220707@CZ5.jpg" class="portfolio-img">+</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item other china mb-30 wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item other china mb-30 wow fadeInUp" data-wow-delay="0ms">
                     <div class="single-portfolio-content">
-                        <img src="img/public/220707@CZ4.jpg"alt="">
-                        <div class="hover-content">
-                            <a href="img/public/220707@CZ4.jpg" class="portfolio-img">+</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item other china mb-30 wow fadeInUp" data-wow-delay="100ms">
-                    <div class="single-portfolio-content">
-                        <img src="img/public/220707@CZ3.jpg"alt="">
+                        <img src="img/public_reduce/220707@CZ3.jpg"alt="">
                         <div class="hover-content">
                             <a href="img/public/220707@CZ3.jpg" class="portfolio-img">+</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="0ms">
                     <div class="single-portfolio-content">
-                        <img src="img/public/220707@CZ2.JPG"alt="">
+                        <img src="img/public_reduce/220707@CZ2.jpg"alt="">
                         <div class="hover-content">
                             <a href="img/public/220707@CZ2.JPG" class="portfolio-img">+</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="0ms">
                     <div class="single-portfolio-content">
-                        <img src="img/public/220707@CZ.JPG"alt="">
+                        <img src="img/public_reduce/220707@CZ.jpg"alt="">
                         <div class="hover-content">
                             <a href="img/public/220707@CZ.JPG" class="portfolio-img">+</a>
                         </div>
                     </div>
                 </div>
-
+        
                 <!-- End of 2022-->
+            </div>
 
+
+            <!-- view more button-->
+            <div class="row">
+                <div class="col-12 text-center wow fadeInUp" data-wow-delay="800ms">
+                    <a href="#" class="btn lx-btn btn-2 mt-15">View More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+        <div class="instragram-feed-area owl-carousel"><
                 <!-- 2021-->
 
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item other china mb-30 wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="0ms">
                     <div class="single-portfolio-content">
-                        <img src="img/public/211228@SZmusem24.jpg"alt="">
-                        <div class="hover-content">
-                            <a href="img/public/211228@SZmusem24.jpg" class="portfolio-img">+</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="100ms">
-                    <div class="single-portfolio-content">
-                        <img src="img/public/211228@SZmusem23.JPG"alt="">
+                        <img src="img/public_reduce/211228@SZmusem23.jpg"alt="">
                         <div class="hover-content">
                             <a href="img/public/211228@SZmusem23.JPG" class="portfolio-img">+</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item other china mb-30 wow fadeInUp" data-wow-delay="0ms">
                     <div class="single-portfolio-content">
-                        <img src="img/public/211228@SZmusem22.JPG"alt="">
-                        <div class="hover-content">
-                            <a href="img/public/211228@SZmusem22.JPG" class="portfolio-img">+</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item other china mb-30 wow fadeInUp" data-wow-delay="100ms">
-                    <div class="single-portfolio-content">
-                        <img src="img/public/211228@SZmusem21.JPG"alt="">
+                        <img src="img/public_reduce/211228@SZmusem21.jpg"alt="">
                         <div class="hover-content">
                             <a href="img/public/211228@SZmusem21.JPG" class="portfolio-img">+</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="0ms">
                     <div class="single-portfolio-content">
-                        <img src="img/public/211228@SZmusem20.JPG"alt="">
-                        <div class="hover-content">
-                            <a href="img/public/211228@SZmusem20.JPG" class="portfolio-img">+</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="100ms">
-                    <div class="single-portfolio-content">
-                        <img src="img/public/211228@SZmusem19.JPG"alt="">
+                        <img src="img/public_reduce/211228@SZmusem19.jpg"alt="">
                         <div class="hover-content">
                             <a href="img/public/211228@SZmusem19.JPG" class="portfolio-img">+</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item other china mb-30 wow fadeInUp" data-wow-delay="0ms">
                     <div class="single-portfolio-content">
-                        <img src="img/public/211228@SZmusem18.JPG"alt="">
-                        <div class="hover-content">
-                            <a href="img/public/211228@SZmusem18.JPG" class="portfolio-img">+</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item other china mb-30 wow fadeInUp" data-wow-delay="100ms">
-                    <div class="single-portfolio-content">
-                        <img src="img/public/211228@SZmusem17.JPG"alt="">
+                        <img src="img/public_reduce/211228@SZmusem17.jpg"alt="">
                         <div class="hover-content">
                             <a href="img/public/211228@SZmusem17.JPG" class="portfolio-img">+</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item other mb-30 wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item other mb-30 wow fadeInUp" data-wow-delay="0ms">
                     <div class="single-portfolio-content">
-                        <img src="img/public/211228@SZmusem16.JPG"alt="">
+                        <img src="img/public_reduce/211228@SZmusem16.jpg"alt="">
                         <div class="hover-content">
                             <a href="img/public/211228@SZmusem16.JPG" class="portfolio-img">+</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="0ms">
                     <div class="single-portfolio-content">
-                        <img src="img/public/211228@SZmusem15.JPG"alt="">
+                        <img src="img/public_reduce/211228@SZmusem15.jpg"alt="">
                         <div class="hover-content">
                             <a href="img/public/211228@SZmusem15.JPG" class="portfolio-img">+</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="0ms">
                     <div class="single-portfolio-content">
-                        <img src="img/public/211228@SZmusem14.JPG"alt="">
+                        <img src="img/public_reduce/211228@SZmusem14.jpg"alt="">
                         <div class="hover-content">
                             <a href="img/public/211228@SZmusem14.JPG" class="portfolio-img">+</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="0ms">
                     <div class="single-portfolio-content">
-                        <img src="img/public/211228@SZmusem13.JPG"alt="">
+                        <img src="img/public_reduce/211228@SZmusem13.jpg"alt="">
                         <div class="hover-content">
                             <a href="img/public/211228@SZmusem13.JPG" class="portfolio-img">+</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="0ms">
                     <div class="single-portfolio-content">
-                        <img src="img/public/211228@SZmusem12.JPG"alt="">
-                        <div class="hover-content">
-                            <a href="img/public/211228@SZmusem12.JPG" class="portfolio-img">+</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="100ms">
-                    <div class="single-portfolio-content">
-                        <img src="img/public/211228@SZmusem11.JPG"alt="">
-                        <div class="hover-content">
-                            <a href="img/public/211228@SZmusem11.JPG" class="portfolio-img">+</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="100ms">
-                    <div class="single-portfolio-content">
-                        <img src="img/public/211228@SZmusem10.JPG"alt="">
+                        <img src="img/public_reduce/211228@SZmusem10.jpg"alt="">
                         <div class="hover-content">
                             <a href="img/public/211228@SZmusem10.JPG" class="portfolio-img">+</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="0ms">
                     <div class="single-portfolio-content">
-                        <img src="img/public/211228@SZmusem9.JPG"alt="">
+                        <img src="img/public_reduce/211228@SZmusem9.jpg"alt="">
                         <div class="hover-content">
                             <a href="img/public/211228@SZmusem9.JPG" class="portfolio-img">+</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="0ms">
                     <div class="single-portfolio-content">
-                        <img src="img/public/211228@SZmusem8.JPG"alt="">
-                        <div class="hover-content">
-                            <a href="img/public/211228@SZmusem8.JPG" class="portfolio-img">+</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="100ms">
-                    <div class="single-portfolio-content">
-                        <img src="img/public/211228@SZmusem7.JPG"alt="">
+                        <img src="img/public_reduce/211228@SZmusem7.jpg"alt="">
                         <div class="hover-content">
                             <a href="img/public/211228@SZmusem7.JPG" class="portfolio-img">+</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="0ms">
                     <div class="single-portfolio-content">
-                        <img src="img/public/211228@SZmusem6.JPG"alt="">
+                        <img src="img/public_reduce/211228@SZmusem6.jpg"alt="">
                         <div class="hover-content">
                             <a href="img/public/211228@SZmusem6.JPG" class="portfolio-img">+</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="0ms">
                     <div class="single-portfolio-content">
-                        <img src="img/public/211228@SZmusem5.JPG"alt="">
+                        <img src="img/public_reduce/211228@SZmusem5.jpg"alt="">
                         <div class="hover-content">
                             <a href="img/public/211228@SZmusem5.JPG" class="portfolio-img">+</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="0ms">
                     <div class="single-portfolio-content">
-                        <img src="img/public/211228@SZmusem4.JPG"alt="">
+                        <img src="img/public_reduce/211228@SZmusem4.jpg"alt="">
                         <div class="hover-content">
                             <a href="img/public/211228@SZmusem4.JPG" class="portfolio-img">+</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="0ms">
                     <div class="single-portfolio-content">
-                        <img src="img/public/211228@SZmusem3.JPG"alt="">
+                        <img src="img/public_reduce/211228@SZmusem3.jpg"alt="">
                         <div class="hover-content">
                             <a href="img/public/211228@SZmusem3.JPG" class="portfolio-img">+</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="0ms">
                     <div class="single-portfolio-content">
-                        <img src="img/public/211228@SZmusem2.JPG"alt="">
+                        <img src="img/public_reduce/211228@SZmusem2.jpg"alt="">
                         <div class="hover-content">
                             <a href="img/public/211228@SZmusem2.JPG" class="portfolio-img">+</a>
                         </div>
@@ -803,261 +698,225 @@
                 </div>
 
 
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="0ms">
                     <div class="single-portfolio-content">
-                        <img src="img/public/211228@SZmusem.JPG"alt="">
+                        <img src="img/public_reduce/211228@SZmusem.jpg"alt="">
                         <div class="hover-content">
                             <a href="img/public/211228@SZmusem.JPG" class="portfolio-img">+</a>
                         </div>
                     </div>
                 </div>
             
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item other china top8 mb-30 wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item other china top8 mb-30 wow fadeInUp" data-wow-delay="0ms">
                     <div class="single-portfolio-content">
-                        <img src="img/public/211110@SZnusri5.jpg"alt="">
+                        <img src="img/public_reduce/211110@SZnusri5.jpg"alt="">
                         <div class="hover-content">
                             <a href="img/public/211110@SZnusri5.jpg" class="portfolio-img">+</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china other mb-30 wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china other mb-30 wow fadeInUp" data-wow-delay="0ms">
                     <div class="single-portfolio-content">
-                        <img src="img/public/211110@SZnusri4.JPG"alt="">
+                        <img src="img/public_reduce/211110@SZnusri4.jpg"alt="">
                         <div class="hover-content">
                             <a href="img/public/211110@SZnusri4.JPG" class="portfolio-img">+</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="0ms">
                     <div class="single-portfolio-content">
-                        <img src="img/public/211110@SZnusri3.jpg"alt="">
+                        <img src="img/public_reduce/211110@SZnusri3.jpg"alt="">
                         <div class="hover-content">
                             <a href="img/public/211110@SZnusri3.jpg" class="portfolio-img">+</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china top8 mb-30 wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china top8 mb-30 wow fadeInUp" data-wow-delay="0ms">
                     <div class="single-portfolio-content">
-                        <img src="img/public/211110@SZnusri2.jpg"alt="">
+                        <img src="img/public_reduce/211110@SZnusri2.jpg"alt="">
                         <div class="hover-content">
                             <a href="img/public/211110@SZnusri2.jpg" class="portfolio-img">+</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="0ms">
                     <div class="single-portfolio-content">
-                        <img src="img/public/211008@SZyuanlin4.JPG"alt="">
-                        <div class="hover-content">
-                            <a href="img/public/211008@SZyuanlin4.JPG" class="portfolio-img">+</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="100ms">
-                    <div class="single-portfolio-content">
-                        <img src="img/public/211008@SZyuanlin3.JPG"alt="">
-                        <div class="hover-content">
-                            <a href="img/public/211008@SZyuanlin3.JPG" class="portfolio-img">+</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="100ms">
-                    <div class="single-portfolio-content">
-                        <img src="img/public/211008@SZyuanlin2.JPG"alt="">
+                        <img src="img/public_reduce/211008@SZyuanlin2.jpg"alt="">
                         <div class="hover-content">
                             <a href="img/public/211008@SZyuanlin2.JPG" class="portfolio-img">+</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="0ms">
                     <div class="single-portfolio-content">
-                        <img src="img/public/211008@SZyuanlin.jpg"alt="">
+                        <img src="img/public_reduce/211008@SZyuanlin.jpg"alt="">
                         <div class="hover-content">
                             <a href="img/public/211008@SZyuanlin.jpg" class="portfolio-img">+</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="0ms">
                     <div class="single-portfolio-content">
-                        <img src="img/public/211008@SZpingjianglu.jpg"alt="">
+                        <img src="img/public_reduce/211008@SZpingjianglu.jpg"alt="">
                         <div class="hover-content">
                             <a href="img/public/211008@SZpingjianglu.jpg" class="portfolio-img">+</a>
                         </div>
                     </div>
                 </div>
                 
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china other mb-30 wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china other mb-30 wow fadeInUp" data-wow-delay="0ms">
                     <div class="single-portfolio-content">
-                        <img src="img/public/211004@SZjiaotang3.JPG"alt="">
+                        <img src="img/public_reduce/211004@SZjiaotang3.jpg"alt="">
                         <div class="hover-content">
                             <a href="img/public/211004@SZjiaotang3.JPG" class="portfolio-img">+</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china other mb-30 wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china other mb-30 wow fadeInUp" data-wow-delay="0ms">
                     <div class="single-portfolio-content">
-                        <img src="img/public/211004@SZjiaotang2.JPG"alt="">
+                        <img src="img/public_reduce/211004@SZjiaotang2.jpg"alt="">
                         <div class="hover-content">
                             <a href="img/public/211004@SZjiaotang2.JPG" class="portfolio-img">+</a>
                         </div>
                     </div>
                 </div>
                 
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china top8 other mb-30 wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china top8 other mb-30 wow fadeInUp" data-wow-delay="0ms">
                     <div class="single-portfolio-content">
-                        <img src="img/public/211004@SZjiaotang.JPG"alt="">
+                        <img src="img/public_reduce/211004@SZjiaotang.jpg"alt="">
                         <div class="hover-content">
                             <a href="img/public/211004@SZjiaotang.JPG" class="portfolio-img">+</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="0ms">
                     <div class="single-portfolio-content">
-                        <img src="img/public/211002@SZyangchenghu4.jpg"alt="">
+                        <img src="img/public_reduce/211002@SZyangchenghu4.jpg"alt="">
                         <div class="hover-content">
                             <a href="img/public/211002@SZyangchenghu4.jpg" class="portfolio-img">+</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china othre mb-30 wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china othre mb-30 wow fadeInUp" data-wow-delay="0ms">
                     <div class="single-portfolio-content">
-                        <img src="img/public/211002@SZyangchenghu3.jpg"alt="">
+                        <img src="img/public_reduce/211002@SZyangchenghu3.jpg"alt="">
                         <div class="hover-content">
                             <a href="img/public/211002@SZyangchenghu3.jpg" class="portfolio-img">+</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china other mb-30 wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china other mb-30 wow fadeInUp" data-wow-delay="0ms">
                     <div class="single-portfolio-content">
-                        <img src="img/public/211002@SZyangchenghu2.JPG"alt="">
+                        <img src="img/public_reduce/211002@SZyangchenghu2.jpg"alt="">
                         <div class="hover-content">
                             <a href="img/public/211002@SZyangchenghu2.JPG" class="portfolio-img">+</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china other mb-30 wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china other mb-30 wow fadeInUp" data-wow-delay="0ms">
                     <div class="single-portfolio-content">
-                        <img src="img/public/211002@SZyangchenghu.JPG"alt="">
+                        <img src="img/public_reduce/211002@SZyangchenghu.jpg"alt="">
                         <div class="hover-content">
                             <a href="img/public/211002@SZyangchenghu.JPG" class="portfolio-img">+</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="0ms">
                     <div class="single-portfolio-content">
-                        <img src="img/public/211002@SZsonghelou.jpg"alt="">
-                        <div class="hover-content">
-                            <a href="img/public/211002@SZsonghelou.jpg" class="portfolio-img">+</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="100ms">
-                    <div class="single-portfolio-content">
-                        <img src="img/public/210925@SZshantang2.JPG"alt="">
+                        <img src="img/public_reduce/210925@SZshantang2.jpg"alt="">
                         <div class="hover-content">
                             <a href="img/public/210925@SZshantang2.JPG" class="portfolio-img">+</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="0ms">
                     <div class="single-portfolio-content">
-                        <img src="img/public/210925@SZshantang.JPG"alt="">
+                        <img src="img/public_reduce/210925@SZshantang.jpg"alt="">
                         <div class="hover-content">
                             <a href="img/public/210925@SZshantang.JPG" class="portfolio-img">+</a>
                         </div>
                     </div>
                 </div>
-
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="100ms">
-                    <div class="single-portfolio-content">
-                        <img src="img/public/210925@SZ.JPG"alt="">
-                        <div class="hover-content">
-                            <a href="img/public/210925@SZ.JPG" class="portfolio-img">+</a>
-                        </div>
-                    </div>
-                </div>
  
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="0ms">
                     <div class="single-portfolio-content">
-                        <img src="img/public/210917@SZnusri2.jpg"alt="">
+                        <img src="img/public_reduce/210917@SZnusri2.jpg"alt="">
                         <div class="hover-content">
                             <a href="img/public/210917@SZnusri2.jpg" class="portfolio-img">+</a>
                         </div>
                     </div>
                 </div>
    
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="0ms">
                     <div class="single-portfolio-content">
-                        <img src="img/public/210917@SZnusri.jpg"alt="">
+                        <img src="img/public_reduce/210917@SZnusri.jpg"alt="">
                         <div class="hover-content">
                             <a href="img/public/210917@SZnusri.jpg" class="portfolio-img">+</a>
                         </div>
                     </div>
                 </div>
    
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china other mb-30 wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china other mb-30 wow fadeInUp" data-wow-delay="0ms">
                     <div class="single-portfolio-content">
-                        <img src="img/public/210911@DG.jpg"alt="">
+                        <img src="img/public_reduce/210911@DG.jpg"alt="">
                         <div class="hover-content">
                             <a href="img/public/210911@DG.jpg" class="portfolio-img">+</a>
                         </div>
                     </div>
                 </div>
   
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china top8 mb-30 wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china top8 mb-30 wow fadeInUp" data-wow-delay="0ms">
                     <div class="single-portfolio-content">
-                        <img src="img/public/210730@GStumencun5.jpg"alt="">
+                        <img src="img/public_reduce/210730@GStumencun5.jpg"alt="">
                         <div class="hover-content">
                             <a href="img/public/210730@GStumencun5.jpg" class="portfolio-img">+</a>
                         </div>
                     </div>
                 </div>
                
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="0ms">
                     <div class="single-portfolio-content">
-                        <img src="img/public/210730@GStumencun4.jpg"alt="">
+                        <img src="img/public_reduce/210730@GStumencun4.jpg"alt="">
                         <div class="hover-content">
                             <a href="img/public/210730@GStumencun4.jpg" class="portfolio-img">+</a>
                         </div>
                     </div>
                 </div>
                        
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="0ms">
                     <div class="single-portfolio-content">
-                        <img src="img/public/210730@GStumencun3.jpg"alt="">
+                        <img src="img/public_reduce/210730@GStumencun3.jpg"alt="">
                         <div class="hover-content">
                             <a href="img/public/210730@GStumencun3.jpg" class="portfolio-img">+</a>
                         </div>
                     </div>
                 </div>
                 
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="0ms">
                     <div class="single-portfolio-content">
-                        <img src="img/public/210730@GStumencun2.jpg"alt="">
+                        <img src="img/public_reduce/210730@GStumencun2.jpg"alt="">
                         <div class="hover-content">
                             <a href="img/public/210730@GStumencun2.jpg" class="portfolio-img">+</a>
                         </div>
                     </div>
                 </div>
                 
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="0ms">
                     <div class="single-portfolio-content">
-                        <img src="img/public/210730@GStumencun.jpg"alt="">
+                        <img src="img/public_reduce/210730@GStumencun.jpg"alt="">
                         <div class="hover-content">
                             <a href="img/public/210730@GStumencun.jpg" class="portfolio-img">+</a>
                         </div>
@@ -1067,18 +926,10 @@
                 <!-- End of 2021-->
 
                 <!-- 2020-->
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="100ms">
-                    <div class="single-portfolio-content">
-                        <img src="img/public/200121@JX.jpg"alt="">
-                        <div class="hover-content">
-                            <a href="img/public/200121@JX.jpg" class="portfolio-img">+</a>
-                        </div>
-                    </div>
-                </div>
                 
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="0ms">
                     <div class="single-portfolio-content">
-                        <img src="img/public/200120@JXtengwangge.jpg"alt="">
+                        <img src="img/public_reduce/200120@JXtengwangge.jpg"alt="">
                         <div class="hover-content">
                             <a href="img/public/200120@JXtengwangge.jpg" class="portfolio-img">+</a>
                         </div>
@@ -1089,153 +940,153 @@
 
                 <!-- 2019-->
 
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="0ms">
                     <div class="single-portfolio-content">
-                        <img src="img/public/190916@DLDUT.jpg"alt="">
+                        <img src="img/public_reduce/190916@DLDUT.jpg"alt="">
                         <div class="hover-content">
                             <a href="img/public/190916@DLDUT.jpg" class="portfolio-img">+</a>
                         </div>
                     </div>
                 </div>
                 
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="0ms">
                     <div class="single-portfolio-content">
-                        <img src="img/public/190820@GZzhujiangxincheng2.jpg"alt="">
+                        <img src="img/public_reduce/190820@GZzhujiangxincheng2.jpg"alt="">
                         <div class="hover-content">
                             <a href="img/public/190820@GZzhujiangxincheng2.jpg" class="portfolio-img">+</a>
                         </div>
                     </div>
                 </div>
                 
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="0ms">
                     <div class="single-portfolio-content">
-                        <img src="img/public/190820@GZzhujiangxincheng.jpg"alt="">
+                        <img src="img/public_reduce/190820@GZzhujiangxincheng.jpg"alt="">
                         <div class="hover-content">
                             <a href="img/public/190820@GZzhujiangxincheng.jpg" class="portfolio-img">+</a>
                         </div>
                     </div>
                 </div>
                 
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china top8 mb-30 wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china top8 mb-30 wow fadeInUp" data-wow-delay="0ms">
                     <div class="single-portfolio-content">
-                        <img src="img/public/190722@HLJqiqihaer.jpg"alt="">
+                        <img src="img/public_reduce/190722@HLJqiqihaer.jpg"alt="">
                         <div class="hover-content">
                             <a href="img/public/190722@HLJqiqihaer.jpg" class="portfolio-img">+</a>
                         </div>
                     </div>
                 </div>
                 
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="0ms">
                     <div class="single-portfolio-content">
-                        <img src="img/public/190719@HLJmohe.jpg"alt="">
+                        <img src="img/public_reduce/190719@HLJmohe.jpg"alt="">
                         <div class="hover-content">
                             <a href="img/public/190719@HLJmohe.jpg" class="portfolio-img">+</a>
                         </div>
                     </div>
                 </div>
                 
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="0ms">
                     <div class="single-portfolio-content">
-                        <img src="img/public/190717@NMGcaoyuan.jpg"alt="">
+                        <img src="img/public_reduce/190717@NMGcaoyuan.jpg"alt="">
                         <div class="hover-content">
                             <a href="img/public/190717@NMGcaoyuan.jpg" class="portfolio-img">+</a>
                         </div>
                     </div>
                 </div>
                 
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="0ms">
                     <div class="single-portfolio-content">
-                        <img src="img/public/190716@NMGhailaier.jpg"alt="">
+                        <img src="img/public_reduce/190716@NMGhailaier.jpg"alt="">
                         <div class="hover-content">
                             <a href="img/public/190716@NMGhailaier.jpg" class="portfolio-img">+</a>
                         </div>
                     </div>
                 </div>
                 
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="0ms">
                     <div class="single-portfolio-content">
-                        <img src="img/public/190714@SYdashuaifu2.jpg"alt="">
+                        <img src="img/public_reduce/190714@SYdashuaifu2.jpg"alt="">
                         <div class="hover-content">
                             <a href="img/public/190714@SYdashuaifu2.jpg" class="portfolio-img">+</a>
                         </div>
                     </div>
                 </div>
                 
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="0ms">
                     <div class="single-portfolio-content">
-                        <img src="img/public/190714@SYdashuaifu.jpg"alt="">
+                        <img src="img/public_reduce/190714@SYdashuaifu.jpg"alt="">
                         <div class="hover-content">
                             <a href="img/public/190714@SYdashuaifu.jpg" class="portfolio-img">+</a>
                         </div>
                     </div>
                 </div>
                 
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="0ms">
                     <div class="single-portfolio-content">
-                        <img src="img/public/190602@DLxinghai.jpg"alt="">
+                        <img src="img/public_reduce/190602@DLxinghai.jpg"alt="">
                         <div class="hover-content">
                             <a href="img/public/190602@DLxinghai.jpg" class="portfolio-img">+</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item other top8 mb-30 wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item other top8 mb-30 wow fadeInUp" data-wow-delay="0ms">
                     <div class="single-portfolio-content">
-                        <img src="img/public/190512@DLDUT.jpg"alt="">
+                        <img src="img/public_reduce/190512@DLDUT.jpg"alt="">
                         <div class="hover-content">
                             <a href="img/public/190512@DLDUT.jpg" class="portfolio-img">+</a>
                         </div>
                     </div>
                 </div>
                 
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="0ms">
                     <div class="single-portfolio-content">
-                        <img src="img/public/190415@DLDUT.jpg"alt="">
+                        <img src="img/public_reduce/190415@DLDUT.jpg"alt="">
                         <div class="hover-content">
                             <a href="img/public/190415@DLDUT.jpg" class="portfolio-img">+</a>
                         </div>
                     </div>
                 </div>
                 
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item other top8 mb-30 wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item other top8 mb-30 wow fadeInUp" data-wow-delay="0ms">
                     <div class="single-portfolio-content">
-                        <img src="img/public/190414@DLxinghai2.jpg"alt="">
+                        <img src="img/public_reduce/190414@DLxinghai2.jpg"alt="">
                         <div class="hover-content">
                             <a href="img/public/190414@DLxinghai2.jpg" class="portfolio-img">+</a>
                         </div>
                     </div>
                 </div>
                 
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="0ms">
                     <div class="single-portfolio-content">
-                        <img src="img/public/190414@DLxinghai.jpg"alt="">
+                        <img src="img/public_reduce/190414@DLxinghai.jpg"alt="">
                         <div class="hover-content">
                             <a href="img/public/190414@DLxinghai.jpg" class="portfolio-img">+</a>
                         </div>
                     </div>
                 </div>
                 
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="0ms">
                     <div class="single-portfolio-content">
-                        <img src="img/public/190213@CShengshan3.jpg"alt="">
+                        <img src="img/public_reduce/190213@CShengshan3.jpg"alt="">
                         <div class="hover-content">
                             <a href="img/public/190213@CShengshan3.jpg" class="portfolio-img">+</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="0ms">
                     <div class="single-portfolio-content">
-                        <img src="img/public/190213@CShengshan2.jpg"alt="">
+                        <img src="img/public_reduce/190213@CShengshan2.jpg"alt="">
                         <div class="hover-content">
                             <a href="img/public/190213@CShengshan2.jpg" class="portfolio-img">+</a>
                         </div>
                     </div>
                 </div>
                 
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="0ms">
                     <div class="single-portfolio-content">
-                        <img src="img/public/190212@CSjuzizhou.jpg"alt="">
+                        <img src="img/public_reduce/190212@CSjuzizhou.jpg"alt="">
                         <div class="hover-content">
                             <a href="img/public/190212@CSjuzizhou.jpg" class="portfolio-img">+</a>
                         </div>
@@ -1246,52 +1097,52 @@
 
                 <!-- 2018-->
 
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="0ms">
                     <div class="single-portfolio-content">
-                        <img src="img/public/181208@DLDUT5.jpg"alt="">
+                        <img src="img/public_reduce/181208@DLDUT5.jpg"alt="">
                         <div class="hover-content">
                             <a href="img/public/181208@DLDUT5.jpg" class="portfolio-img">+</a>
                         </div>
                     </div>
                 </div>
                 
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="0ms">
                     <div class="single-portfolio-content">
-                        <img src="img/public/181027@DLDUT4.jpg"alt="">
+                        <img src="img/public_reduce/181027@DLDUT4.jpg"alt="">
                         <div class="hover-content">
                             <a href="img/public/181027@DLDUT4.jpg" class="portfolio-img">+</a>
                         </div>
                     </div>
                 </div>
                 
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="0ms">
                     <div class="single-portfolio-content">
-                        <img src="img/public/181027@DLDUT3.jpg"alt="">
+                        <img src="img/public_reduce/181027@DLDUT3.jpg"alt="">
                         <div class="hover-content">
                             <a href="img/public/181027@DLDUT3.jpg" class="portfolio-img">+</a>
                         </div>
                     </div>
                 </div>
                 
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp"data-wow-delay="100ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp"data-wow-delay="0ms">
                     <div class="single-portfolio-content">
-                        <img src="img/public/181027@DLDUT2.jpg"alt="">
+                        <img src="img/public_reduce/181027@DLDUT2.jpg"alt="">
                         <div class="hover-content">
                             <a href="img/public/181027@DLDUT2.jpg" class="portfolio-img">+</a>
                         </div>
                     </div>
                 </div>
                 
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp"data-wow-delay="100ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp"data-wow-delay="0ms">
                     <div class="single-portfolio-content">
-                        <img src="img/public/181027@DLDUT.jpg"alt="">
+                        <img src="img/public_reduce/181027@DLDUT.jpg"alt="">
                         <div class="hover-content">
                             <a href="img/public/181027@DLDUT.jpg" class="portfolio-img">+</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="0ms">
                     <div class="single-portfolio-content">
                         <img src="./img/public/180930@DLFaxianwangguo.jpg"alt="">
                         <div class="hover-content">
@@ -1300,16 +1151,7 @@
                     </div>
                 </div>
 
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="100ms">
-                    <div class="single-portfolio-content">
-                        <img src="./img/public/180803@ESdaxiagu2.jpg"alt="">
-                        <div class="hover-content">
-                            <a href="./img/public/180803@ESdaxiagu2.jpg" class="portfolio-img">+</a>
-                        </div>
-                    </div>
-                </div>
-              
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="0ms">
                     <div class="single-portfolio-content">
                         <img src="./img/public/180803@ESdaxiagu.jpg"alt="">
                         <div class="hover-content">
@@ -1318,7 +1160,7 @@
                     </div>
                 </div>
                               
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="0ms">
                     <div class="single-portfolio-content">
                         <img src="./img/public/180731@HBshennongjia3.jpg"alt="">
                         <div class="hover-content">
@@ -1327,16 +1169,7 @@
                     </div>
                 </div>
                 
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="100ms">
-                    <div class="single-portfolio-content">
-                        <img src="./img/public/180731@HBshennongjia2.jpg"alt="">
-                        <div class="hover-content">
-                            <a href="./img/public/180731@HBshennongjia2.jpg" class="portfolio-img">+</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="0ms">
                     <div class="single-portfolio-content">
                         <img src="./img/public/180731@HBshennongjia.jpg"alt="">
                         <div class="hover-content">
@@ -1345,7 +1178,7 @@
                     </div>
                 </div>
                 
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="0ms">
                     <div class="single-portfolio-content">
                         <img src="./img/public/180728@XAbingmayong6.jpg"alt="">
                         <div class="hover-content">
@@ -1354,7 +1187,7 @@
                     </div>
                 </div>
 
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="0ms">
                     <div class="single-portfolio-content">
                         <img src="./img/public/180728@XAbingmayong5.jpg"alt="">
                         <div class="hover-content">
@@ -1363,16 +1196,7 @@
                     </div>
                 </div>
                 
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="100ms">
-                    <div class="single-portfolio-content">
-                        <img src="./img/public/180728@XAbingmayong4.jpg"alt="">
-                        <div class="hover-content">
-                            <a href="./img/public/180728@XAbingmayong4.jpg" class="portfolio-img">+</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="0ms">
                     <div class="single-portfolio-content">
                         <img src="./img/public/180728@XAbingmayong3.jpg"alt="">
                         <div class="hover-content">
@@ -1381,16 +1205,7 @@
                     </div>
                 </div>
                
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="100ms">
-                    <div class="single-portfolio-content">
-                        <img src="./img/public/180728@XAbingmayong2.jpg"alt="">
-                        <div class="hover-content">
-                            <a href="./img/public/180728@XAbingmayong2.jpg" class="portfolio-img">+</a>
-                        </div>
-                    </div>
-                </div>
-               
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="0ms">
                     <div class="single-portfolio-content">
                         <img src="./img/public/180728@XAbingmayong.jpg"alt="">
                         <div class="hover-content">
@@ -1399,25 +1214,7 @@
                     </div>
                 </div>
                
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="100ms">
-                    <div class="single-portfolio-content">
-                        <img src="./img/public/180727@WNhuashan4.jpg"alt="">
-                        <div class="hover-content">
-                            <a href="./img/public/180727@WNhuashan4.jpg" class="portfolio-img">+</a>
-                        </div>
-                    </div>
-                </div>
-               
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="100ms">
-                    <div class="single-portfolio-content">
-                        <img src="./img/public/180727@WNhuashan3.jpg"alt="">
-                        <div class="hover-content">
-                            <a href="./img/public/180727@WNhuashan3.jpg" class="portfolio-img">+</a>
-                        </div>
-                    </div>
-                </div>
-               
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="0ms">
                     <div class="single-portfolio-content">
                         <img src="./img/public/180727@WNhuashan2.jpg"alt="">
                         <div class="hover-content">
@@ -1426,7 +1223,7 @@
                     </div>
                 </div>
 
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="0ms">
                     <div class="single-portfolio-content">
                         <img src="./img/public/180727@WNhuashan.jpg"alt="">
                         <div class="hover-content">
@@ -1435,7 +1232,7 @@
                     </div>
                 </div>
                
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="0ms">
                     <div class="single-portfolio-content">
                         <img src="./img/public/180726@LYlongmenshiku2.jpg"alt="">
                         <div class="hover-content">
@@ -1444,7 +1241,7 @@
                     </div>
                 </div>
                
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item china mb-30 wow fadeInUp" data-wow-delay="0ms">
                     <div class="single-portfolio-content">
                         <img src="./img/public/180726@LYlongmenshiku.jpg">
                         <div class="hover-content">
