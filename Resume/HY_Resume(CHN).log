@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.6.27)  4 JUL 2025 09:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.6.27)  24 JAN 2026 19:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -841,10 +841,10 @@ Package rerunfilecheck Info: File `HY_Resume(CHN).out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 14877 strings out of 478268
- 248724 string characters out of 5847351
- 563025 words of memory out of 5000000
- 32562 multiletter control sequences out of 15000+600000
+ 14883 strings out of 478268
+ 248801 string characters out of 5847351
+ 563257 words of memory out of 5000000
+ 32568 multiletter control sequences out of 15000+600000
  501772 words of font info for 145 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  90i,5n,92p,737b,350s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -892,7 +892,7 @@ type1/public/amsfonts/cm/cmr10.pfb><e:/Latex/texlive/2022/texmf-dist/fonts/type
 1/public/amsfonts/cm/cmsy10.pfb><e:/Latex/texlive/2022/texmf-dist/fonts/type1/p
 ublic/amsfonts/cm/cmti10.pfb><e:/Latex/texlive/2022/texmf-dist/fonts/type1/publ
 ic/amsfonts/cm/cmtt10.pfb>
-Output written on HY_Resume(CHN).pdf (2 pages, 354826 bytes).
+Output written on HY_Resume(CHN).pdf (2 pages, 354840 bytes).
 PDF statistics:
  517 PDF objects out of 1000 (max. 8388607)
  331 compressed objects within 4 object streams

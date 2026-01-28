@@ -77,11 +77,11 @@ def add_data_to_html(html_file_path, txt_file_path, repo_path, commit_message):
             with open(html_file_path, 'r', encoding='utf-8') as html_file:
                 html_content = html_file.read()
 
-            pattern = r"(var\s+datas2025\s*=\s*\[)([\s\S]*?)(\]\s*;)"
+            pattern = r"(var\s+datas2026\s*=\s*\[)([\s\S]*?)(\]\s*;)"
             match = re.search(pattern, html_content, re.DOTALL)
             
             if match:
-                original_data_start = match.group(1)  # 'var datas2025 = ['
+                original_data_start = match.group(1)  # 'var datas2026 = ['
                 existing_data = match.group(2)        # 数组中的已有数据
                 original_data_end = match.group(3)    # '];'
 
@@ -99,7 +99,7 @@ def add_data_to_html(html_file_path, txt_file_path, repo_path, commit_message):
                 
                 print("HTML file has been updated with the new data.")
             else:
-                print("Could not find the 'datas2025' section in the HTML file.")
+                print("Could not find the 'datas2026' section in the HTML file.")
 
         file.close()
         try:
